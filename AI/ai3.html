@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-VP3VDZGZEM');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+  crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="description" content="Enhance your Python skills with tutorials on Numpy, facial emotion analysis, photo conversion, and text writing. Explore practical examples and gain insights into these exciting areas of Python programming.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="ai.css" />
+  <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+  <title>Learn Facial Emotion Analysis & Photo Conversion with Numpy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+  <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("EPqtEwgLtyLECUuik");
+    })();
+  </script>
+  <!-- Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Learn Facial Emotion Analysis & Photo Conversion with Numpy">
+  <meta property="og:description" content="Enhance your Python skills with tutorials on Numpy, facial emotion analysis, photo conversion, and text writing. Explore practical examples and gain insights into these exciting areas of Python programming.">
+  <meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+  <meta property="og:url" content="https://samcodehub.com/AI/ai3.html">
+  <meta name="twitter:title" content="Learn Facial Emotion Analysis & Photo Conversion with Numpy">
+  <meta name="twitter:description" content="Enhance your Python skills with tutorials on Numpy, facial emotion analysis, photo conversion, and text writing. Explore practical examples and gain insights into these exciting areas of Python programming.">
+  <meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://samcodehub.com/AI/ai3.html">
+  </head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+  </div>
+</nav>
+<div class="container-fluid text-dark bg-light mb-5">
+    <div  class="container text-break">
+      <div class="row">
+
+        <div class="mt-3 text-center d-none d-sm-block">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        
+  
+  
+        <div class="mt-3 text-center d-block d-sm-none">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        <div class="col-9 ">
+
+
+<!--NUMPY LIBRARY--#######################################################################################-->
+
+
+<h1 class="mt-3">Step-by-Step Guide: How to install and use Numpy in Python?</h1>
+<p class="mt-5"><strong>Numpy</strong> is a popular numerical computing library for Python and can be installed using <strong>pip</strong>. To install Numpy, simply run the following command in your terminal or command prompt:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install numpy                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Once the installation is complete, you can start using <strong>Numpy</strong> by importing it in your Python code:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import numpy as np                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Here's a simple example to get you started with <strong>Numpy</strong>:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import numpy as np
+
+# Create a 1-dimensional array
+a = np.array([1, 2, 3, 4, 5])
+  
+# Create a 2-dimensional array
+b = np.array([[1, 2, 3], [4, 5, 6]])
+  
+# Get the shape of the array
+print("Shape of a:", a.shape)
+print("Shape of b:", b.shape)
+  
+# Get the data type of the array
+print("Data type of a:", a.dtype)
+print("Data type of b:", b.dtype)
+  
+# Access elements of the array
+print("First element of a:", a[0])
+print("Last element of a:", a[-1])
+print("Second row, third column of b:", b[1, 2])
+  
+# Perform arithmetic operations on arrays
+c = a + b
+d = a * b
+  
+print("c:", c)
+print("d:", d)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">In this example, we create two arrays, <mark>'a'</mark> and <mark>'b'</mark> and perform some basic operations on them such as getting their <strong>shape</strong>, <strong>data type</strong>, <strong>accessing elements</strong>, and performing <strong>arithmetic</strong> operations.</p>
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<!--FACE EMOTION DETECT-----############################################################################-->
+<h2 class="mt-5">How to Analyze Facial Emotions with Python: A Deepface, Numpy, and cv2 Tutorial</h2>
+<p class="mt-5">"In this tutorial, learn how to use <strong>Python</strong> and advanced libraries like <strong>Deepface</strong>, <strong>Numpy</strong>, and <strong>cv2</strong> to <strong>analyze facial emotions</strong>. Explore the basics of facial recognition and gain hands-on experience with the latest technologies in <strong>emotion detection</strong>."</p>
+<p class="mt-5">import the necessary libraries <strong>(OpenCV, DeepFace, and Numpy)</strong> and load an image (img.jpg) using the OpenCV <strong>imread()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import cv2
+from cv2 import FONT_HERSHEY_SIMPLEX
+from deepface import DeepFace
+import numpy as np
+
+image_path = 'img.jpg'
+image = cv2.imread(image_path)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line performs facial analysis on the image using the <strong>DeepFace</strong> library, specifically analyzing emotions using the 'emotion' action.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">analyze = DeepFace.analyze(image, actions=['emotion'])
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line adds the text of the dominant emotion detected by DeepFace to the image using the OpenCV <strong>putText()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">analyzed_image = cv2.putText(image, analyze['dominant_emotion'],
+(380,50), cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These lines display the analyzed image on the screen using the OpenCV <strong>imshow()</strong> function and wait for a key press before closing the window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cv2.imshow('Recognize emotions', analyzed_image)
+cv2.waitKey(0)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-4">Overall, the code load an image, analyze the emotions in the image using <strong>DeepFace</strong>, and display the image with the dominant emotion text overlayed on it.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ipNhJgULdAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+<!--DAY NIGHT LIGHT CONVERSION PROJECT----##############################################################-->
+<h2 class="mt-5">How to Convert Daytime Photos to Nighttime Mode with Python: A Numpy, CV2, and Imageio Tutorial</h2>
+<p class="mt-5">"In this tutorial, learn how to use <strong>Python</strong> and advanced libraries like <strong>Numpy</strong>, <strong>CV2</strong>, and <strong>Imageio</strong> to convert <strong></strong>daytime photos to <strong>nighttime mode</strong>. Explore the basics of <strong>image manipulation</strong> and gain hands-on experience with the latest technologies in photo editing."</p>
+<p class="mt-5">Firstly, this code imports the <strong>NumPy</strong> library as '<strong>np</strong>', the <strong>imageio</strong> library's '<strong>imread</strong>' and '<strong>imwrite</strong>' functions, and the <strong>OpenCV</strong> library as '<strong>cv2</strong>'. <strong>NumPy</strong> is a powerful library for numerical computing in Python. The <strong>imageio</strong> library provides easy access to read and write a variety of image formats. <strong>OpenCV</strong> is a library used for computer vision tasks, including image processing.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import numpy as np
+from imageio import imread, imwrite
+import cv2
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">Next, the code reads an image 'day.jpg' using the <strong>imageio.imread</strong> function and stores it in the '<strong>img</strong>' variable.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">img = imread('day.jpg')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">Then, the code multiplies the image by an array of values [0.1, 0.2, 0.5] element-wise, which results in a darker image. This new image is stored in the '<strong>arr</strong>' variable.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">arr = img * np.array([0.1, 0.2, 0.5])
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">After that, the code scales the values of the '<strong>arr</strong>' variable so that the maximum pixel value is <strong>255</strong>, which is the maximum value that can be stored in an <strong>8-bit</strong> unsigned integer. This is done by multiplying the '<strong>arr</strong>' variable by <strong>255</strong> and then dividing it by its maximum value. This new array is then converted to an <strong>8-bit</strong> unsigned integer data type and stored in the '<strong>arr2</strong>' variable.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">arr2 = (255 * arr/arr.max()).astype(np.uint8)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">The next line of code saves the image '<strong>arr2</strong>' as a <strong>PNG</strong> file with the name 'night.png'.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">imwrite('night.png', arr2)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">Then, the code reads the 'night.png' image back in using the <strong>cv2.imread</strong> function and stores it in the '<strong>img2</strong>' variable.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">img2 = cv2.imread('night.png')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">Next, the code applies a <strong>gamma</strong> correction to the '<strong>img2</strong>' variable using the formula:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">gamma_img = np.array(255 * (img2/255) ** gamma, dtype = 'uint8')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">This formula applies a power function to each pixel value in the '<strong>img2</strong>' variable, where '<strong>gamma</strong>' is the exponent. Higher gamma values result in a darker image. The resulting image is stored in the '<strong>gamma_img</strong>' variable.</p>
+
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+<p class="mt-5">Finally, the code saves the '<strong>gamma_img</strong>' variable as a <strong>PNG</strong> file named 'night_final.png' using the <strong>cv2.imwrite</strong> function and prints the message "finished!".</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cv2.imwrite('night_final.png', gamma_img)
+print("finished!")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Overall, this code performs the following operations:</p>
+<ol class="mt-4">
+  <li class="mt-4">Reads an image from a file using the <strong>imageio</strong> library.</li>
+  <li class="mt-4">Multiplies the image by an array of values to darken it.</li>
+  <li class="mt-4">Scales the values of the resulting array so that the maximum pixel value is <strong>255</strong>.</li>
+  <li class="mt-4">Saves the resulting array as a <strong>PNG</strong> file using the <strong>imageio</strong> library.</li>
+  <li class="mt-4">Reads the resulting image from the file using the <strong>OpenCV</strong> library.</li>
+  <li class="mt-4">Applies a gamma correction to the image using the <strong>OpenCV</strong> and <strong>NumPy</strong> libraries.</li>
+  <li class="mt-4">Saves the gamma-corrected image as a <strong>PNG</strong> file using the <strong></strong>OpenCV library.</li>
+  <li class="mt-4">Prints a message to the console indicating that the process is finished.</li>
+</ol>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-O3fu4nZleM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<!--WRITE ON IMAGE---###############################################################################-->
+<h2 class="mt-5">How to Write Text on Solid Images with Python: A Numpy and OpenCV (cv2) Tutorial</h2>
+<p class="mt-5">"In this tutorial, learn how to use <strong>Python</strong> and advanced libraries like <strong>Numpy</strong> and <strong>OpenCV</strong> (<strong>cv2</strong>) to write text on <strong>solid images</strong>. Explore the basics of <strong>image processing</strong> and gain hands-on experience with the latest technologies in <strong>text overlaying</strong>."</p>
+<p class="mt-5">First, the <strong>NumPy</strong> library is imported as "<strong>np</strong>" and the <strong>OpenCV</strong> library is imported as "<strong>cv2</strong>".</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import numpy as np
+import cv2
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">A black image is created using <strong>NumPy</strong> with 3 channels RGB and unsigned integer datatype. The dimensions of the image are (400, 400, 3).</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">img = np.zeros((400, 400, 3), dtype = "uint8")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>cv2.putText()</strong> function is used to write text on the image. The text is "sam codehub presents..." and it is positioned at (50, 50) on the image. The font used is <strong>FONT_HERSHEY_SIMPLEX</strong> with a size of 0.8 and the color of the text is green (0, 255, 0). The thickness of the text is set to 2 and the line type is <strong>LINE_AA</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">font = cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(img, 'sam codehub presents...', (50, 50), font, 0.8, (0, 255, 0), 2, cv2.LINE_AA)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">The <strong>cv2.imshow()</strong> function is used to display the image in a window named "dark".</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cv2.imshow('dark', img)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>cv2.waitKey()</strong> function waits for a keyboard event and the <strong>cv2.destroyAllWindows()</strong> function closes all windows.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cv2.waitKey(0)
+cv2.destroyAllWindows()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">This project is a great example of how Python's powerful libraries can be used to quickly and easily manipulate images. By combining <strong>NumPy</strong> and <strong>OpenCV</strong> (<strong>cv2</strong>), we were able to create a black image and write text on it with just a few lines of code. This technique can be used in a wide range of applications, from creating custom watermarks for images to generating graphics for web pages or social media posts. With these powerful tools at our disposal, the possibilities are endless.</p>
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1qM5gCZ6_UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<div class="mt-5"></div>
+
+<script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+
+  
+
+<nav aria-label="Page navigation example ">
+  <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+    <li class="page-item active  pe-2">
+      <a class="page-link" href="ai2.html" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+   
+    <li class="page-item  pe-2"><a class="page-link" href="ai2.html">2</a></li>
+    <li class="page-item active pe-2"><a class="page-link" href="ai3.html">3</a></li>
+    <li class="page-item pe-2"><a class="page-link" href="ai4.html">4</a></li>
+    
+    <li class="page-item active pe-2">
+      <a class="page-link" href="ai4.html">Next</a>
+    </li>
+  </ul>
+</nav>     
+<!----------------- Comments...-------------- -->
+
+<div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+
+  <!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+          
+        </div>
+        <div id="ads" class="col-3  mt-5 d-none d-sm-block border-start">
+      
+          
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-Falchion-Wireless-Mechanical-Interactive/dp/B08T88Y23K?content-id=amzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b%3Aamzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b&keywords=programming+keyboard&pd_rd_r=55f9b23f-3f8a-4559-baf4-63a322e7b945&pd_rd_w=39IRF&pd_rd_wg=32oSI&pf_rd_p=1b55e175-aab2-4228-be7e-b2330901df8b&pf_rd_r=1JYEEBSQ3MF0GCJ4GH8X&qid=1683950809&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzRFRXMEE2RVBBMTBTJmVuY3J5cHRlZElkPUEwNzU0NTg1Mk8xVjZHNlFCUkdLUyZlbmNyeXB0ZWRBZElkPUEwNzczODM5MVI4N1c4VzA3NkU4NCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=li2&tag=samcodehub-20&linkId=53cf8ec18aa643805e2a6541864e3eb6&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="ak.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS ROG Falchion Wireless 65% Mechanical Gaming Keyboard | 68 Keys, Aura Sync RGB, Extended Battery Life, Interactive Touch Panel, PBT Keycaps, Cherry MX Red Switches, Keyboard Cover Case</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+     
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-ROG-Construction-Installation-Compatibility/dp/B0B173F6RM?pd_rd_w=mDOWS&content-id=amzn1.sym.a400618b-650b-4c39-a4fe-66c3e0813a14&pf_rd_p=a400618b-650b-4c39-a4fe-66c3e0813a14&pf_rd_r=TB3H2W2D56VYQTW1KRH9&pd_rd_wg=NSxXA&pd_rd_r=ef92c552-bb64-4ef6-b6e1-a54fe3b60976&pd_rd_i=B0B173F6RM&psc=1&linkCode=li2&tag=samcodehub-20&linkId=a70c6a485d807da9250e3c1258849c41&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="ar.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS ROG Herculx Graphics Card Anti-Sag Holder Bracket (Solid Zinc Alloy Construction, Easy Toolless Installation, Included Spirit Level, Adjustable Height, Wide Compatibility, Aura Sync RGB)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+         
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B0985VND1G?pd_rd_w=2SHhC&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=GRY2CNKV3G7K96145HTH&pd_rd_wg=1Le0p&pd_rd_r=d765052f-f118-4cc1-96e2-fa534fc05e69&pd_rd_i=B0985VND1G&th=1&linkCode=li2&tag=samcodehub-20&linkId=e34b0811e368ffb0037664eac59ae1f5&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="en.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS TUF Gaming NVIDIA GeForce RTX 3060 V2 OC Edition Graphics Card (PCIe 4.0, 12GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+          
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-ROG-Wireless-Magnetic-Programmable/dp/B09726KT4R?pd_rd_w=mejtH&content-id=amzn1.sym.cdcffa71-e0b6-4359-8695-8b1b65851e69&pf_rd_p=cdcffa71-e0b6-4359-8695-8b1b65851e69&pf_rd_r=TB3H2W2D56VYQTW1KRH9&pd_rd_wg=NSxXA&pd_rd_r=ef92c552-bb64-4ef6-b6e1-a54fe3b60976&pd_rd_i=B09726KT4R&th=1&linkCode=li3&tag=samcodehub-20&linkId=5f58815497ba9be162c60d1d8f28763c&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="am.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS ROG Spatha X Wireless Gaming Mouse (Magnetic Charging Stand, 12 Programmable Buttons, 19,000 DPI, Push-fit Hot Swap Switch Sockets, ROG Micro Switches, ROG Paracord and Aura RGB lighting)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+         
+          
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/dp/B0B12F8N3S?ie=UTF8&psc=1&pd_rd_plhdr=t&linkCode=li2&tag=samcodehub-20&linkId=b50cccb90b1632865d7bd20264e6877b&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="sc.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Ergonomic Mouse Wireless, ProtoArc EM11 Bluetooth Vertical Ergo Mouse, Rechargeable, 2.4G RGB Optical Vertical Mice with 3 Adjustable DPI, 3-Device Connection for PC, iPad, Mac, Windows-Black</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+         
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ProtoArc-Wireless-Ergonomic-Vertical-Keyboard/dp/B0BSFD99N6?&linkCode=li2&tag=samcodehub-20&linkId=6dba978e84ae2eb30fa46d0ed7a28efd&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="cs.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ERGONOMIC DESIGN: The wireless ergonomic mouse with extended wrist rest fits perfectly in the palm of your hand, following the natural curve of your right hand and promoting a more natural, relaxed forearm and wrist position to reduce hand fatigue for all-day comfort. </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/dp/B09G6DTKNB?pd_rd_i=B09G6DTKNB&pd_rd_w=UPuIm&content-id=amzn1.sym.d81b167d-1f9e-48b6-87d8-8aa5e473ea8c&pf_rd_p=d81b167d-1f9e-48b6-87d8-8aa5e473ea8c&pf_rd_r=Z0E50ERD4HGTHW5GJRQ0&pd_rd_wg=Y91yw&pd_rd_r=2eca95bc-a1c5-4c9a-9738-bcaf290c854d&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTERNMzVVNzhKRjYmZW5jcnlwdGVkSWQ9QTAxNDQ1NDUySlJGUkNQSlVWME1RJmVuY3J5cHRlZEFkSWQ9QTA3ODkxMzEzOURZWEozNjJDSFVSJndpZGdldE5hbWU9c3BfZGV0YWlsX3RoZW1hdGljJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1&linkCode=li2&tag=samcodehub-20&linkId=aed79f95d4661f5f39c7dab9b6034cd7&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="dx.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">DeLUX Seeker Wireless Ergonomic Vertical Mouse with OLED Screen, BT and USB Receiver, Connect with Up to 4 Devices, Thumb Wheel, 4000DPI, Programmable Rechargeable Silent Mouse(M618XSD-Black)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/dp/B09JNX6868?pd_rd_i=B09JNX6868&pd_rd_w=QI8Tt&content-id=amzn1.sym.7b21e0c7-2d6d-4279-a40b-74d2b0593b5a&pf_rd_p=7b21e0c7-2d6d-4279-a40b-74d2b0593b5a&pf_rd_r=ZXAYB6FE4E3NRNPFGCKV&pd_rd_wg=AR6Vp&pd_rd_r=704d3e32-5442-42bf-bf31-0066c864f10d&s=pc&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFMRVlVOE9GNUdVUk8mZW5jcnlwdGVkSWQ9QTAxMTQwODExVzBVUjJZNFpKQUkwJmVuY3J5cHRlZEFkSWQ9QTA4NDc3MzUySFBWUzhIQkYwWjZJJndpZGdldE5hbWU9c3BfZGV0YWlsX3RoZW1hdGljJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1&linkCode=li2&tag=samcodehub-20&linkId=11591af3b5b4f0ae7185d547b0d0b285&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="dy.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">RedThunder Wireless One-Handed Gaming Keyboard, 2.4Ghz RGB Backlit Mini Gaming Keypad, Rechargeable 2000mAh Battery for PC Gamer</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/Extra-Large-Laptop-Desk-17-3/dp/B09NZJ7H1S?pd_rd_w=XfVaz&content-id=amzn1.sym.368b1da3-bd5e-471c-a642-a329f8f53bef&pf_rd_p=368b1da3-bd5e-471c-a642-a329f8f53bef&pf_rd_r=3BZ7S0AHWQZVNXH8QYZX&pd_rd_wg=O39If&pd_rd_r=9c3fb58c-df6b-49fd-9afe-4ef2a1b7b552&pd_rd_i=B09NZJ7H1S&th=1&linkCode=li2&tag=samcodehub-20&linkId=9b8be8ef68bf70adde1552b223d2dc92&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="xl.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Extra Large Lap Laptop Desk - Full PU Material Mouse Pad Gaming Tray - Portable LapDesk with Phone Holder & Wrist Rest for Notebook, MacBook, Tablet, Bed, Sofa(Black, Fit Up 17.3-in Laptops)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3K0Kj8h" target="_blank">
+            <div>
+              <img src="touch.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Foldable Bluetooth Keyboard with Touchpad, XK02 Folding Wireless Keyboard for Travel, Pocket-Sized Compact Portable Keyboard for iPad iPhone Tablet Laptop Windows iOS Android</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/4be1dfC" target="_blank">
+            <div>
+              <img src="lumber.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Lumbar Support Pillow, ComfortX LC Ergonomic Back Support Cushion for Lower Back Pain Relief, Memory Foam Lumbar Pillow with 2 Adjustable Strap for Office Chair, Car Seat, Sofa</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3UTDaNi" target="_blank">
+            <div>
+              <img src="full.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Ergonomic Wireless Keyboard Mouse, ProtoArc EKM01 Plus Full Size Ergo Bluetooth Keyboard Mouse Combo, Split Design, Wrist Rest, Multi-Device, Rechargeable, for Windows/Mac OS
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3UTDaNi" target="_blank">
+            <div>
+              <img src="full.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Ergonomic Wireless Keyboard Mouse, ProtoArc EKM01 Plus Full Size Ergo Bluetooth Keyboard Mouse Combo, Split Design, Wrist Rest, Multi-Device, Rechargeable, for Windows/Mac OS
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/44Uefg5" target="_blank">
+            <div>
+              <img src="seat.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Ergonomic Seat Cushion, ComfortX SC Pressure Relief Chair Cushions for Long Hours Sitting, Extra-Dense Memory Foam & Gel Butt Pillow for Office, Home, Car Seat, Tailbone, Coccyx, Sciatica
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/4dxOvK5" target="_blank">
+            <div>
+              <img src="recharge.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Foldable Keyboard and Mouse, XKM01 Folding Bluetooth Keyboard Mouse Combo for Business and Travel, 2.4G+Dual Bluetooth Full-Size Portable Keyboard for Laptop iPad Tablets - Space Gray
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3ww5WtX" target="_blank">
+            <div>
+              <img src="air.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Beats Studio Buds with AppleCare+ for Headphones (2 Years) - Ocean Blue
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/4bdWL0q" target="_blank">
+            <div>
+              <img src="watch.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Fitbit Charge 6 Fitness Tracker with Google apps, Heart Rate on Exercise Equipment, 6-Months Premium Membership Included, GPS, Health Tools and More, Obsidian/Black, One Size (S & L Bands Included)
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3wuGzZy" target="_blank">
+            <div>
+              <img src="fan.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">JISULIFE Portable Neck Fan, Hands Free Bladeless Fan, 4000 mAh Battery Operated Wearable Personal Fan, Leafless, Rechargeable, Headphone Design,3 Speeds Gifts for Women Men-Dark Green
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/4bfUS38" target="_blank">
+            <div>
+              <img src="head.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Skullcandy Crusher Evo Over-Ear Wireless Headphones with Sensory Bass, 40 Hr Battery, Microphone, Works with iPhone Android and Bluetooth Devices - Black
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3JX0C5T" target="_blank">
+            <div>
+              <img src="amd.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3wx52xc" target="_blank">
+            <div>
+              <img src="mas.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">MoCuishle Shiatsu Back Shoulder and Neck Massager with Heat, Electric Deep Tissue 4D Kneading Massage, Best Gifts for Women Men Mom Dad
+              </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+<footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+<!-- Section: Form -->
+<section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="ai.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>

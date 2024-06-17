@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="description" content="Explore Python CV2 (OpenCV) tutorials covering various topics. Learn how to create a cartoon version of your photo, remove the green screen from images, and implement a barcode scanner using Python Pyzbar and cv2 libraries. Enhance your image processing skills with these step-by-step guides.">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="ai.css" />
+<link rel="icon" type="image/x-icon" href="../IMG/s.png">
+<title>Python CV2: Cartoon Photo, Green Removal & Barcode Scanner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+<script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("EPqtEwgLtyLECUuik");
+  })();
+</script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python CV2: Cartoon Photo, Green Removal & Barcode Scanner">
+<meta property="og:description" content="Explore Python CV2 (OpenCV) tutorials covering various topics. Learn how to create a cartoon version of your photo, remove the green screen from images, and implement a barcode scanner using Python Pyzbar and cv2 libraries. Enhance your image processing skills with these step-by-step guides.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/AI/ai7.html">
+<meta name="twitter:title" content="Python CV2: Cartoon Photo, Green Removal & Barcode Scanner">
+<meta name="twitter:description" content="Explore Python CV2 (OpenCV) tutorials covering various topics. Learn how to create a cartoon version of your photo, remove the green screen from images, and implement a barcode scanner using Python Pyzbar and cv2 libraries. Enhance your image processing skills with these step-by-step guides.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/AI/ai7.html">
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+  </div>
+</nav>
+<div class="container-fluid text-dark bg-light mb-5">
+    <div  class="container text-break">
+      <div class="row">
+        <div class="mt-3 text-center d-none d-sm-block">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        
+  
+  
+        <div class="mt-3 text-center d-block d-sm-none">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        <div class="col-9  ">
+
+<!--IMAGE TO CARTOON CONVERSION---#####################################################################-->
+
+
+<h1 class="mt-3">Create a Cartoon Version of Your Photo with Python cv2(OpenCV) Library</h1>
+<p class="mt-5">Learn how to use <strong>Python's OpenCV</strong> library to convert your photos into cartoon versions. Follow this step-by-step guide to create your own cartoon images using <strong>cv2</strong> library. This project is a fun and creative way to enhance your photo editing skills. Start converting your photos to cartoon today!</p>
+<p class="mt-3">Here's what does every section of the code:</p> 
+<p class="mt-5">The first two lines import the <strong>OpenCV (cv2)</strong> and <strong>numpy</strong> libraries. These libraries provide image processing and numerical functions that the code uses.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># importing libraries
+import cv2
+import numpy as np
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The next line of code reads an image file "pic.jpeg" using the <strong>cv2.imread()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># reading image
+img = cv2.imread("pic.jpeg")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The following lines of code perform the cartoonization of the image. First, the grayscale version of the image is obtained by using <strong>cv2.cvtColor()</strong> function, which converts the color image to grayscale. Then, the grayscale image is filtered using <strong>cv2.medianBlur()</strong> function, which applies a median filter to smooth out the image. Next, edges are detected using <strong>cv2.adaptiveThreshold()</strong> function, which applies an adaptive threshold to the grayscale image to highlight the edges.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Edges
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+gray = cv2.medianBlur(gray, 5)
+edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY, 9, 9)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Finally, a bilateral filter is applied to the color image using <strong>cv2.bilateralFilter()</strong> function, which preserves edges while smoothing out other areas. A bitwise AND operation is then applied between the filtered color image and the edge mask to produce the cartoonized image using <strong>cv2.bitwise_and()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Cartoonization
+color = cv2.bilateralFilter(img, 9, 250, 250)
+cartoon = cv2.bitwise_and(color, color, mask=edges)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The final lines of code display the original image, edge-detected image, and cartoonized image using <strong>cv2.imshow()</strong> function. The <strong>cv2.waitKey(0)</strong> function waits indefinitely for a keyboard event to terminate the program, and <strong>cv2.destroyAllWindows()</strong> function closes all windows.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cv2.imshow("Image", img)
+cv2.imshow("edges", edges)
+cv2.imshow("Cartoon", cartoon)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">Overall, this code performs the cartoonization of an image using <strong>OpenCV</strong> library functions. The code converts the image to grayscale, detects edges, applies a bilateral filter to preserve edges, and finally combines the filtered color image and the edge mask to produce the cartoonized image.</p>
+
+
+
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/oOoLY0pAHqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<!--GREEN-SCREEN-REMOVER---###############################################################################-->
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+<h2 class="mt-5">Green screen removal using Python CV2 (OpenCV): A step-by-step guide</h2>
+<p class="mt-5">Learn how to use <strong>Python's OpenCV</strong> library to remove the <strong>green screen</strong> from your videos and images. This step-by-step guide will walk you through the process of using <strong>CV2</strong> to eliminate the green background and create a transparent image or video. With this skill, you can create professional-looking media for your projects or simply have fun with your green screen content. Start removing the green screen from your media today!</p>
+<p class="mt-3">Here's what does every section of the code:</p>
+<p class="mt-5">The code first imports the required libraries: <strong>OpenCV</strong> and <strong>NumPy</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import cv2
+import numpy as np
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">It then loads the input video file and the background image using <strong>cv2.VideoCapture()</strong> and <strong>cv2.imread()</strong> functions, respectively.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># load the image or video files
+video = cv2.VideoCapture("green.mp4")
+
+# background
+image = cv2.imread("bg.jpeg")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Inside the while loop, the code reads each frame of the video using the <strong>.read()</strong> method and resizes both the frame and the background image to the same size using the <strong>cv2.resize()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">while True:
+    ret, frame = video.read()  # read the file 
+    
+    frame = cv2.resize(frame, (640, 480))   # resize the image and video to the same size
+    image = cv2.resize(image, (640, 480))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The next step is to define the upper and lower RGB values of the green color that needs to be removed. This is done using NumPy arrays.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#while True:
+  #ret, frame = video.read()  # read the file 
+  
+  #frame = cv2.resize(frame, (640, 480))   # resize the image and video to the same size
+  #image = cv2.resize(image, (640, 480))
+  
+  u_green = np.array([104, 153, 70])   # load the upper and lower RGB values of the green color
+  l_green = np.array([30, 30, 0])
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The code applies a mask to the frame using <strong>cv2.inRange()</strong> function to select only the green pixels. This mask is then used with the frame and <strong>cv2.bitwise_and()</strong> function to create a new image that contains only the green pixels.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#while True:
+  #ret, frame = video.read()  # read the file 
+  
+  #frame = cv2.resize(frame, (640, 480))   # resize the image and video to the same size
+  #image = cv2.resize(image, (640, 480))
+  
+  #u_green = np.array([104, 153, 70])   # load the upper and lower RGB values of the green color
+  #l_green = np.array([30, 30, 0])
+  
+  mask = cv2.inRange(frame, l_green, u_green)     # apply the mask and then use bitwise_and
+  res = cv2.bitwise_and(frame, frame, mask = mask)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3JZMLfm" target="_blank">
+    <div>
+      <img src="5-9.jpg" width="250" height="300" border="0" alt="Wireless Earbuds Bluetooth Headphones"  />
+      <p class="small text-secondary">YAQ Wireless Earbuds Bluetooth Headphones, 40H Playtime Stereo IPX5 Waterproof Ear Buds, LED Power Display Cordless in-Ear Earphones with Microphone for iPhone Andriod Cell Phone Sports, Pink
+      </p>
+      <button class="btn btn-warning rounded-pill amazon-btn " type="button">Buy Now</button>
+    </div>
+  </a>
+</div>
+
+<p class="mt-5">The next step is to subtract the new image from the original frame using the <mark><strong>"-"</strong></mark> operator. This step removes the green pixels from the frame.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#while True:
+  #ret, frame = video.read()  # read the file 
+  
+  #frame = cv2.resize(frame, (640, 480))   # resize the image and video to the same size
+  #image = cv2.resize(image, (640, 480))
+  
+  #u_green = np.array([104, 153, 70])   # load the upper and lower RGB values of the green color
+  #l_green = np.array([30, 30, 0])
+  
+  #mask = cv2.inRange(frame, l_green, u_green)     # apply the mask and then use bitwise_and
+  #res = cv2.bitwise_and(frame, frame, mask = mask)
+  
+  f = frame - res     # substract bitwise_and from the original green screen image
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Finally, the code checks for any remaining black pixels in the resulting image and replaces them with the background image using the <strong>np.where()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#while True:
+  #ret, frame = video.read()  # read the file 
+  
+  #frame = cv2.resize(frame, (640, 480))   # resize the image and video to the same size
+  #image = cv2.resize(image, (640, 480))
+  
+  #u_green = np.array([104, 153, 70])   # load the upper and lower RGB values of the green color
+  #l_green = np.array([30, 30, 0])
+  
+  #mask = cv2.inRange(frame, l_green, u_green)     # apply the mask and then use bitwise_and
+  #res = cv2.bitwise_and(frame, frame, mask = mask)
+  
+  #f = frame - res     # substract bitwise_and from the original green screen image
+  
+  f = np.where(f==0, image, f)  # check for matrix value 0 after substracting and replace it by the second img
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The output video is displayed using the <strong>cv2.imshow()</strong> function, and the while loop continues until the user presses the ESC key or the video is finished.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#while True:
+  #ret, frame = video.read()  # read the file 
+  
+  #frame = cv2.resize(frame, (640, 480))   # resize the image and video to the same size
+  #image = cv2.resize(image, (640, 480))
+  
+  #u_green = np.array([104, 153, 70])   # load the upper and lower RGB values of the green color
+  #l_green = np.array([30, 30, 0])
+  
+  #mask = cv2.inRange(frame, l_green, u_green)     # apply the mask and then use bitwise_and
+  #res = cv2.bitwise_and(frame, frame, mask = mask)
+  
+  #f = frame - res     # substract bitwise_and from the original green screen image
+  
+  #f = np.where(f==0, image, f)  # check for matrix value 0 after substracting and replace it by the second img
+  
+  cv2.imshow("video", frame)   # display the video
+  cv2.imshow("mask", f)
+  if cv2.waitKey(25)==27:
+      break
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">At the end, the video capture is released using <strong>video.release()</strong> and all windows are closed using <strong>cv2.destroyAllWindows()</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">video.release()
+cv2.destroyAllWindows()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Overall, this code is a useful tool for anyone who wants to remove the green screen from a video or image and add a custom background.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oI487OZr2hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="text-center mt-5" >
+  <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3WEJNV4" target="_blank">
+    <div>
+      <img src="5-8.jpg" width="300" height="300" border="0" alt="Meta Quest 2"  />
+      <p class="small text-secondary">Meta Quest 2 — Advanced All-In-One Virtual Reality Headset — 128 GB
+      </p>
+      <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+    </div>
+  </a>
+</div>
+
+<!--BARCODE READER PROJECT--##############################################################################-->
+<h2 class="mt-5">Python Pyzbar and cv2 Libraries: A Step-by-Step Guide to Creating a Barcode Scanner</h2>
+<p class="mt-5">"Learn how to build a <strong>barcode scanner</strong> using <strong>Python's Pyzbar</strong> and <strong>cv2</strong> libraries in this step-by-step guide. Perfect for developers looking to enhance their Python skills and create a useful tool for their projects."</p>
+<p class="mt-3">Here's what does every section of this code:</p>
+<p class="mt-5">It first imports the necessary libraries - <strong>pyzbar</strong>, <strong>argparse</strong>, and <strong>cv2</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># pip install pyzbar , argparse
+
+from pyzbar import pyzbar
+import argparse
+import cv2
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">It then constructs an argument parser using <strong>argparse</strong> to accept command line arguments. In this case, it accepts the path to the input image.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># construct the argument parser and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-i","--image", required=True, help = "path to input image")
+args = vars(ap.parse_args())
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The input image is loaded using <strong>cv2.imread</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># load the input image
+image = cv2.imread(args["image"])
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>pyzbar</strong> library is then used to decode the barcodes in the image.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># find the barcodes in the image and decode each of the barcodes
+barcodes = pyzbar.decode(image)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">The code then loops over the detected barcodes and extracts the <strong>bounding box</strong> location of each barcode. It draws a <strong>bounding box</strong> surrounding the <strong>barcode</strong> on the image.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># loop over the detected barcodes
+for barcode in barcodes:
+    # extract the bounding box location of the barcode and draw the
+	# bounding box surrounding the barcode on the image
+    (x,y,w,h)=barcode.rect 
+    cv2.rectangle(image,(x,y),(x+w,y+h),(255,5,255),2)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The barcode data is a bytes object, so it is decoded into a string using the <strong>utf-8</strong> encoding. The barcode type is also extracted.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># loop over the detected barcodes
+#for barcode in barcodes:
+    # extract the bounding box location of the barcode and draw the
+	# bounding box surrounding the barcode on the image
+    #(x,y,w,h)=barcode.rect 
+    #cv2.rectangle(image,(x,y),(x+w,y+h),(255,5,255),2)
+    
+    # the barcode data is a bytes object so if we want to draw it on
+	# our output image we need to convert it to a string first
+    barcodeData = barcode.data.decode("utf-8")
+    barcodeType = barcode.type
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The barcode data and type are then drawn on the image using <strong>cv2.putText</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># loop over the detected barcodes
+  #for barcode in barcodes:
+      # extract the bounding box location of the barcode and draw the
+    # bounding box surrounding the barcode on the image
+      #(x,y,w,h)=barcode.rect 
+      #cv2.rectangle(image,(x,y),(x+w,y+h),(255,5,255),2)
+      
+      # the barcode data is a bytes object so if we want to draw it on
+    # our output image we need to convert it to a string first
+      #barcodeData = barcode.data.decode("utf-8")
+      #barcodeType = barcode.type
+      
+      # draw the barcode data and barcode type on the image
+      text=("{}({})".format(barcodeData,barcodeType))
+      cv2.putText(image, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX,
+    0.5, (0, 0, 255), 2)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Finally, the barcode type and data are printed to the terminal.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># print the barcode type and data to the terminal
+print("[INFO] Found {} barcode: {}".format(barcodeType, barcodeData))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">the output image is displayed using <strong>cv2.imshow</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># show the output image
+cv2.imshow("Image",image)
+cv2.waitKey(0)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, This project is a tutorial on how to create a <strong>barcode scanner</strong> using <strong>Python</strong>, <strong>Pyzbar</strong>, and <strong>cv2</strong> libraries. The tutorial provides a step-by-step guide on how to create a <strong>barcode scanner</strong> using the <strong>OpenCV</strong> library, and decode the barcode using the <strong>Pyzbar</strong> library. This project is a great resource for anyone looking to learn how to create a barcode scanner using Python and OpenCV libraries.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Hnw8Gh_rDVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="mt-5"></div>
+<script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+
+  
+
+<nav aria-label="Page navigation example ">
+  <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+    <li class="page-item active  pe-2">
+      <a class="page-link" href="ai6.html" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+   
+    <li class="page-item  pe-2"><a class="page-link" href="ai6.html">6</a></li>
+    <li class="page-item active pe-2"><a class="page-link" href="ai7.html">7</a></li>
+    <li class="page-item pe-2"><a class="page-link" href="ai8.html">8</a></li>
+    
+    <li class="page-item active pe-2">
+      <a class="page-link" href="ai8.html">Next</a>
+    </li>
+  </ul>
+</nav>     
+<!----------------- Comments...-------------- -->
+
+<div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+
+  <!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+          
+        </div>
+        
+        <div id="ads" class="col-3  mt-5 d-none d-sm-block border-start">
+          <div class="text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+          </div>
+
+          
+      
+          
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+<footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+<!-- Section: Form -->
+<section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="ai.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>

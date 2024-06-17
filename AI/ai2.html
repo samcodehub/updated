@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-VP3VDZGZEM');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn how to install and use Keras, PyTorch, and Scikit-learn in Python with this step-by-step guide. Explore the process of setting up these powerful libraries for machine learning and data analysis.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="ai.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Installing and Using Keras, PyTorch & Scikit-learn in Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+    <!-- Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Installing and Using Keras, PyTorch & Scikit-learn in Python">
+    <meta property="og:description" content="Learn how to install and use Keras, PyTorch, and Scikit-learn in Python with this step-by-step guide. Explore the process of setting up these powerful libraries for machine learning and data analysis.">
+    <meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+    <meta property="og:url" content="https://samcodehub.com/AI/ai2.html">
+    <meta name="twitter:title" content="Installing and Using Keras, PyTorch & Scikit-learn in Python">
+    <meta name="twitter:description" content="Learn how to install and use Keras, PyTorch, and Scikit-learn in Python with this step-by-step guide. Explore the process of setting up these powerful libraries for machine learning and data analysis.">
+    <meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://samcodehub.com/AI/ai2.html">
+    </head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+  </div>
+</nav>
+<div class="container-fluid text-dark bg-light mb-5">
+    <div  class="container text-break">
+      <div class="row">
+        <div class="mt-3 text-center d-none d-sm-block">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        
+  
+  
+        <div class="mt-3 text-center d-block d-sm-none">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+ 
+        <div class="col-9 ">
+
+
+<!--KERAS LIBRARY-------#############################################################################-->
+
+
+<h1 class="mt-3">Step-by-Step Guide: How to install and use Keras in Python?</h1>
+               <p class="mt-5"><strong>Keras</strong> is a high-level neural network API written in Python that runs on top of <strong>TensorFlow</strong>, <strong>CNTK</strong>, or <strong>Theano</strong>. Here is how you can install and use Keras in Python:</p>
+
+               <ol class="mt-4">
+                <li class="mt-5"><strong>Installing Keras:</strong> To install Keras, open your terminal or command prompt and run the following command:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install keras                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                
+
+
+
+                <li class="mt-5"><strong>Importing Keras:</strong> After installing Keras, you can import it in your Python script by using the following code:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import keras                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                
+
+
+
+                <li class="mt-5"><strong>Building a Neural Network:</strong> Keras makes it very easy to build and train a neural network. Here is a simple example of building a fully connected network with one hidden layer:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from keras.models import Sequential
+from keras.layers import Dense
+  
+model = Sequential()
+model.add(Dense(units=64, activation='relu', input_dim=100))
+model.add(Dense(units=10, activation='softmax'))                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+              
+
+
+
+                <li class="mt-5"><strong>Compiling the Model:</strong> Before you can start training your model, you need to compile it with a loss function and an optimizer. Here is an example of compiling the model with categorical cross-entropy loss and the Adam optimizer:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">model.compile(loss='categorical_crossentropy',
+    optimizer='adam',
+    metrics=['accuracy'])                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+               
+
+
+
+                <li class="mt-5"><strong>Training the Model:</strong> You can train the model using the fit method. You will need to provide training data, the number of epochs, and the batch size. Here is an example:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">model.fit(X_train, Y_train, epochs=5, batch_size=32)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+               
+
+
+                <li class="mt-5"><strong>Evaluating the Model:</strong> Once you have trained your model, you can evaluate its performance on test data. Here is an example:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">loss_and_metrics = model.evaluate(X_test, Y_test, batch_size=128)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+               
+
+
+
+                <li class="mt-5"><strong>Making Predictions:</strong> You can use the trained model to make predictions on new data. Here is an example:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">classes = model.predict(X_test, batch_size=128)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+               
+               </ol>
+
+               <p class="mt-4">These are the basic steps for installing and using <strong>Keras</strong> in Python. There are many more features and options available in <strong>Keras</strong>, so I would recommend reading the official documentation to learn more.</p>
+<!--PYTORCH LIBRARY----#######################################################################-->              
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<h2 class="mt-5">Step-by-Step Guide: How to install and use PyTorch in Python?</h2>
+               <p class="mt-5"><strong>PyTorch</strong> is a popular open-source machine learning library for Python used for creating and training <strong>deep learning</strong> models. Here is how you can install and use PyTorch in Python:</p>
+
+               <ol class="mt-4">
+                <li class="mt-5"><strong>Installing PyTorch:</strong> To install PyTorch, open your terminal or command prompt and run the following command:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install torch torchvision                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                
+
+
+
+                <li class="mt-5"><strong>Importing PyTorch:</strong> After installing PyTorch, you can import it in your Python script by using the following code:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import torch                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+               
+
+
+
+                <li class="mt-5"><strong>Building a Neural Network:</strong> PyTorch provides a module called torch.nn that makes it easy to build and train neural networks. Here is a simple example of building a fully connected network with one hidden layer:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import torch.nn as nn
+
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.fc1 = nn.Linear(100, 64)
+        self.fc2 = nn.Linear(64, 10)
+  
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = self.fc2(x)
+          return x
+  
+model = Net()                         
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+               
+
+
+
+                <li class="mt-5"><strong>Defining a Loss Function:</strong> Before you can start training your model, you need to define a loss function. PyTorch provides many loss functions in the torch.nn module. Here is an example of using the cross-entropy loss:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">criterion = nn.CrossEntropyLoss()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                
+
+
+
+                <li class="mt-5"><strong>Defining an Optimizer:</strong> You also need to define an optimizer to update the model weights during training. PyTorch provides many optimizers in the torch.optim module. Here is an example of using the stochastic gradient descent (SGD) optimizer:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">optimizer = torch.optim.SGD(model.parameters(), lr=0.01)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+               
+
+
+
+                <li class="mt-5"><strong>Training the Model:</strong> You can train the model using a loop to process the data in batches. Here is a simple example:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">for epoch in range(100):
+    # Forward pass: Compute predicted y by passing x to the model
+    y_pred = model(X_train)
+
+    # Compute and print loss
+    loss = criterion(y_pred, Y_train)
+    print('Epoch:', epoch, 'Loss:', loss.item())
+
+    # Zero gradients, perform a backward pass, and update the weights.
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+      
+
+                <li class="mt-5"><strong>Evaluating the Model:</strong> Once you have trained your model, you can evaluate its performance on test data. Here is an example:
+
+</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">with torch.no_grad():
+    y_test_pred = model(X_test)
+    test_loss = criterion(y_test_pred, Y_test)
+    print('Test Loss:', test_loss.item())                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+                <li class="mt-5"><strong>Making Predictions:</strong> You can use the trained model to make predictions on new data. Here is an example:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">with torch.no_grad():
+    y_pred = model(X_new)                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+             
+               </ol>
+          <p class="mt-4">These are the basic steps for installing and using PyTorch in Python.</p>
+<!--SCIKIT-LEARN LIBRARY---################################################################################-->
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+<h2 class="mt-5">Step-by-Step Guide: How to install and use Scikit-learn in Python?</h2>
+<p class="mt-5"><strong>Scikit-learn</strong> is a popular machine learning library for Python and can be installed using <strong>pip</strong>. To install scikit-learn, simply run the following command in your terminal or command prompt:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install scikit-learn                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">Once the installation is complete, you can start using <strong>scikit-learn</strong> by importing it in your Python code:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import sklearn                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Here's a simple example to get you started with <strong>scikit-learn</strong>:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import numpy as np
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+  
+# Load the iris dataset
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+  
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  
+# Train a logistic regression model on the training data
+model = LogisticRegression()
+model.fit(X_train, y_train)
+  
+# Evaluate the model on the test data
+accuracy = model.score(X_test, y_test)
+print("Accuracy: {:.2f}%".format(accuracy * 100))                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">In this example, we first load the iris dataset using <mark>datasets.load_iris()</mark>, and then split the data into training and testing sets using <mark>train_test_split()</mark>. Finally, we train a logistic regression model on the training data and evaluate its accuracy on the test data.</p>
+
+
+
+
+
+
+<script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+
+  
+
+<nav aria-label="Page navigation example ">
+  <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+    <li class="page-item active  pe-2">
+      <a class="page-link" href="ai.html" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+   
+    <li class="page-item  pe-2"><a class="page-link" href="ai.html">1</a></li>
+    <li class="page-item active pe-2"><a class="page-link" href="ai2.html">2</a></li>
+    <li class="page-item pe-2"><a class="page-link" href="ai3.html">3</a></li>
+    
+    <li class="page-item active pe-2">
+      <a class="page-link" href="ai3.html">Next</a>
+    </li>
+  </ul>
+</nav>     
+<!----------------- Comments...-------------- -->
+
+<div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+
+  <!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+          
+        </div>
+        <div id="ads" class="col-3  mt-5 d-none d-sm-block border-start">
+      
+          <a class="right-ads mt-3 " style="display:block; text-align:center;" href="https://www.amazon.com/dp/1108835082?psc=1&pd_rd_i=1108835082&pd_rd_w=9X5Dy&content-id=amzn1.sym.f734d1a2-0bf9-4a26-ad34-2e1b969a5a75&pf_rd_p=f734d1a2-0bf9-4a26-ad34-2e1b969a5a75&pf_rd_r=7F21X5F3SF8Q1MY7S00E&pd_rd_wg=uKA0n&pd_rd_r=56fc1a12-252d-4991-a9b2-906609e920b0&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&linkCode=li3&tag=samcodehub-20&linkId=d68abc185eb86a79e31c683dbb236c5a&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="dl.jpg" width="200" height="300" border="0" alt=""  />
+              <p class="small">The Science of Deep Learning emerged from courses taught by the author that have provided thousands of students with training and experience for their academic studies, and prepared them for careers in deep learning, machine learning, and artificial intelligence in top companies in industry and academia. </p>
+              <button class="btn btn-warning rounded-pill amazon-btn " type="button">Buy Now</button>
+            </div>
+          </a>
+
+         
+         
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-Falchion-Wireless-Mechanical-Interactive/dp/B08T88Y23K?content-id=amzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b%3Aamzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b&keywords=programming+keyboard&pd_rd_r=55f9b23f-3f8a-4559-baf4-63a322e7b945&pd_rd_w=39IRF&pd_rd_wg=32oSI&pf_rd_p=1b55e175-aab2-4228-be7e-b2330901df8b&pf_rd_r=1JYEEBSQ3MF0GCJ4GH8X&qid=1683950809&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzRFRXMEE2RVBBMTBTJmVuY3J5cHRlZElkPUEwNzU0NTg1Mk8xVjZHNlFCUkdLUyZlbmNyeXB0ZWRBZElkPUEwNzczODM5MVI4N1c4VzA3NkU4NCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=li2&tag=samcodehub-20&linkId=53cf8ec18aa643805e2a6541864e3eb6&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="ak.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS ROG Falchion Wireless 65% Mechanical Gaming Keyboard | 68 Keys, Aura Sync RGB, Extended Battery Life, Interactive Touch Panel, PBT Keycaps, Cherry MX Red Switches, Keyboard Cover Case</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+     
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-ROG-Construction-Installation-Compatibility/dp/B0B173F6RM?pd_rd_w=mDOWS&content-id=amzn1.sym.a400618b-650b-4c39-a4fe-66c3e0813a14&pf_rd_p=a400618b-650b-4c39-a4fe-66c3e0813a14&pf_rd_r=TB3H2W2D56VYQTW1KRH9&pd_rd_wg=NSxXA&pd_rd_r=ef92c552-bb64-4ef6-b6e1-a54fe3b60976&pd_rd_i=B0B173F6RM&psc=1&linkCode=li2&tag=samcodehub-20&linkId=a70c6a485d807da9250e3c1258849c41&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="ar.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS ROG Herculx Graphics Card Anti-Sag Holder Bracket (Solid Zinc Alloy Construction, Easy Toolless Installation, Included Spirit Level, Adjustable Height, Wide Compatibility, Aura Sync RGB)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+         
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B0985VND1G?pd_rd_w=2SHhC&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=GRY2CNKV3G7K96145HTH&pd_rd_wg=1Le0p&pd_rd_r=d765052f-f118-4cc1-96e2-fa534fc05e69&pd_rd_i=B0985VND1G&th=1&linkCode=li2&tag=samcodehub-20&linkId=e34b0811e368ffb0037664eac59ae1f5&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="en.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS TUF Gaming NVIDIA GeForce RTX 3060 V2 OC Edition Graphics Card (PCIe 4.0, 12GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+          
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ASUS-ROG-Wireless-Magnetic-Programmable/dp/B09726KT4R?pd_rd_w=mejtH&content-id=amzn1.sym.cdcffa71-e0b6-4359-8695-8b1b65851e69&pf_rd_p=cdcffa71-e0b6-4359-8695-8b1b65851e69&pf_rd_r=TB3H2W2D56VYQTW1KRH9&pd_rd_wg=NSxXA&pd_rd_r=ef92c552-bb64-4ef6-b6e1-a54fe3b60976&pd_rd_i=B09726KT4R&th=1&linkCode=li3&tag=samcodehub-20&linkId=5f58815497ba9be162c60d1d8f28763c&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="am.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ASUS ROG Spatha X Wireless Gaming Mouse (Magnetic Charging Stand, 12 Programmable Buttons, 19,000 DPI, Push-fit Hot Swap Switch Sockets, ROG Micro Switches, ROG Paracord and Aura RGB lighting)</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+         
+          
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/dp/B0B12F8N3S?ie=UTF8&psc=1&pd_rd_plhdr=t&linkCode=li2&tag=samcodehub-20&linkId=b50cccb90b1632865d7bd20264e6877b&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="sc.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Ergonomic Mouse Wireless, ProtoArc EM11 Bluetooth Vertical Ergo Mouse, Rechargeable, 2.4G RGB Optical Vertical Mice with 3 Adjustable DPI, 3-Device Connection for PC, iPad, Mac, Windows-Black</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+         
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://www.amazon.com/ProtoArc-Wireless-Ergonomic-Vertical-Keyboard/dp/B0BSFD99N6?&linkCode=li2&tag=samcodehub-20&linkId=6dba978e84ae2eb30fa46d0ed7a28efd&language=en_US&ref_=as_li_ss_il" target="_blank">
+            <div>
+              <img src="cs.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ERGONOMIC DESIGN: The wireless ergonomic mouse with extended wrist rest fits perfectly in the palm of your hand, following the natural curve of your right hand and promoting a more natural, relaxed forearm and wrist position to reduce hand fatigue for all-day comfort. </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3JYRk9A" target="_blank">
+            <div>
+              <img src="3d.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Ergonomic Office Chair with Wheels, Mesh Desk Chair with Adjustable 3D Arms and Headrest Adaptive Lumbar Support for Home Office Desk Chair with Wheels ErgoChair 100 (Grey/Black) </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3UBR0T8" target="_blank">
+            <div>
+              <img src="wh.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Standing Desk with Dual Monitor Stand Riser, 48 x 24 Inches Height Adjustable Desk with Storage, ErgoDesk 100 Electric Stand up Desk with Laptop Stand (Black/White) </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/4bkt268" target="_blank">
+            <div>
+              <img src="curve.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Backlit Wireless Ergonomic Keyboard, EK01 Plus Full Size Ergo Keyboard with Wrist Rest, Split Design, USB-C Charging, Bluetooth and USB, Natural Typing Compatible with Windows/Mac/Android </p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3ygC1GK" target="_blank">
+            <div>
+              <img src="ipad.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Magic Keyboard Case for iPad Pro 12.9 inch (6th, 5th, 4th, 3rd Gen), Magnetic Keyboard Case with Multi-Touch Built-in Trackpad, 12 Colors Backlight - Black</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3WyCgah" target="_blank">
+            <div>
+              <img src="fold.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Foldable Bluetooth Keyboard, XK01 Folding Wireless Portable Keyboard with Numeric Keypad, Full-Size Travel Keyboard for Windows iOS Android Tablet Smartphone Laptop PC, Black</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3UW5eQ2" target="_blank">
+            <div>
+              <img src="mf.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Wired Trackball Mouse, EM04 Wired USB C Ergonomic Rollerball Mouse Computer Laptop Mouse, Smooth Tracking, Thumb Control, Compatible with PC, Mac, Windows-Gray Ball</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3UxelVY" target="_blank">
+            <div>
+              <img src="backlight.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">ProtoArc Backlit Bluetooth Keyboard Mouse for Mac, KM100-A Ultra Slim Wireless Keyboard Mouse for Mac, Rechargeable, Multi-Device for MacBook Pro, MacBook Air, iMac, iPhone, iPad, Space Gray</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+          <a class="right-ads mt-5" style="display:block; text-align:center;" href="https://amzn.to/3ygFvZK" target="_blank">
+            <div>
+              <img src="tv.jpg" width="250" height="300" border="0" alt=""  />
+              <p class="small">Max 32 Inch Monitor Desk Mount with 6 in 1 USB C Hub, ProtoArc Single Monitor Mount Arm, Full Motion Gas Spring Monitor Stand, Holds Max 19.8lbs, VESA Bracket with Clamp/Grommet Base</p>
+              <button class="btn btn-warning rounded-pill amazon-btn" type="button">Buy Now</button>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+<footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+<!-- Section: Form -->
+<section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="ai.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>

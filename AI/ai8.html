@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="description" content="Learn MediaPipe in Python with this comprehensive tutorial covering installation, usage, and hand movement tracking. Follow step-by-step instructions and explore practical examples to master MediaPipe for advanced computer vision tasks. Enhance your skills in hand gesture recognition and analysis with MediaPipe.">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="ai.css" />
+<link rel="icon" type="image/x-icon" href="../IMG/s.png">
+<title>MediaPipe in Python: Installation & Hand Movement Tracking </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+<script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("EPqtEwgLtyLECUuik");
+  })();
+</script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="MediaPipe in Python: Installation & Hand Movement Tracking ">
+<meta property="og:description" content="Learn MediaPipe in Python with this comprehensive tutorial covering installation, usage, and hand movement tracking. Follow step-by-step instructions and explore practical examples to master MediaPipe for advanced computer vision tasks. Enhance your skills in hand gesture recognition and analysis with MediaPipe.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/AI/ai8.html">
+<meta name="twitter:title" content="MediaPipe in Python: Installation & Hand Movement Tracking ">
+<meta name="twitter:description" content="Learn MediaPipe in Python with this comprehensive tutorial covering installation, usage, and hand movement tracking. Follow step-by-step instructions and explore practical examples to master MediaPipe for advanced computer vision tasks. Enhance your skills in hand gesture recognition and analysis with MediaPipe.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/AI/ai8.html">
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+  </div>
+</nav>
+<div class="container-fluid text-dark bg-light mb-5">
+    <div  class="container text-break">
+      <div class="row">
+        <div class="mt-3 text-center d-none d-sm-block">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        
+  
+  
+        <div class="mt-3 text-center d-block d-sm-none">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        <div class="col-9  ">
+
+<!--MEDIAPIPE LIBRARY---###################################################################################-->
+
+
+<h1 class="mt-3">Step-by-Step Guide: How to install and use MediaPipe in Python?</h1>
+<p class="mt-5"><strong>MediaPipe</strong> is a multi-platform framework for building multimedia processing <strong>pipelines</strong>, and can be used in Python through the <strong>MediaPipe Python wrapper</strong>. To install the <strong>MediaPipe Python wrapper</strong>, you need to first install <strong>Bazel</strong>, which is used to build the <strong>wrapper</strong>. Here are the steps to install <strong>MediaPipe</strong> in Python:</p>
+
+<ol class="mt-4">
+  <li class="mt-3"><strong>Install Bazel:</strong> Bazel can be installed on Windows, Linux, and macOS by following the instructions on the Bazel website: <a href="https://docs.bazel.build/versions/master/install.html" target="_blank" class="text-break">https://docs.bazel.build/versions/master/install.html</a></li>
+  <li class="mt-4"><strong>Clone the MediaPipe repository:</strong> Run the following command in your terminal or command prompt to clone the MediaPipe repository:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">git clone https://github.com/google/mediapipe.git                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  <li class="mt-4"><strong>Build the Python wrapper:</strong> Run the following command in your terminal or command prompt to build the MediaPipe Python wrapper:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">bazel build -c opt --define mediapipe_mobile=false mediapipe/python:mediapipe_python                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+ 
+  <li class="mt-4"><strong>Install the Python wrapper:</strong> Run the following command in your terminal or command prompt to install the MediaPipe Python wrapper:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install --upgrade bazel-bin/mediapipe/python/mediapipe_python-0.0.0-py3-none-any.whl                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+ 
+</ol>
+<p class="mt-4">Once the installation is complete, you can start using <strong>MediaPipe</strong> in Python by importing the <strong>mediapipe</strong> module:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import mediapipe as mp                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Here's a simple example to get you started with <strong>MediaPipe</strong> in Python:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import mediapipe as mp
+
+# Create a MediaPipe calculator graph
+graph = mp.Graph()
+  
+# Add a calculator node to the graph
+input_side_packet = mp.InputSidePacket("input_side_packet")
+calculator = graph.Add(
+  mp.CreateCoreRatioCalculator(input_side_packet=input_side_packet),
+  input_side_packet=input_side_packet,
+  output_side_packets=["output_side_packet"]
+  )
+  
+# Run the graph
+graph.StartRun(calculators=[calculator])
+graph.WaitUntilDone()
+  
+# Get the output from the calculator node
+output_side_packet = calculator.Outputs().Get("output_side_packet")
+print("Output from calculator:", output_side_packet)
+
+# Stop the graph
+graph.StopRun()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+  
+  <p class="mt-4">In this example, we create a <strong>MediaPipe calculator graph</strong>, add a calculator node to the graph, and run the graph to get the output from the calculator node. Note that this is a very simple example and <strong>MediaPipe</strong> is capable of much more complex processing <strong>pipelines</strong>.</p>
+  <!--TRACK HAND MOVEMENTS---##############################################################################-->
+  <div class="text-center mt-5">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '2be6d81d479aab6f66c74305d58a3261',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+    </script>
+  </div>
+  
+<h2 class="mt-5">Track Hand Movements with Python cv2 & mediapipe Libraries: A Comprehensive Guide with Examples</h2>
+<p class="mt-5">"Learn how to <strong>track hand movements</strong> using <strong>Python cv2</strong> and <strong>mediapipe</strong> libraries with this comprehensive guide. this tutorial provides step-by-step instructions and tips for implementing <strong>hand tracking</strong> in your projects."</p>
+<p class=mt-3>Here's what does every section of this code:</p>
+<p class="mt-5">import the necessary libraries (<strong>OpenCV</strong> and <strong>Mediapipe</strong>) and initialize a video capture object <mark><strong>(cap)</strong></mark> using the default camera <mark><strong>(0)</strong></mark>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import cv2
+import mediapipe as mp 
+import time
+
+cap = cv2.VideoCapture(0)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These lines initialize the hand detection and tracking object <mark><strong>(hands)</strong></mark> using the Mediapipe library. The <mark><strong>max_num_hands</strong></mark> parameter sets the maximum number of hands that can be detected, and the <mark><strong>min_detection_confidence</strong></mark> and <mark><strong>min_tracking_confidence</strong></mark> parameters set the minimum confidence values required for detection and tracking, respectively.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">mpHands = mp.solutions.hands 
+hands = mpHands.Hands(static_image_mode=False,
+                      max_num_hands=2,
+                      min_detection_confidence=0.5,
+                      min_tracking_confidence=0.5)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">This line initializes the drawing utilities object from <strong>Mediapipe</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">mpDraw = mp.solutions.drawing_utils
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">These lines initialize two variables (<mark><strong>pTime</strong></mark> and <mark><strong>cTime</strong></mark>) to keep track of the previous and current times for calculating the frames per second (FPS).</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pTime = 0
+cTime = 0
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+
+<p class="mt-5">These lines contain the main loop of the program, which continuously reads frames from the video capture object <mark><strong>(cap)</strong></mark> and processes them using the hand detection and tracking object <mark><strong>(hands)</strong></mark>.</p>
+
+<p class="mt-4">For each frame, the program checks whether there are any detected hand landmarks <mark><strong>(results.multi_hand_landmarks)</strong></mark>, and if so, it iterates over them and draws circles around each landmark using the OpenCV <mark><strong>circle()</strong></mark> function.</p>
+
+<p class="mt-4">It then draws the hand landmarks and connections on the frame using the Mediapipe <mark><strong>draw_landmarks()</strong></mark> function, and calculates the FPS using the <mark><strong>cTime</strong></mark> and <mark><strong>pTime</strong></mark> variables.</p>
+
+<p class="mt-4">Finally, the FPS value is displayed on the frame using the OpenCV <mark><strong>putText()</strong></mark> function, and the frame is displayed on the screen using the <mark><strong>imshow()</strong></mark> function.</p>
+
+<p class="mt-4">The program exits the loop and stops running when the user presses the "q" key.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">while True:
+  success, img = cap.read()
+  imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+  results = hands.process(imgRGB)
+  
+  if results.multi_hand_landmarks:
+      for handLms in results.multi_hand_landmarks:
+          for id, lm in enumerate(handLms.landmarks):
+              
+              h, w, c = img.shape
+              cx, cy = int(lm.x *w), int(lm.y *h)
+              cv2.circle(img, (cx,cy), 3,(255,0,255),cv2.FILLED)
+              
+  mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
+
+  cTime = time.time()
+  fps = 1/(cTime-pTime)
+  pTime = cTime
+    
+  cv2.putText(img, str(int(fps)),(10,70), cv2.FONT_HERSHEY_PLAIN, 3, (255,0,255),
+                3)
+    
+  cv2.imshow("Image", img)
+  cv2.waitKey(1)
+
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class=mt-3>Overall, the purpose of the code is to demonstrate how to perform <strong>hand tracking</strong> and <strong>landmark estimation</strong> using <strong>MediaPipe</strong> and <strong>OpenCV</strong>.</p>
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ASN5NF5F0zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="mt-5"></div>
+
+<script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+
+  
+
+<nav aria-label="Page navigation example ">
+  <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+    <li class="page-item active  pe-2">
+      <a class="page-link" href="ai7.html" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+   
+    <li class="page-item  pe-2"><a class="page-link" href="ai7.html">7</a></li>
+    <li class="page-item active pe-2"><a class="page-link" href="ai8.html">8</a></li>
+    <li class="page-item pe-2"><a class="page-link" href="ai9.html">9</a></li>
+    
+    <li class="page-item active pe-2">
+      <a class="page-link" href="ai9.html">Next</a>
+    </li>
+  </ul>
+</nav>     
+<!----------------- Comments...-------------- -->
+
+<div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+
+  <!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+          
+        </div>
+        <div id="ads" class="col-3  mt-5 d-none d-sm-block border-start">
+      
+          
+
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+<footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+<!-- Section: Form -->
+<section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="ai.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>

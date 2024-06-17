@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="description" content="Learn Python OpenCV with this comprehensive guide covering installation, usage, face detection, and smile detection projects. Explore practical examples and gain insights into using OpenCV for computer vision tasks in Python. Enhance your image processing skills with OpenCV.">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="ai.css" />
+<link rel="icon" type="image/x-icon" href="../IMG/s.png">
+<title>Face & Smile Detection Projects with Python OpenCV (CV2)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+<script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("EPqtEwgLtyLECUuik");
+  })();
+</script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Face & Smile Detection Projects with Python OpenCV (CV2)">
+<meta property="og:description" content="Learn Python OpenCV with this comprehensive guide covering installation, usage, face detection, and smile detection projects. Explore practical examples and gain insights into using OpenCV for computer vision tasks in Python. Enhance your image processing skills with OpenCV.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/AI/ai6.html">
+<meta name="twitter:title" content="Face & Smile Detection Projects with Python OpenCV (CV2)">
+<meta name="twitter:description" content="Learn Python OpenCV with this comprehensive guide covering installation, usage, face detection, and smile detection projects. Explore practical examples and gain insights into using OpenCV for computer vision tasks in Python. Enhance your image processing skills with OpenCV.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/AI/ai6.html">
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+  </div>
+</nav>
+<div class="container-fluid text-dark bg-light mb-5">
+    <div  class="container text-break">
+      <div class="row">
+        <div class="mt-3 text-center d-none d-sm-block">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        
+  
+  
+        <div class="mt-3 text-center d-block d-sm-none">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        <div class="col-9 ">
+
+<!--OPEN-CV LIBRARY#####################################################################################-->
+
+
+<h1 class="mt-5">Step-by-Step Guide: How to install and use OpenCV in Python?</h1>
+<p class="mt-5"><strong>OpenCV</strong> is a popular computer vision library for Python and can be installed using <strong>pip</strong>. To install <strong>OpenCV</strong>, simply run the following command in your terminal or command prompt:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3 " >
+<pre>
+<code class="language-Python">pip install opencv-python                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Once the installation is complete, you can start using <strong>OpenCV</strong> by importing it in your Python code:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import cv2                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Here's a simple example to get you started with <strong>OpenCV</strong>:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import cv2
+
+# Load an image
+img = cv2.imread("image.jpg")
+  
+# Display the image
+cv2.imshow("Image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">In this example, we load an image using the <mark>imread()</mark> function and display it using the <mark>imshow()</mark> function. The <mark>waitKey(0)</mark> function is used to wait for a key event, and the <mark>destroyAllWindows()</mark> function is used to close all windows when the event is triggered.</p>
+<!--FACE DETECTION PROJECTS----###########################################################################-->
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<h2 class="mt-5">Python CV2 Face Detection Project: Learn How to Detect Faces in Photos Using OpenCV and Sys Module</h2>
+<p class="mt-5">In this <strong>Python CV2 face detection project</strong>, you'll learn how to use <strong>OpenCV</strong> and the <strong>sys module</strong> to <strong>detect faces</strong> in photos. Follow along with this step-by-step guide and master the skills needed to build your own <strong>face detection project</strong>. Start detecting faces in your own photos today!</p>
+<p class="mt-3">Here's what does every section of the code:</p>
+<p class="mt-5">The code starts by importing the necessary modules: <mark><strong>cv2</strong></mark> for working with images and video in OpenCV, and <mark><strong>sys</strong></mark> for handling command-line arguments.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import cv2
+import sys
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">Next, the code retrieves the path to the input image from the first command-line argument <mark><strong>(sys.argv[1])</strong></mark> and sets the path to the <mark><strong>Haar Cascade classifier XML file</strong></mark>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#get user vlaues
+imagePath = sys.argv[1]
+cascPath = "haarcascade_frontalface_default.xml"
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4"><strong>Haar Cascade</strong> is a <strong>machine learning object detection algorithm</strong> used to identify objects in an image or video and based on the concept of features proposed by Paul Viola and Michael Jones in their paper “Rapid Object Detection using a Boosted Cascade of Simple Features” in 2001.
+  you can download it from github:
+  <a href="https://github.com/opencv/opencv/tree/master/data/haarcascades" target="_blank">https://github.com/opencv/opencv/tree/master/data/haarcascades</a></p>
+
+<p class="mt-5">The code then loads the Haar Cascade classifier into a <mark><strong>CascadeClassifier</strong></mark> object using <mark><strong>cv2.CascadeClassifier()</strong></mark>. The classifier is used to detect faces in the input image.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Load the Haar Cascade classifier
+face_cascade = cv2.CascadeClassifier(cascPath)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">The code reads the input image using <mark><strong>cv2.imread()</strong></mark> and converts it to grayscale using <mark><strong>cv2.cvtColor()</strong></mark>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Read the image file
+image = cv2.imread(imagePath)
+
+# Convert the image to grayscale
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">The <mark><strong>detectMultiScale()</strong></mark> method of the <mark><strong>CascadeClassifier</strong></mark> object is used to detect faces in the grayscale image. The method returns a list of rectangles, where each rectangle represents a detected face. The <mark><strong>scaleFactor</strong></mark>, <mark><strong>minNeighbors</strong></mark>, <mark><strong>minSize</strong></mark>, and <mark><strong>flags</strong></mark> arguments control the sensitivity and accuracy of the face detection algorithm.</p>
+
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Detect faces in the image
+faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, 
+                                      minNeighbors=5, 
+                                      minSize=(30, 30), 
+                                      flags=cv2.cv.CV_HAAR_SCALE_IMAGE)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">The code prints the number of faces found using <mark><strong>print()</strong></mark></p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">print("Found {0} faces!". format(len(faces)))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">The code draws a rectangle around each detected face in the original input image using <mark><strong>cv2.rectangle()</strong></mark>. The color of the rectangle is green (0, 255, 0), and the thickness is set to 2.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Draw rectangles around the detected faces
+for (x, y, w, h) in faces:
+    cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">Finally, the code displays the input image with the detected faces using <mark><strong>cv2.imshow()</strong></mark>. The program waits for a key press before exiting, using <mark><strong>cv2.waitKey()</strong></mark>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Display the image with the detected faces
+cv2.imshow('Faces FOUND', image)
+cv2.waitKey(0)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-t">Overall, this code demonstrates a simple way to <strong>detect faces</strong> in an image using <strong>OpenCV</strong> and a <strong>Haar Cascade classifier</strong>.</p>
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bBbwKyyLWmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<!--SMILE DETECTION---@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+<h2 class="mt-5">Python CV2 Smile Detection Project: Learn How to Detect Smiles in Pictures Using OpenCV Library</h2>
+<p class="mt-5">In this <strong>Python CV2 smile detection project</strong>, you'll learn how to use the <strong>OpenCV</strong> library to <strong>detect smiles</strong> in pictures. Follow along with this step-by-step guide and master the skills needed to build your own <strong>smile detection project</strong>. Start detecting smiles in your own pictures today!</p>
+<p class="mt-3">Here's what does every section of the code:</p>
+
+<p class="mt-5">we are importing several Python modules that will be used throughout the code:</p>
+<ul class="mt-4">
+  <li class="mt-4"><strong>tabnanny</strong> is a module that checks for inconsistent use of tabs and spaces in Python code. It's not actually used in the code you provided, so it's unnecessary here.</li>
+  <li class="mt-4"><strong>turtle</strong> is a module for creating turtle graphics. It's also not used in this code.</li>
+  <li class="mt-4"><strong>cv2</strong> is a module for computer vision applications, specifically for image and video processing. It's used extensively in this code to detect faces and smiles in a video stream.</li>
+  <li class="mt-4"><strong>time</strong> is a module for working with time and dates. It's used in the smile_meter function to pause the program for 15 seconds after detecting a smile.</li>
+  <li class="mt-4"><strong>random</strong> is a module for generating random numbers. It's used in the smile_meter function to generate a random smile percentage.</li>
+  <li class="mt-4"><strong>CascadeClassifier</strong> is a class from the cv2 module that is used to detect objects in an image or video stream using a classifier cascade. In this code, we use it to detect faces and smiles.</li>
+</ul>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from tabnanny import check
+from turtle import color
+import cv2
+import time
+import random
+from cv2 import CascadeClassifier
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">Here, we create two <strong>CascadeClassifier</strong> objects that will be used to detect faces and smiles in the video stream. These objects are initialized with <strong>XML</strong> files that contain the trained data for the <strong>classifiers</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">face_cascade = CascadeClassifier("haarcascade_frontalface_default.xml")
+smile_cascade=cv2.CascadeClassifier("haarcascade_smile.xml")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">After that, we create a <strong>VideoCapture</strong> object that will capture frames from the webcam:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">video = cv2.VideoCapture(0)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-4">Here, the <strong>0</strong> argument tells <strong>cv2</strong> to use the default webcam as the video source.</p>
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+
+
+<p class="mt-5">Next, we define a function called <strong>smile_meter</strong> that takes in a frame from the video stream and the coordinates of a face bounding box. This function is used to display the smile percentage on the video stream.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+def smile_meter(frame,x1,y1):
+  global num
+  if num > 4000:
+      x=str(random.randint(0,100))
+      font=cv2.FONT_HERSHEY_SIMPLEX
+      color=(255,0,255)
+      text=cv2.putText(frame,"your smile is",(int(x1)+15,int(y1)-70),font,1,color,4,cv2.LINE_AA)
+      text=cv2.putText(frame,x+" %",(int(x1)+50,int(y1)-20),font,1,color,4,cv2.LINE_AA)
+      time.sleep(15)
+      num=0
+      return num
+  else:
+      x=str(random.randint(0,100))
+      font=cv2.FONT_HERSHEY_SIMPLEX
+      color=(255,0,255)
+      text=cv2.putText(frame,"smile meter",(int(x1)+15,int(y1)-70),font,1,color,4,cv2.LINE_AA)
+      text=cv2.putText(frame,x+" %",(int(x1)+50,int(y1)-20),font,1,color,4,cv2.LINE_AA)
+      num=num+5
+      return num
+
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-4">In this function, we check the value of a global variable num to determine if the smile meter should be reset. If num is greater than 4000, we display the smile percentage and reset num to 0. If num is less than or equal to `400.</p>
+
+
+<p class="mt-5">This part of the code is inside a <strong>while</strong> loop that runs continuously until the user presses the <strong>q</strong> key. Within the loop, the code performs the following steps:</p>
+<ol class="mt-4">
+  <li class="mt-4"><strong>check,frame=video.read():</strong> This line reads the video stream and stores the current frame in the variable frame.</li>
+  <li class="mt-4"><strong>gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY):</strong> This line converts the current frame to grayscale using the cv2.cvtColor() method.</li>
+  <li class="mt-4"><strong>face= face_cascade.detectMultiScale(gray,scaleFactor=1.1, minNeighbors=5):</strong> This line uses the Haar cascade classifier face_cascade to detect faces in the grayscale image. The detectMultiScale() method returns a list of rectangles (x, y, w, h) where each rectangle represents a face.</li>
+  <li class="mt-4"><strong>for x,y,w,h in face: ...:</strong> This loop iterates over the detected faces and draws a red rectangle around each face using the cv2.rectangle() method.</li>
+
+  <div class="text-center mt-5">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '2be6d81d479aab6f66c74305d58a3261',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+    </script>
+  </div>
+
+  <li class="mt-4"><strong>smile=smile_cascade.detectMultiScale(gray,scaleFactor=1.8,minNeighbors=20):</strong> This line uses the Haar cascade classifier smile_cascade to detect smiles in the grayscale image. The detectMultiScale() method returns a list of rectangles (x, y, w, h) where each rectangle represents a smile.</li>
+  <li class="mt-4"><strong>for x1,y1,w1,h1 in smile: ...:</strong> This loop iterates over the detected smiles and draws a blue rectangle around each smile using the cv2.rectangle() method. It also calls the smile_meter() function to calculate and display the smile percentage.</li>
+  <li class="mt-4"><strong>cv2.imshow("smile meter",frame):</strong> This line displays the current frame in a window titled "smile meter".</li>
+  <li class="mt-4"><strong>key = cv2.waitKey(1):</strong> This line waits for a key press for 1 millisecond.</li>
+  <li class="mt-4"><strong>if key ==ord('q'): ...:</strong> This line checks if the user has pressed the q key. If the q key is pressed, the loop breaks.</li>
+  <li class="mt-4"><strong>video.release():</strong> This line releases the video capture object.</li>
+  <li class="mt-4"><strong>cv2.destroyAllWindows():</strong> This line closes all windows.</li>
+  
+</ol>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+while True:
+    check,frame=video.read()
+    gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+    face= face_cascade.detectMultiScale(gray,scaleFactor=1.1, minNeighbors=5)
+    for x,y,w,h in face:
+        img=cv2.rectangle(frame,(x,y),(x+(w+20),y+(h-300)),(0,0,255),-1)
+        smile = smile_cascade.detectMultiScale(gray,scaleFactor=1.8,minNeighbors=20)
+        for x1,y1,w1,h1 in smile:
+            img = cv2.rectangle(frame,(x1,y1),(x1+(w1),y1+(h1)),(255,0,0),3)
+            smile_meter(frame,x,y)
+            
+    cv2.imshow("smile meter",frame)
+    key = cv2.waitKey(1)
+    if key ==ord('q'):
+        break
+video.release()
+cv2.destroyAllWindows()
+
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Overall, this code can be used as a starting point for projects that involve <strong>facial recognition and tracking</strong>, or just for a fun way to measure your own smile percentage.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/EpQJ6v60ea4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+<div class="mt-5"></div>
+<script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+  
+
+<nav aria-label="Page navigation example ">
+  <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+    <li class="page-item active  pe-2">
+      <a class="page-link" href="ai5.html" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+   
+    <li class="page-item  pe-2"><a class="page-link" href="ai5.html">5</a></li>
+    <li class="page-item active pe-2"><a class="page-link" href="ai6.html">6</a></li>
+    <li class="page-item pe-2"><a class="page-link" href="ai7.html">7</a></li>
+    
+    <li class="page-item active pe-2">
+      <a class="page-link" href="ai7.html">Next</a>
+    </li>
+  </ul>
+</nav>     
+<!----------------- Comments...-------------- -->
+
+<div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+
+  <!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+          
+        </div>
+        <div id="ads" class="col-3  mt-5 d-none d-sm-block border-start">
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+      
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class=" text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+<footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+<!-- Section: Form -->
+<section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="ai.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>
