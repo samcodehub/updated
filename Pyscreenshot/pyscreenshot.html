@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn how to capture, display, and save screenshots in Python using the pyscreenshot library. This comprehensive documentation guides you through installation, basic and advanced usage, and even includes an example project for creating a screenshot tool. Start integrating screen-capturing functionalities into your Python projects today.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="pyscreenshot.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Capture Screenshots in Python with pyscreenshot Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Capture Screenshots in Python with pyscreenshot Library">
+<meta property="og:description" content="Learn how to capture, display, and save screenshots in Python using the pyscreenshot library. This comprehensive documentation guides you through installation, basic and advanced usage, and even includes an example project for creating a screenshot tool. Start integrating screen-capturing functionalities into your Python projects today.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Pyscreenshot/pyscreenshot.html">
+<meta name="twitter:title" content="Capture Screenshots in Python with pyscreenshot Library">
+<meta name="twitter:description" content="Learn how to capture, display, and save screenshots in Python using the pyscreenshot library. This comprehensive documentation guides you through installation, basic and advanced usage, and even includes an example project for creating a screenshot tool. Start integrating screen-capturing functionalities into your Python projects today.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Pyscreenshot/pyscreenshot.html">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container">
+        <div class="row">
+          <div class="mt-3 text-center d-none d-sm-block">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+          
+    
+    
+          <div class="mt-3 text-center d-block d-sm-none">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+                
+                <div class="col-9 text-break">
+                  <h1 class="mt-3">Utilizing the pyscreenshot Library for Screen Capture in Python</h1>
+                  <p class="mt-5">The <strong>pyscreenshot</strong> library is a Python module that allows users to easily <strong>capture screenshots</strong> of their computer screens. It provides a simple and intuitive interface to take screenshots, display them, and save them to various file formats. This library is particularly useful for creating screen-capturing applications, automating visual tests, or even for educational purposes.</p>
+
+                  <p class="mt-4">In this documentation article, we will explore how to install the <strong>pyscreenshot</strong> library, how to use it to take screenshot, and demonstrate its usage in a practical example project.</p>
+
+
+
+
+
+                  <div class="mt-5 text-center">
+                    <script type="text/javascript">
+                      atOptions = {
+                        'key' : '2be6d81d479aab6f66c74305d58a3261',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                      };
+                      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                    </script>
+                  </div>
+ 
+                  <h2 class="mt-5">Installation</h2>
+<p class="mt-5">To use the <strong>pyscreenshot</strong> library, you need to install it using the Python package manager <strong>pip</strong>. Open your command-line interface and run the following command:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install pyscreenshot
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<h2 class="mt-5">Basic Usage</h2>
+<p class="mt-5">The basic usage of the <strong>pyscreenshot</strong> library involves capturing a screenshot, displaying it, and saving it to a file. Here's a simple example to demonstrate these functionalities:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pyscreenshot
+
+# Capture the screen
+image = pyscreenshot.grab()
+
+# Display the screenshot
+image.show()
+
+# Save the screenshot
+image.save("screenshot.jpg")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bhuMfQNmGZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="mt-5">
+    <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+  <div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+  </div>
+
+<h2 class="mt-5">Advanced Usage</h2>
+<p class="mt-4">The <strong>pyscreenshot</strong> library offers more advanced features for capturing specific areas of the screen, capturing multiple monitors, and selecting output formats. Some of the advanced features include:</p>
+
+<ul class="mt-4">
+    <li class="mt-3">Capturing a specific region using coordinates</li>
+    <li class="mt-3">Capturing specific monitors in multi-monitor setups</li>
+    <li class="mt-3">Capturing in various image formats</li>
+</ul>
+
+<p class="mt-4">For more information on these advanced features, you can refer to the official documentation.</p>
+
+
+
+<h2 class="mt-5">Example Project: Creating a Screenshot Tool</h2>
+<p class="mt-5">In this example project, we will create a basic screenshot tool using the pyscreenshot library and <strong>tkinter framework</strong> (<a href="../Tkinter/tkinter.html" target="_blank" class="mt-4">learn more about tkinter module</a>). This tool will allow users to capture their screens, preview the screenshot, and save it to a file.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pyscreenshot
+from tkinter import Tk, Button, Label
+
+def capture_screenshot():
+    # Capture the screen
+    image = pyscreenshot.grab()
+    
+    # Display the screenshot
+    image.show()
+    
+    # Save the screenshot
+    image.save("screenshot.jpg")
+
+# Create a simple GUI window
+window = Tk()
+window.title("Screenshot Tool")
+
+# Create capture button
+capture_button = Button(window, text="Capture Screenshot", command=capture_screenshot)
+capture_button.pack()
+
+# Create label
+label = Label(window, text="Press the button to capture a screenshot.")
+label.pack()
+
+# Start the GUI event loop
+window.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '2be6d81d479aab6f66c74305d58a3261',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+    </script>
+  </div>
+
+<p class="mt-4">let's break down how the provided Python code works:</p>
+
+<ol class="mt-4">
+    <li class="mt-3 fw-bold">Importing Libraries:</li>
+
+<ul class="mt-3">
+    <li class="mt-3">The code begins by importing two libraries: <strong>pyscreenshot</strong> and <strong>tkinter</strong>.</li>
+    <li class="mt-3"><strong>pyscreenshot</strong> is the library that enables capturing screenshots.</li>
+    <li class="mt-3"><strong>tkinter</strong> is a standard GUI (Graphical User Interface) library used to create graphical interfaces.</li>
+</ul>
+
+    <li class="mt-3 fw-bold">Defining the Capture Function:</li>
+
+<ul class="mt-3">
+    <li class="mt-3">The <code>capture_screenshot()</code> function is defined to encapsulate the process of capturing a screenshot.</li>
+    <li class="mt-3">Inside the function:</li>
+    <ul class="mt-3">
+        <li class="mt-3"><code>pyscreenshot.grab()</code> is used to capture the entire screen.</li>
+        <li class="mt-3"><code>image.show()</code> displays the captured screenshot in the default image viewer.</li>
+        <li class="mt-3"><code>image.save("screenshot.jpg")</code> saves the captured screenshot as "screenshot.jpg" in the current working directory.</li>
+    </ul>
+</ul>
+
+    <li class="mt-3 fw-bold">Creating a GUI Window:</li>
+
+<ul class="mt-3">
+    <li class="mt-3">A simple GUI window is created using the <code>Tk()</code> constructor from the tkinter library.</li>
+    <li class="mt-3">The window's title is set to "Screenshot Tool" using the <code>title()</code> method.</li>
+    
+</ul>
+
+    <li class="mt-3 fw-bold">Adding a Capture Button:</li>
+
+<ul class="mt-3">
+    <li class="mt-3">A capture button is created using the <code>Button()</code> widget from the tkinter library.</li>
+    <li class="mt-3">The button's text is set to "Capture Screenshot".</li>
+    <li class="mt-3">The <code>command</code> parameter is set to the <code>capture_screenshot()</code> function, which means when the button is clicked, the <code>capture_screenshot()</code> function will be executed.</li>
+</ul>
+
+    <li class="mt-3 fw-bold">Adding a Label:</li>
+
+<ul class="mt-3">
+    <li class="mt-3">A label is added using the <code>Label()</code> widget.</li>
+    <li class="mt-3">The label's text is set to "Press the button to capture a screenshot."</li>
+    
+</ul>
+
+    <li class="mt-3 fw-bold">Starting the GUI Event Loop:</li>
+
+<ul class="mt-3">
+    <li class="mt-3">The <code>window.mainloop()</code> method starts the GUI event loop, which continuously listens for user interactions and updates the graphical interface accordingly.</li>
+    <li class="mt-3">The program remains in this loop until the user closes the window.</li>
+    
+</ul>
+
+</ol>
+
+<p class="mt-4">Overall, the code creates a simple graphical interface with a button and a label. When the "Capture Screenshot" button is clicked, it triggers the <code>capture_screenshot()</code> function, which captures the screen, displays the screenshot, and saves it as "screenshot.jpg". The user can repeat this process by clicking the button again. The label provides instructions to the user on how to use the tool. The GUI event loop ensures that the application remains responsive to user actions.</p>
+
+
+
+
+
+<h3 class="mt-5">Conclusion</h3>
+
+<p class="mt-4">The pyscreenshot library provides a straightforward and convenient way to capture, display, and save screenshots in Python applications. Whether you're building a screen-capturing tool, automating tasks, or creating educational content, this library offers a reliable solution. By following the steps outlined in this documentation, you can easily integrate the pyscreenshot library into your projects and take advantage of its features. Happy coding!</p>
+
+
+
+
+<p class="mt-4">Note: This documentation provides a general overview of the pyscreenshot library and its usage. For more detailed information and advanced use cases, it's recommended to refer to the official documentation of the library.</p>
+<!----------------- Comments...-------------- -->
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+
+<div class="alert alert-info mt-5" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm"  onsubmit="return sendMail();">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+      <div id="ads" class="col-3 mt-5 d-none d-sm-block  border-start">
+        <div class=" text-center">
+          <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 mb-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+        <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+
+ 
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+
+
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="pyscreenshot.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
+
+

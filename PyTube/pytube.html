@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover the power of the PyTube library in Python for seamless video downloading and processing. Learn how to install and use PyTube effectively. Build a YouTube video downloader app using Python, PyTube library, and Tkinter GUI. Explore the features and usage of PyTube to enhance your video-related tasks and applications.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="pytube.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python PyTube: Video Processing, and YouTube Downloader App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python PyTube: Video Processing, and YouTube Downloader App">
+<meta property="og:description" content="Discover the power of the PyTube library in Python for seamless video downloading and processing. Learn how to install and use PyTube effectively. Build a YouTube video downloader app using Python, PyTube library, and Tkinter GUI. Explore the features and usage of PyTube to enhance your video-related tasks and applications.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/PyTube/pytube.html">
+<meta name="twitter:title" content="Python PyTube: Video Processing, and YouTube Downloader App">
+<meta name="twitter:description" content="Discover the power of the PyTube library in Python for seamless video downloading and processing. Learn how to install and use PyTube effectively. Build a YouTube video downloader app using Python, PyTube library, and Tkinter GUI. Explore the features and usage of PyTube to enhance your video-related tasks and applications.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/PyTube/pytube.html">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container">
+        <div class="row">
+          <div class="mt-3 text-center d-none d-sm-block">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+          
+    
+    
+          <div class="mt-3 text-center d-block d-sm-none">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+                
+                <div class="col-9 ">
+                  <h1 class="mt-3">PyTube Library: Features & Usage for Video Downloading and Processing</h1>
+                  <p class="mt-5"><strong>PyTube</strong> is a Python library that allows you to easily download YouTube videos. It provides a simple API that allows you to download YouTube videos in various formats and resolutions, and also allows you to extract audio from a video and download it as an MP3 file.</p>
+<p class="mt-4"><strong>PyTube</strong> is built on top of the YouTube API and provides a higher-level abstraction that makes it easier to work with YouTube videos. It handles all the low-level details of downloading and processing YouTube videos, so you don't have to worry about them.</p>
+
+
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+                  
+                  <h2 class="mt-5">How to install and use PyTube in Python?</h2>
+                  <p class=" mt-4">You can install PyTube using pip, which is the standard package manager for Python. Here are the steps to install and use PyTube in Python:</p>
+                  <ol class="mt-4">
+                    <li class="mt-3">Open a command prompt or terminal window.</li>
+                    <li class="mt-3">Type the following command to install the PyTube package:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install pytube                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div> 
+<p class="mt-3">This command will download and install the PyTube package and its dependencies.</p>                   
+                    <li class="mt-3">Once the PyTube package is installed, you can use it in your Python code. Here's an example of how to use PyTube to download a YouTube video:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from pytube import YouTube
+
+# Create a YouTube object for the video you want to download
+yt = YouTube("https://youtu.be/LkZgsmb4N1E")
+
+# Get the highest resolution video and download it
+video = yt.streams.get_highest_resolution()
+video.download()                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                </ol>
+
+
+                  <p class=" mt-4">This code will download the highest resolution version of the video and save it to your current working directory.</p>
+                  <p class=" mt-4"><strong>*Note</strong> that PyTube is not an official library supported by YouTube and may be subject to changes in the YouTube API. Also, downloading copyrighted material from YouTube without permission is generally prohibited and may be illegal in some jurisdictions.</p>
+
+                  <div class="mt-5">
+                    <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+                  <div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+                  </div>
+
+<h2 class="mt-5"> YouTube Video Downloader App: Download YouTube Videos Using Python PyTube Library and Tkinter GUI</h2>
+
+<p class="mt-5">In this project, we will explore a simple yet powerful Python project that allows you to download YouTube videos effortlessly. With the help of the <strong>tkinter</strong> library for creating a graphical user interface (GUI) and the <strong>pytube</strong> library for handling YouTube video downloads, you'll be able to save your favorite videos directly to your local machine. Let's dive into the code and see how it works!</p>
+<p class="mt-3">Here's the code breakdown:</p>
+
+
+
+<p class="mt-5">First, we import the necessary libraries:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from tkinter import *
+from pytube import YouTube  
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-3">The tkinter library provides tools for creating GUI applications, while pytube is a library specifically designed for downloading YouTube videos.</p>
+
+<p class="mt-5">Next, we create the main window and set its dimensions and title:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root = Tk()
+root.geometry('500x300')
+root.resizable(0, 0)
+root.title('YouTube Video Downloader By SamCodeHub')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">We add a label to display the title of our application:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">Label(root, text='YouTube Video Downloader', font='arial 20 bold').pack()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">To handle the user input for the YouTube video link, we create a string variable called link:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">link = StringVar()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">A label is added to prompt the user to paste the YouTube video link:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">Label(root, text='Paste Your Link Here:', font='arial 15 bold').place(x=160, y=60)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">We create an entry field where the user can input the YouTube video link:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">link_enter = Entry(root, width=70, textvariable=link).place(x=32, y=90)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">The Downloader() function is defined to handle the download process when the user clicks the "DOWNLOAD" button:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def Downloader():
+    url = YouTube(str(link.get()))
+    video = url.stream.first()
+    video.download()
+    Label(root, text='Downloaded', font='arial 15').place(x=180, y=210)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">The Downloader() function uses the pytube library to create a YouTube object based on the provided link. It then selects the first available video stream and downloads it to the current working directory.</p>
+
+<p class="mt-5">Finally, we create the "DOWNLOAD" button that triggers the Downloader() function when clicked:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">Button(root, text='DOWNLOAD', font='arial 15 bold', bg='limegreen', padx=2, command=Downloader).place(x=180, y=150)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">To start the application and handle user interactions, we use the mainloop() function:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Overall, With just a few lines of code, we have created a simple YouTube video downloader using Python, tkinter, and pytube libraries. This project allows users to conveniently download their favorite YouTube videos by pasting the video link and clicking the "DOWNLOAD" button. You can further enhance the application by adding features like selecting the video quality, providing a progress bar, or saving the videos to a specific folder. Have fun exploring and customizing the project to fit your needs!</p>
+
+<p class="mt-4">Remember to install the pytube library by running pip install pytube before executing the code.</p>
+<p class="mt-3">Happy downloading!</p>
+
+
+<h5 class="mt-5 mb-3">You can watch the video below:</h5>
+
+                  <script>!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/uzo4xg"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");</script>
+
+                  <div id="rumble_v2pc752"></div>
+                  <script>
+                  Rumble("play", {"video":"v2pc752","div":"rumble_v2pc752"});</script>
+
+
+
+<!----------------- Comments...-------------- -->
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+
+<div class="alert alert-info mt-5" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm"  onsubmit="return sendMail();">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+      <div id="ads" class="col-3 mt-5 d-none d-sm-block  border-start">
+        <div class=" text-center">
+          <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 mb-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+        <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        
+
+
+
+     
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="pytube.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>

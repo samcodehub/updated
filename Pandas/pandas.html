@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore the power of the Pandas library in Python and master the art of data manipulation and analysis. This comprehensive guide covers everything from installation to advanced usage, providing step-by-step instructions and examples. Learn how to create CSV and Excel files using the Pandas package, and unlock the full potential of Pandas for efficient data handling. Enhance your Python data science skills and leverage the capabilities of Pandas to extract insights and make data-driven decisions.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="pandas.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Pandas Data Manipulation and Analysis: A Comprehensive Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Pandas Data Manipulation and Analysis: A Comprehensive Guide">
+<meta property="og:description" content="Explore the power of the Pandas library in Python and master the art of data manipulation and analysis. This comprehensive guide covers everything from installation to advanced usage, providing step-by-step instructions and examples. Learn how to create CSV and Excel files using the Pandas package, and unlock the full potential of Pandas for efficient data handling. Enhance your Python data science skills and leverage the capabilities of Pandas to extract insights and make data-driven decisions.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Pandas/pandas.html">
+<meta name="twitter:title" content="Pandas Data Manipulation and Analysis: A Comprehensive Guide">
+<meta name="twitter:description" content="Explore the power of the Pandas library in Python and master the art of data manipulation and analysis. This comprehensive guide covers everything from installation to advanced usage, providing step-by-step instructions and examples. Learn how to create CSV and Excel files using the Pandas package, and unlock the full potential of Pandas for efficient data handling. Enhance your Python data science skills and leverage the capabilities of Pandas to extract insights and make data-driven decisions.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Pandas/pandas.html">
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("EPqtEwgLtyLECUuik");
+    })();
+  </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div  class="container ">
+      <div class="row">
+        <div class="mt-3 text-center d-none d-sm-block">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+        
+  
+  
+        <div class="mt-3 text-center d-block d-sm-none">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+
+        <div class="col-9 ">
+            <h1 class="mt-3">Pandas Library in Python: A Guide to Data Manipulation and Analysis</h1>
+            <p class="mt-5">Python <strong>Pandas</strong> is a popular open-source data analysis and manipulation library for Python. It provides tools for <strong>data cleaning</strong>, <strong>transformation</strong>, and <strong>analysis</strong>, and is built on top of the <strong>NumPy</strong> library.</p>
+            <p class="mt-4">The name "<strong>Pandas</strong>" comes from "<strong>Panel Data</strong>," which refers to data that is organized in a <strong>tabular format</strong> with rows and columns, similar to a <strong>spreadsheet</strong> or a <strong>database table</strong>. The library is particularly useful for working with <strong>structured data</strong>, such as data from <strong>CSV files</strong>, <strong>SQL databases</strong>, or <strong>Excel spreadsheets</strong>.</p>
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '2be6d81d479aab6f66c74305d58a3261',
+                  'format' : 'iframe',
+                  'height' : 250,
+                  'width' : 300,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+              
+               <p class="mt-4">Some of the key features of Pandas include:</p>
+<ol class="mt-4">
+    <li class="mt-3"><strong>DataFrame</strong>: A two-dimensional table-like data structure that can store data of different types in columns. It is similar to a SQL table or an Excel spreadsheet.</li>
+    <li class="mt-3"><strong>Series</strong>: A one-dimensional array-like object that can store data of different types.</li>
+    <li class="mt-3"><strong>Data cleaning and preparation tools</strong>: Pandas provides a wide range of functions for handling missing data, transforming data, and filtering data.</li>
+    <li class="mt-3"><strong>Data aggregation and summarization tools</strong>: Pandas can group data by different criteria and calculate summary statistics such as mean, median, and standard deviation.</li>
+    <li class="mt-3"><strong>Data visualization</strong>: Pandas can also be used in conjunction with other libraries, such as Matplotlib and Seaborn, to create plots and visualizations of data.</li>
+</ol>
+
+
+
+
+               <p class="mt-4">Overall, Pandas is a powerful tool for data analysis and is widely used in data science, finance, economics, and other fields.</p>
+
+               <div class="mt-5">
+                <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+              <div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+              </div>
+              
+<h2 class="mt-5">Mastering Pandas in Python: Step-by-Step Guide to Installation and Usage for Data Manipulation</h2>
+<p class="mt-5">To install <strong>Pandas</strong> in Python, you can use <strong>pip</strong>, the package installer for Python. Here are the steps:</p>
+<ol class="mt-4">
+    <li class="mt-4">Open a terminal or command prompt on your computer.</li>
+    <li class="mt-4">Type the following command and press enter to upgrade pip:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">python -m pip install --upgrade pip
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+    <li class="mt-5">Type the following command and press enter to install Pandas:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install pandas
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+</ol>
+
+<p class="mt-5">Once you have installed Pandas, you can import it into your Python code using the following line:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pandas as pd
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">This line imports <strong>Pandas</strong> and assigns it the alias "<strong>pd</strong>," which is a common convention. You can then use the various functions and objects provided by Pandas, such as <strong>DataFrame</strong> and <strong>Series</strong>, to work with your data.</p>
+<p class="mt-5">Here's an example of how to use Pandas to read a CSV file and display the first five rows of data:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pandas as pd
+
+# Read a CSV file into a DataFrame
+df = pd.read_csv('mydata.csv')
+
+# Display the first five rows of data
+print(df.head())
+
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-4">This code reads a CSV file called "mydata.csv" into a Pandas DataFrame and then uses the <strong>head()</strong> method to display the first five rows of data. You can modify this code to suit your specific data analysis needs.</p>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+<h2 class="mt-5">Step-by-Step Guide: Creating CSV Excel Files in Python with Pandas Package</h2>
+
+<p class="mt-5">Data manipulation is a crucial aspect of any data analysis project, and Python's <strong>Pandas library</strong> provides powerful tools to <strong>efficiently handle</strong> and <strong>transform data</strong>. In this project, we will dive into a code snippet that demonstrates the process of creating a<strong> DataFrame</strong> from a <strong>dictionary</strong> and <strong>exporting</strong> it to a <strong>CSV file</strong>. We will explore each line of code and provide a detailed explanation, allowing you to grasp the concepts behind the code.</p>
+
+<p class="mt-3">
+  Here's what does every line of the code:
+</p>
+
+<p class="mt-5">In the first line, we import the <strong>Pandas</strong> library and assign it the alias <strong>pd</strong>. This allows us to access Pandas functions and classes using the <strong>pd</strong> prefix.</p>
+
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pandas as pd
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">Next, we define a dictionary called <strong>d</strong>. This dictionary contains two key-value pairs: <strong>class</strong> with corresponding values [1, 2, 3] and <strong>probability</strong> with corresponding values [0.5, 1.3, 4.8]. Each key represents a column name, and the associated values represent the data within each column.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">d = {"class": [1, 2, 3], "probability": [0.5, 1.3, 4.8]}
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+<p class="mt-5">Here, we create a <strong>DataFrame</strong> using the Pandas <strong>DataFrame()</strong> function. We pass the dictionary <strong>d</strong> as the argument, which automatically structures the data into a <strong>tabular format</strong>. The <strong>DataFrame</strong> will have two columns, <strong>class</strong> and <strong>probability</strong>, with the provided values.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">df = pd.DataFrame(d)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">In the final line, we use the <strong>to_csv()</strong> function to export the DataFrame to a <strong>CSV</strong> file. We specify the filename as "<strong>samcodehub.csv</strong>". The '<strong>r</strong>' before the filename is used to treat the string as a raw string literal, ensuring any backslashes are interpreted correctly.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">df.to_csv(r"samcodehub.csv")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">In this small project, we explored a simple yet insightful code snippet that demonstrates the process of creating a <strong>DataFrame</strong> from a <strong>dictionary</strong> using <strong>Pandas</strong> in Python. We learned how to import the Pandas library, create a dictionary, convert it into a DataFrame, and export the DataFrame to a CSV file. Understanding these fundamental operations will serve as a solid foundation for performing advanced data manipulation and analysis tasks using Pandas.</p>
+
+
+
+
+
+
+
+
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+
+
+
+
+
+
+
+<!----------------- Comments...-------------- -->
+
+
+<div class="alert alert-info mt-5" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm"  onsubmit="return sendMail();">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+      <div id="ads" class="col-3 mt-5 d-none d-sm-block  border-start">
+        <div class=" text-center">
+          <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 mb-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+        <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="pandas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>
