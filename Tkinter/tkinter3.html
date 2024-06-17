@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore the world of Python Tkinter GUI application development with our comprehensive step-by-step guides. Learn how to create a calendar, text-to-speech converter, weather checking app, and image converter using Tkinter, TkCalendar, gTTS, playsound, PIL, BeautifulSoup, and Requests libraries. Build interactive and functional graphical user interfaces with ease. Start building your own Python GUI apps today.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="tkinter.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Tkinter Calendar, Text-to-Speech, Image Converter GUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Tkinter Calendar, Text-to-Speech, Image Converter GUI">
+<meta property="og:description" content="Explore the world of Python Tkinter GUI application development with our comprehensive step-by-step guides. Learn how to create a calendar, text-to-speech converter, weather checking app, and image converter using Tkinter, TkCalendar, gTTS, playsound, PIL, BeautifulSoup, and Requests libraries. Build interactive and functional graphical user interfaces with ease. Start building your own Python GUI apps today.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Tkinter/tkinter3.html">
+<meta name="twitter:title" content="Python Tkinter Calendar, Text-to-Speech, Image Converter GUI">
+<meta name="twitter:description" content="Explore the world of Python Tkinter GUI application development with our comprehensive step-by-step guides. Learn how to create a calendar, text-to-speech converter, weather checking app, and image converter using Tkinter, TkCalendar, gTTS, playsound, PIL, BeautifulSoup, and Requests libraries. Build interactive and functional graphical user interfaces with ease. Start building your own Python GUI apps today.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Tkinter/tkinter3.html">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+<div class="container-fluid text-dark bg-light mb-5">
+  <div class="container text-break">
+    <div class="row">
+
+      <div class="mt-3 text-center d-none d-sm-block">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      
+
+
+      <div class="mt-3 text-center d-block d-sm-none">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+
+      <div class="col-9 ">
+
+
+<!--CALENDER-GUI-TKCALENDER-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<h1 class="mt-3">Building a Python Calendar GUI with Tkinter and TkCalendar Library</h1>
+<p class="mt-5">The <strong>tkcalendar</strong> module is a Python library that provides a <strong>calendar</strong> widget for use in graphical user interfaces (GUIs) created with the <strong>Tkinter</strong> library. The <strong>calendar</strong> widget can display a month or a year and allows users to select a date by clicking on it. The selected date can then be used in various ways, such as updating a label or a <strong>text</strong> field, or performing some action based on the selected date. The <strong>tkcalendar</strong> widget provides various customization options, including the ability to set the range of years that can be displayed, to highlight specific dates, and to format the appearance of the widget.</p>
+<p class="mt-3">The <strong>tkcalendar</strong> module is easy to use and integrates well with <strong></strong>Tkinter GUIs. It provides a simple and efficient way to display a <strong>calendar</strong> widget in a GUI, which can be useful in many applications, such as event scheduling, data entry, or appointment management. The <strong>tkcalendar</strong> module is open source and can be installed using the <strong>pip</strong> package manager.</p>
+
+
+<p class="mt-3">This code creates a basic graphical user interface (GUI) using the <strong>Tkinter</strong> library in Python. The GUI window displays a <strong>calendar</strong> for the month of January in the year 2022. The user can select a <strong>date</strong> by clicking on it, and then click a button to retrieve the selected <strong>date</strong>. Once the user clicks the button, a label below the <strong>calendar</strong> displays the selected date. The code uses the <strong>tkcalendar</strong> module to create the <strong>calendar</strong> widget and defines a function to retrieve the selected date. This code provides a simple but useful example of how to create a GUI with <strong>Tkinter</strong> and how to use the <strong>tkcalendar</strong> module to display a <strong>calendar</strong> widget.</p>
+<p class="mt-3">Here's what each section of the code does:</p>
+<p class="mt-5">Imports the necessary libraries for this code, including <strong>Tkinter</strong> and the <strong>tkcalendar</strong> module.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from tkinter import *
+from tkcalendar import *
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="text-center mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+</div>
+
+<p class="mt-5">Creates the <strong>main</strong> GUI window, sets its <strong>title</strong>, <strong>size</strong>, and <strong>background color</strong>, and prevents it from being resized.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root = Tk()
+root.title()
+root.geometry('400x300')
+root.resizable(False,False)
+root.config(bg='orange')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creates the <strong>calendar</strong> widget and adds it to the GUI window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">cal = Calendar(root,selectmode='day',year=2022,month=1)
+cal.pack(pady=10)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a function called <strong>get_info</strong> that retrieves the selected <strong>date</strong> from the <strong>calendar</strong> widget.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># define func to get selected date
+def get_info():
+    x = cal.get_date()
+    current_date['text'] = x
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creates a button that triggers the <strong>get_info</strong> function when clicked and adds a label to the GUI window that displays the selected <strong>date</strong>. </p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">Button(root,text='Get Info', command=get_info, fg='green').pack(pady=5)
+current_date= Label(root, text='', font=('Arial,18'),fg='black',bg='orange')
+current_date.pack(pady=5)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Starts the <strong>Tkinter</strong> event loop and displays the GUI to the user.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, we learned how to create a calendar GUI using Python's Tkinter library and the TkCalendar library. We explored the step-by-step process of building a graphical user interface for a calendar application. By utilizing Tkinter's widgets and TkCalendar's functionalities, we successfully developed a user-friendly and interactive calendar interface.</p>
+
+  <h4 class="mt-5">You can watch the video below:</h4>
+  <div class="ratio ratio-16x9 mt-3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2sMqu0oCvLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+<div class="text-center mt-5">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+<!--TEXT-TO-SPEECH-CONVERTOR-GUI-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<h2 class="mt-5">Complete Guide: Building a Python Text-to-Speech Converter GUI App with Tkinter, gTTS, and playsound Libraries</h2>
+<p class="mt-5">In this project, we will delve into the fascinating world of <strong>speech synthesis</strong> and create an intuitive <strong>graphical user interface</strong> that converts <strong>text</strong> into <strong>lifelike audio</strong>. With <strong>Tkinter's powerful GUI capabilities</strong> and the <strong>gTTS (Google Text-to-Speech) library's </strong>cutting-edge technology, we'll develop an application that can transform written content into spoken words. By incorporating the <strong>playsound library</strong>, we'll also enable seamless playback of the generated audio.</p>
+<p class="mt-4">This code is a basic GUI (Graphical User Interface) program using the <strong>tkinter</strong>, <strong>gtts</strong> and <strong>playsound</strong> libraries to implement a simple <strong>Text-To-Speech</strong> application.</p>
+
+<p class="mt-3">Here is the step-by-step explanation of the code:</p>
+
+<p class="mt-5"><strong>from tkinter import * </strong>- It imports all the classes, functions, and variables from the tkinter library.</p>
+<p class="mt-1"><strong>from gtts import gTTS</strong> - It imports the gTTS class from the gtts library, which is used to convert text to speech.</p>
+<p class="mt-1"><strong>from playsound import playsound</strong> - It imports the playsound function from the playsound library, which is used to play the generated audio.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from tkinter import *
+from gtts import gTTS
+from playsound import playsound
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>root = Tk()</strong> - It creates an instance of the Tk class, which represents the main window of the application.</p>
+<p class="mt-1"><strong>root.geometry('350x300')</strong> - It sets the size of the main window to 350x300 pixels.</p>
+<p class="mt-1"><strong>root.resizable(0,0)</strong> - It disables the resizing of the main window.</p>
+<p class="mt-1"><strong>root.config(bg='white')</strong> - It sets the background color of the main window to white.</p>
+<p class="mt-1"><strong>root.title('TEXT-TO-SPEECH')</strong> - It sets the title of the main window to 'TEXT-TO-SPEECH'.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root = Tk()
+root.geometry('350x300')
+root.resizable(0,0)
+root.config(bg='white')
+root.title('TEXT-TO-SPEECH')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+<p class="mt-5"><strong>Label(root, text='Text-TO-SPEECH' , font='ariel 20 bold', bg='white').pack()</strong> - It creates a label widget with the text 'Text-TO-SPEECH', sets its font and background color, and packs it into the main window.</p>
+<p class="mt-1"><strong>Label(root, text='SAMCODEHUB', font='ariel 15 bold', bg='white').pack(side= BOTTOM)</strong> - It creates a label widget with the text 'SAMCODEHUB', sets its font and background color, and packs it into the main window at the bottom.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># heading
+Label(root, text='Text-TO-SPEECH' , font='ariel 20 bold', bg='white').pack()
+Label(root, text='SAMCODEHUB', font='ariel 15 bold', bg='white').pack(side= BOTTOM)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>Label(root, text='Enter Text', font='ariel 15 bold', bg='white').place(x=20, y=60)</strong> - It creates a label widget with the text 'Enter Text', sets its font and background color, and places it at the specified position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># label 
+Label(root, text='Enter Text', font='ariel 15 bold', bg='white').place(x=20, y=60)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>Msg= StringVar()</strong> - It creates a StringVar variable, which is used to store the user input from the text entry field.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># text variable
+Msg= StringVar()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5"><strong>entry_field = Entry(root, textvariable =Msg, width='50')</strong> - It creates a text entry widget with the specified width and sets its text variable to Msg.</p>
+<p class="mt-1"><strong>entry_field.place(x=20, y=100)</strong> - It places the text entry widget at the specified position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#ENTRY
+entry_field = Entry(root, textvariable =Msg, width='50')
+entry_field.place(x=20, y=100)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/300x250_adsterra_reff.gif" /></a>
+</div>
+
+<p class="mt-5"><strong>def Text_to_speech()</strong>: - It defines a function Text_to_speech, which is called when the 'PLAY' button is clicked.</p>
+<p class="mt-1"><strong>Message = entry_field.get()</strong> - It gets the user input from the text entry widget.</p>
+<p class="mt-1"><strong>speech = gTTS(text= Message)</strong> - It creates a gTTS object with the user input text.</p>
+<p class="mt-1"><strong>speech.save('v.mp3')</strong> - It saves the generated audio as a .mp3 file with the name 'v.mp3'.</p>
+<p class="mt-1"><strong>playsound('v.mp3')</strong> - It plays the generated audio using the playsound function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># define function
+def Text_to_speech():
+    Message = entry_field.get()
+    speech = gTTS(text= Message)
+    speech.save('v.mp3')
+    playsound('v.mp3')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>def Exit()</strong>: - It defines a function Exit, which is called when the 'EXIT' button is clicked.</p>
+<p class="mt-1"><strong>root.destroy()</strong> - It destroys the main window, which exits the program.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def Exit():
+    root.destroy()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>def Reset()</strong>: - This function resets the content of the Msg variable to an empty string.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def Reset():
+    Msg.set()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This lines creates 3 Buttons widgets with the label "<strong>RESET</strong>" and sets its command to the <strong>Reset()</strong> function. When the button is clicked, it will execute the <strong>Reset()</strong> function.</p>
+<p class="mt-1">Button widget with the label "<strong>PLAY</strong>" and sets its command to the <strong>Text-To-Speech()</strong> function. When the button is clicked, it will execute the <strong>Text-To-Speech()</strong> function.</p>
+<p class="mt-1">Button widget with the label "<strong>EXIT</strong>" and sets its command to the <strong>Exit()</strong> function. When the button is clicked, it will execute the <strong>Exit()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># button
+Button(root, text = "PLAY", font= 'ariel 15 bold', command = Text_to_speech, width=4).place(x=25, y=140)   
+Button(root, text= "EXIT", font= 'ariel 15 bold', command = Exit, bg='red').place(x=100, y=140)
+Button(root, text= "RESET", font= 'ariel 15 bold', command = Reset).place(x=175, y=140) 
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">The <strong>mainloop()</strong> method is responsible for starting the event loop, which waits for user events and processes them as they occur.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">we learned how to create a Text-to-Speech Converter GUI app using Python's Tkinter library, gTTS (Google Text-to-Speech) library, and the playsound library. We explored the fascinating world of speech synthesis and developed an intuitive graphical user interface that can convert text into lifelike audio. Through the integration of these libraries, we achieved seamless playback of the generated audio, providing a user-friendly and efficient text-to-speech conversion experience.</p>
+
+                  <h4 class="mt-5">You can watch the video below:</h4>
+                  <div class="ratio ratio-16x9 mt-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MT4-S5HDOgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  
+                  <div class="mt-5 text-center">
+                    <script type="text/javascript">
+                      atOptions = {
+                        'key' : '2be6d81d479aab6f66c74305d58a3261',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                      };
+                      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                    </script>
+                  </div>
+
+<!--WEATHER-GUI-APP-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<h2 class=" mt-5">Step-by-Step Guide: Building a Weather Checking App GUI with Python Tkinter, PIL, BeautifulSoup, and Requests Library</h2>
+
+<p class="mt-5">In this project, we will explore the process of creating a user-friendly graphical user interface that allows users to check the weather for any desired location. By leveraging the power of <strong>Tkinter</strong>, we'll design an intuitive and visually appealing interface. Using <strong>PIL</strong>, we'll enhance the app with images and icons to provide a rich user experience. With <strong>BeautifulSoup</strong> and <strong>Requests library</strong>, we'll fetch and extract real-time weather data from reliable sources. Join us on this journey as we combine the power of these libraries to create a feature-rich Weather Checking App GUI that keeps users informed about current weather conditions in any location of their choice.</p>
+
+<p class="mt-3">Here's a breakdown of the code:</p>
+
+<p class="mt-5">This section imports the necessary libraries for the code. <strong>Tkinter</strong> is the standard Python library for creating graphical user interfaces. <strong>PIL</strong> (Python Imaging Library) is a library for working with images. <strong>Beautiful Soup</strong> is a library for web scraping HTML and XML files. The <strong>requests</strong> library allows us to make HTTP requests to websites. <strong>Threading</strong> is a library that allows us to run the code concurrently in separate threads.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import tkinter as tk
+from tkinter import ttk
+from PIL import Image
+from bs4 import BeautifulSoup
+import requests, threading
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line sets the <strong>headers</strong> for the <strong>HTTP request</strong> to the Google website. The user agent is set to <strong>mimic</strong> the behavior of Google Chrome.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># if user agent not work search on chrome my user agent otherwise update chrome
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This section defines a function called "<strong>Weather</strong>" that takes in an arbitrary number of arguments. "<strong>city</strong>" is a <strong>global</strong> variable that is used to store the name of the city that the user enters. The function takes the city name and concatenates it with the word "<strong>weather</strong>" to create a search query. Any spaces in the query are replaced with the plus symbol to make it a valid <strong>URL</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def Weather(*args):
+    global city
+    city1 = city.get() + " weather"
+    city1 = city1.replace(" ", "+")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">This line sets the text of a label widget to show that the program is searching for the weather information for the specified city.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">search_label['text'] = "Searching For "+city.get()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line makes an <strong>HTTP GET request</strong> to the Google website with the search query for the weather information. The <strong>headers</strong> that were set earlier are used for the <strong>request</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">res = requests.get(f'https://www.google.com/search?q={city1}&oq={city1}&aqs=chrome.0.35i39l2j0l4j46j69i60.6128j1j7&sourceid=chrome&ie=UTF-8', headers=headers)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These lines use the <strong>Beautiful Soup</strong> library to parse the <strong>HTML response</strong> from the Google website. The "<strong>.select()</strong>" method is used to select the elements with the specified <strong>IDs</strong>. The text of each element is extracted and stripped of any leading or trailing spaces.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">soup = BeautifulSoup(res.text, 'html.parser')
+    location = soup.select('#wob_loc')[0].getText().strip()
+    # print(soup.select('#wob_dts'))
+    time = soup.select('#wob_dts')[0].getText().strip()
+    info = soup.select('#wob_dc')[0].getText().strip()
+    weather = soup.select('#wob_tm')[0].getText().strip()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These lines create label widgets that show the location, weather information, and temperature in Celsius.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">    tk.Label(root, text=location, font='Caveat 12 bold', bg="#2E2E2E", fg='#fff').place(x=130, y=250)
+    tk.Label(root, text=info, font='ROBOTO 15 bold', bg="#2E2E2E", fg='#fff').place(x=130, y=220)
+    tk.Label(root, text=f'{weather}°C', font='ROBOTO 35 bold', bg="#2E2E2E", fg='#fff').place(x=5, y=220)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">These lines split the current time into hours and minutes using the <strong>split()</strong> method, and then display the hour and minute on the tkinter window as two separate labels with different font sizes and colors.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">    time = time.split(',')
+    tk.Label(root, text=time[0], font='Caveat 20 bold', bg="#33FFDD", fg='#2E2E2E').place(x=330, y=210)
+    tk.Label(root, text=time[1].upper(), font='ROBOTO 15 bold', bg="#33FFDD", fg='#2E2E2E').place(x=325, y=240)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These lines clear the search label and the entry box when the <strong>call_function()</strong> function is called.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">    search_label['text'] = ""
+    entry.delete('0', tk.END)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This function is called when the user clicks the "<strong>Check</strong>" button or presses the "<strong>Enter</strong>" key after entering a city name. It creates a new thread that runs the <strong>Weather()</strong> function, which fetches the weather data for the entered city and displays it on the tkinter window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def call_function(*args):
+    T = threading.Thread(target=Weather, daemon=True)
+    T.start()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These lines create the main tkinter window with a fixed size, a title, and an icon.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># making tkinter window
+root = tk.Tk()
+root.geometry("450x300")
+root.title('Weather App SamCodeHub')
+root.resizable(False, False)
+# this is our app icon 
+root.iconbitmap('cloudy.ico')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">These lines create three different <strong>frames</strong> with different colors to display different content on the tkinter window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># set frames for show different content and color in window
+frame1 = tk.Frame(root, bg='#fff', width=450, height=200)
+frame1.place(x=0, y=0)
+
+frame2 = tk.Frame(root, bg='#2E2E2E', width=300, height=100)
+frame2.place(x=0, y=200)
+
+frame3 = tk.Frame(root, bg='#33FFDD', width=150, height=100)
+frame3.place(x=300, y=200)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These lines create an entry box for the user to enter the city name, a "<strong>Check</strong>" button to fetch the weather data, and a <strong>label</strong> to display any errors or messages. The <strong>textvariable</strong> parameter of the entry box is set to a <strong>StringVar()</strong> variable called <strong>city</strong>, which is used to store the entered city name. When the "<strong>Check</strong>" button is clicked or the "<strong>Enter</strong>" key is pressed, the <strong>call_function()</strong> function is called. The <strong>label</strong> is initially empty but can be used to display</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># weather details
+global city
+city = tk.StringVar()
+
+# make entry box take city name
+tk.Label(root,  text="Enter the City Name", font=("Arial Rounded MT Bold", 12), bg="#fff").place(x=150, y=40)
+entry = tk.Entry(root, textvariable=city,font=("Arial",13),bd=2,justify=tk.CENTER,relief=tk.GROOVE, width=18, bg='#D0FFBC')
+entry.bind("<Return>",call_function)
+entry.place(x=130, y=85)
+
+tk.Button(root, text='Check', font=("Arial Rounded MT Bold", 10),bd=2,relief=tk.GROOVE, bg="#D0FFBC", command=call_function).place(x = 300, y=85)
+
+search_label = tk.Label(root,  text="", font=("Sitka Small", 12), fg="#24292F",bg='#fff')
+search_label.place(x=140, y=130)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-5">it tells <strong></strong>Tkinter to start running the application and it continues running until the window is closed by the user.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">we learned how to create a Weather Checking App GUI using Python's Tkinter, PIL, BeautifulSoup, and Requests library. We explored the process of designing a user-friendly interface, enhancing it with images and icons using PIL, and fetching real-time weather data from reliable sources using BeautifulSoup and Requests. By combining the power of these libraries, we successfully developed a feature-rich Weather Checking App GUI that keeps users informed about current weather conditions in any desired location.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Nrors3rnoJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<!--IMAGE-CONVERTOR-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<h2 class="mt-5">Step-by-Step Guide: Creating a PNG to JPG Image Converter GUI with Python Tkinter Framework and PIL Library</h2>
+<p class="mt-5">This project focuses on building a graphical user interface that allows users to convert <strong>PNG files</strong> to <strong>JPG format</strong> effortlessly. By leveraging the power of <strong>Tkinter</strong>, we'll design an intuitive and user-friendly interface for seamless interaction. With the <strong>PIL (Python Imaging Library)</strong> library, we'll implement the image conversion functionality, enabling users to easily convert their <strong>PNG images</strong> to the widely supported <strong>JPG format</strong>.</p>
+
+<p class="mt-5">This code creates a simple GUI using the <strong>tkinter</strong> library for an image converter application. The GUI consists of a main window (<strong>root</strong>) with a canvas (<strong>canvas1</strong>) and two buttons (<strong>browse_png and saveasbutton</strong>). The purpose of the application is to open a PNG image file, convert it to a JPEG format, and save the result as a new file.</p>
+
+
+
+<p class="mt-3">Here's the code breakdown:</p>
+
+<p class="mt-5">The code begins by importing necessary libraries: <strong>tkinter</strong> for the GUI, <strong>filedialog</strong> for opening and saving files, and <strong>PIL</strong> for image processing. The <strong>root</strong> variable is created as the main window of the GUI using the <strong>Tk</strong> class of tkinter.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import tkinter as tk
+from tkinter import filedialog
+from PIL import Image
+
+root = tk.Tk()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Next, the <strong>canvas1</strong> object is created inside <strong>root</strong>, with a size of 300x250 pixels, a pink background color, and a raised relief. A label with the text "IMAGE CONVERTER" is added to the canvas and positioned using the <strong>create_window</strong> method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">canvas1 = tk.Canvas(root, width=300, height=250, bg='hotpink', relief='raised')
+canvas1.pack() 
+
+label1 = tk.Label(root, text="IMAGE CONVERTER", bg='hotpink')
+label1.config(font=('helvetica',20))
+canvas1.create_window(150, 60, window=label1)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Two buttons are also added to the canvas: <strong>browse_png</strong> and <strong>saveasbutton</strong>. The <strong>browse_png</strong> button calls the <strong>getPNG</strong> function when clicked, which uses the <strong>filedialog</strong> module to open a PNG file and creates an <strong>Image</strong> object from the file using the <strong>PIL</strong> library. The <strong>saveasbutton</strong> button calls the convert function when clicked, which uses the <strong>filedialog</strong> module to save the converted JPEG file.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def getPNG():
+        global im1
+        import_file_path = filedialog.askopenfilename()
+        im1 = Image.open(import_file_path)
+        
+browse_png = tk.Button(text="Selct PNG file", command=getPNG, bg="lime", fg='white', font=('helvetica',12, 'bold'))
+canvas1.create_window(150, 100, window=browse_png)
+
+def convert():
+    global im1
+    export_file_path = filedialog.asksaveasfilename(defaultextension='.jpg')
+    im1.save(export_file_path)
+    
+saveasbutton = tk.Button(text="convert PNG to JPG", command=convert, bg= 'lime', fg='white', font= ('helvetica',12, 'bold'))
+canvas1.create_window(150, 140, window=saveasbutton)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-2">Both the <strong>getPNG</strong> and convert functions use the <strong>global</strong> keyword to make the <strong>im1</strong> variable available outside of the function scope. This variable is used to store the image object that is created from the PNG file.</p>
+
+
+
+<p class="mt-5">Finally, the GUI is run using the mainloop method, which keeps the GUI window open until the user closes it.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall. we learned how to create an Image Converter GUI using Python's Tkinter framework and the PIL library. We explored building a user-friendly interface for converting PNG files to JPG format seamlessly. By utilizing Tkinter, we developed an intuitive and interactive graphical user interface. With the help of the PIL library, we implemented the image conversion functionality, allowing users to effortlessly convert PNG images to the widely supported JPG format.</p>
+
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/AzoE0M-SmQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------- Comments...%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------- -->
+
+  
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+      <li class="page-item active   pe-2">
+        <a class="page-link" href="tkinter2.html" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+     
+      <li class="page-item  pe-2"><a class="page-link" href="tkinter2.html">2</a></li>
+      <li class="page-item active pe-2"><a class="page-link" href="tkinter3.html">3</a></li>
+      <li class="page-item  pe-2"><a class="page-link" href="tkinter4.html">4</a></li>
+      
+      <li class="page-item active pe-2">
+        <a class="page-link" href="tkinter4.html">Next</a>
+      </li>
+    </ul>
+  </nav>    
+  
+  
+  
+  <div class="alert alert-info mt-5" role="alert">
+    <h4 class="alert-heading">Site Update in Progress...</h4>
+    <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+  </div>
+    <h3 class="mt-5">Comments...</h3>
+    <div class="comment mt-3 px-3 py-3">
+      
+      <form id="contactForm"  onsubmit="return sendMail();">
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Name</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="messageTextarea" class="form-label">Your Comments</label>
+          <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class=" mt-4" id="messages">
+                      </div>
+    </div>
+  
+    <!----------------- Comments ENDS HERE...-------------- -->
+  
+  
+  
+            
+          </div>
+          <div id="ads" class="col-3 mt-5 d-none d-sm-block  border-start">
+            <div class=" text-center">
+              <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 mb-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+            <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+  
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+ 
+  
+  
+  
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+      <!-- Footer -->
+  <footer class="futer text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- tiktok -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- pinterest -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+          ><i class="fab fa-pinterest"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- tumblr -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+          ><i class="fab fa-tumblr"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+      <div class="text-center  text-success" id="newsletter-success"></div>
+      <div class="alert" style="display: none;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+        Subscription successful!
+      </div>
+  <!-- Section: Form -->
+  <section class="">
+    <form id="contactForm2" >
+      
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <!--Grid column-->
+        
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="emailid" class="form-control" />
+            <label class="form-label" for="form5Example21">Email address</label>
+          </div>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-light mb-4">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <!-- Section: Form -->
+  <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+      © 2023 Copyright:
+      <a class="text-white" href="../main.html">samcodehub.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="tkinter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+  </body>
+  </html>

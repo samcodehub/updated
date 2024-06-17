@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dive into the world of Python Tkinter GUI development with our comprehensive step-by-step guides. Learn how to create a dice game, alarm clock, QR code generator, calculator, and image viewer using Tkinter, PIL, and other essential libraries. Build interactive and visually appealing graphical user interfaces with ease. Start building your own Python GUI apps today.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="tkinter.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Tkinter: Step-by-Step Guides for Building GUI Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Tkinter: Step-by-Step Guides for Building GUI Apps">
+<meta property="og:description" content="Dive into the world of Python Tkinter GUI development with our comprehensive step-by-step guides. Learn how to create a dice game, alarm clock, QR code generator, calculator, and image viewer using Tkinter, PIL, and other essential libraries. Build interactive and visually appealing graphical user interfaces with ease. Start building your own Python GUI apps today.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Tkinter/tkinter4.html">
+<meta name="twitter:title" content="Python Tkinter: Step-by-Step Guides for Building GUI Apps">
+<meta name="twitter:description" content="Dive into the world of Python Tkinter GUI development with our comprehensive step-by-step guides. Learn how to create a dice game, alarm clock, QR code generator, calculator, and image viewer using Tkinter, PIL, and other essential libraries. Build interactive and visually appealing graphical user interfaces with ease. Start building your own Python GUI apps today.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Tkinter/tkinter4.html">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+<div class="container-fluid text-dark bg-light mb-5">
+  <div class="container text-break">
+    <div class="row">
+      <div class="mt-3 text-center d-none d-sm-block">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      
+
+
+      <div class="mt-3 text-center d-block d-sm-none">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      <div class="col-9 ">
+
+<!--DICE-GAME--########################################################################################-->
+<h1 class="mt-5">Building a Dice Game with Python Tkinter GUI and PIL Library</h1>
+
+<p class="mt-5">Dice games have been a source of entertainment for centuries, and building a custom dice game allows you to explore the exciting world of game development. In this comprehensive guide, we will walk you through the process of creating a <strong>dice game</strong> using Python's <strong>Tkinter GUI framework</strong> and the <strong>PIL (Python Imaging Library)</strong> libraries.</p>
+<p class="mt-4">By following this step-by-step tutorial, you will gain hands-on experience in utilizing the power of Python's Tkinter framework and the PIL libraries. We will cover techniques for handling user input, such as <strong>clicking on the dice</strong> and <strong>rolling them</strong>.</p>
+<p class="mt-4"> <strong>Why Tkinter GUI and PIL Libraries?</strong><br>
+  <strong>Tkinter</strong>, a widely used Python library for GUI development, provides a robust and versatile framework for creating visually appealing and user-friendly applications. Combined with the <strong>PIL libraries</strong>, which offer powerful image manipulation capabilities, you can create stunning graphics and animations for your <strong>dice game</strong>.</p>
+<p class="mt-4">Throughout this guide, we will walk you through the process of building a fully functional <strong>dice game</strong> using Python's <strong>Tkinter framework</strong> and the <strong>PIL libraries</strong>. We will start by setting up the Tkinter framework, designing the main game window, and incorporating the necessary GUI elements for user interaction. We will then utilize the <strong>PIL libraries</strong> to display realistic dice images and create dynamic animations.</p>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-4">By the end of this tutorial, you will have a fully functional <strong>dice game</strong> that provides an engaging and entertaining experience. This project serves as a foundation for further exploration, allowing you to expand the game's functionalities and customize it according to your preferences.</p>
+
+<p class="mt-3">Here's the code breakdown:</p>
+
+
+
+<p class="mt-5">import the necessary modules for the program: <strong>tkinter</strong> for creating GUI elements, <strong>PIL</strong> (Python Imaging Library) for working with images, and random for generating random numbers.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import tkinter
+from PIL import Image, ImageTk
+import random
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creating a new <strong>Tk</strong> object, which represents the main window of the program. <strong>geometry()</strong> sets the size of the window to 400x400 pixels, and <strong>title()</strong> sets the title of the window to "Dice Game".</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root = tkinter.Tk()
+root.geometry('400x400')
+root.title('Dice Game')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Create an empty Label widget and add it to the main window using the <strong>pack()</strong> method. This is just a placeholder and doesn't display any text.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">l0 = tkinter.Label(root, text="")
+l0.pack()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Creates a new Label widget with the text "Hello New User!", green foreground color, dark green background color, and a bold italic Helvetica font. The <strong>pack()</strong> method adds the label to the main window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">l1 = tkinter.Label(root, text="Hello New User!", fg ="light green",
+                   bg="dark green",
+                   font = "Helvetica 16 bold italic")
+l1.pack()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line creates a list of image filenames for the dice images. These images should be located in the same directory as the Python script.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">dice = ['die1.png', 'die2.png', 'die3.png', 'die4.png', 'die5.png', 'die6.png' ]
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This code creates a new <strong>PhotoImage</strong> object from a randomly selected image filename in the dice list. It then creates a new Label widget and sets its image to <strong>image1</strong> using the image attribute. The <strong>expand=True</strong> argument in the <strong>pack()</strong> method tells the label to fill any extra space in the window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">image1 = ImageTk.PhotoImage(Image.open(random.choice(dice)))
+label1 = tkinter.Label (root, image=image1)
+label1.image = image1
+label1.pack( expand=True)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This code defines a new function <strong>rolling_dice()</strong>, which generates a new random image from the dice list and updates <strong>label1</strong> with the new image. It then creates a new Button widget with the label "Roll the Dice", blue foreground color, and the command attribute set to <strong>rolling_dice</strong>, which specifies that the <strong>rolling_dice()</strong> function should be called when the button is clicked. The <strong>pack()</strong> method adds the button to the main window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def rolling_dice():
+    imagel = ImageTk.PhotoImage(Image.open(random.choice(dice)))
+    label1.configure(image=imagel)
+    label1.image = imagel
+
+button = tkinter.Button(root, text='Roll the Dice' , fg = 'blue', command=rolling_dice)
+button.pack( expand=True)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">This line starts the <strong>event</strong> loop of the program, which listens for user input (such as mouse clicks) and updates the GUI accordingly. The program will stay in this loop until the window is closed.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, Creating a dice game with Python's Tkinter GUI framework and the PIL libraries offers an exciting opportunity to dive into game development. By following this guide, you will acquire essential skills in GUI design, and user interaction. So, get ready to roll the dice and embark on a thrilling journey into the world of game development with Python, Tkinter, and PIL libraries.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QStKZaFIBk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<!--ALARM-CLOCK-GUI-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<h2 class="mt-5">Create an Alarm Clock GUI: Step-by-Step Guide using Python Tkinter</h2>
+<p class="mt-5">This code is a simple <strong>alarm clock</strong> application that utilizes the <strong>Tkinter</strong> library in Python. It allows the user to set an <strong>alarm time</strong> by choosing the <strong>hour</strong> and <strong>minute</strong> from the <strong>Spinbox</strong> widgets provided. When the user clicks on the "<strong>set alarm</strong>" button, the <strong>set_alarm</strong> function is called which continuously checks the current time until it matches the set alarm time. Once the time matches, the program prints "<strong>wake up!!!</strong>" and plays an audio file using the <strong>playsound</strong> library. The user can exit the application by clicking on the "<strong>Quit</strong>" button provided.</p>
+<p class="mt-3">The application provides a simple user interface with intuitive widgets for setting the alarm time. The program's logic uses <strong>datetime</strong> and <strong>time</strong> libraries to determine when to trigger the <strong>alarm</strong>. The <strong>playsound</strong> library is used to <strong>play</strong> an audio file once the alarm goes off. The program can be customized to play any audio file of the user's choice by specifying the file path in the code. The application's interface design is simple, and the use of <strong>Spinbox</strong> widgets makes it easy for users to set the alarm time. </p>
+
+
+<p class="mt-3">Here is the step-by-step explanation of the code:</p>
+<p class="mt-4">importing the necessary modules such as <strong>tkinter</strong>, <strong>messagebox</strong>, <strong>datetime</strong>, <strong>time</strong> and <strong>playsound</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from tkinter import *
+from tkinter import messagebox
+import datetime, time
+from playsound import playsound    # pip install playsound
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Define a function <strong>button_hover</strong> which changes the background color of the button when the mouse hovers over it.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def button_hover(event):
+    confirm["bg"] = "lightblue"
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Define another function <strong>button_hover_leave</strong> which changes the background color of the button back to its original color when the mouse leaves the button.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def button_hover_leave(event):
+    confirm["bg"] = "SystemButtonFace"
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Define the <strong>alarm</strong> function which takes a <strong>time</strong> argument as input and checks if the current time matches with the given time. If it matches, it plays the <strong>alarm sound</strong> using the <strong>playsound</strong> module.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def alarm(set_alarm):
+    while True:
+        current = datetime.datetime.now()
+        date = current.strftime("%Y-%m-%d")
+        time_atm = current.strftime("%H:%M:%S")
+        if time_atm == set_alarm:
+            print("wake up!!!")
+            
+        playsound("Happy_Home.mp3")
+        break
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Define the <strong>alarm_time</strong> function which is called when the user clicks on the "<strong>set alarm</strong>" button. It retrieves the values of the <strong>hour</strong> and <strong>minute spinboxes</strong> and shows a <strong>message box</strong> with the selected alarm time. Then it calls the <strong>alarm</strong> function with the selected alarm time.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def alarm_time():
+    h = hour.get()
+    m = minutes.get()
+    answer = messagebox.showinfo("set_alarm",f"alarm will ringing at\n{h}:{m}")
+    set_alarm = f"{h}:{m}:00"
+    alarm(set_alarm)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Check if the current module is being executed as the <strong>main</strong> program. If it is, then we create a <strong>Tk</strong> object and set the window <strong>geometry</strong> and <strong>title</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">if __name__ == "__main__":
+    window = Tk()
+    window.geometry("400x210")
+    window.title = ("Alarm")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Create a <strong>label</strong> asking the user to choose the <strong>alarm time</strong>  and place it at a specific position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    choose_time = Label(text = "choose the alarm time")
+    choose_time.place(x =20, y =20)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Create an <strong>IntVar</strong> variable called <strong>hour</strong> and a <strong>spinbox</strong> for selecting the <strong>hour</strong> value. We place the <strong>spinbox</strong> at a specific position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    hour = IntVar()
+    Spinbox(width=4, from_=0, to=23, state="readonly", textvariable=hour
+    ,wrap=True).place(x =200, y =20)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Create an <strong>IntVar</strong> variable called <strong>minutes</strong> and a <strong>spinbox</strong> for selecting the minute value. We place the <strong>spinbox</strong> at a specific position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    minutes = IntVar()
+    Spinbox(width=4, from_=0, to=59, state="readonly", textvariable=minutes, 
+        wrap=True).place(x =240, y= 20)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Create a button called "<strong>set alarm</strong>" which calls the <strong>alarm_time</strong> function when clicked. We also bind the button to the <strong>button_hover</strong> and <strong>button_hover_leave</strong> functions.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    confirm = Button(text="set alarm", command=alarm_time, width=10, height=3)
+    confirm.place(x =100, y =70)
+    confirm.bind("<Enter>", button_hover)
+    confirm.bind("<Leave>", button_hover_leave)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Create a button called "<strong>Quit</strong>" which destroys the window when clicked.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    exit = Button(text="Quit", width=10, command=window.destroy)
+    exit.place(x=20, y=170)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Create a <strong>label</strong> indicating the author of the program and place it at a specific position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    made_by = Label(text="made by SAMCODEHUB").place(x =260, y =170)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Start the <strong>main</strong> event loop of the window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    window.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, the code provides an excellent foundation for building a more sophisticated alarm clock application with additional features.</p>
+
+
+
+  <h4 class="mt-5">You can watch the video below:</h4>
+  <div class="ratio ratio-16x9 mt-3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xwCKCu_nHHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+  <div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+</div>
+
+  <!--QRCODE-GENERATOR-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<h2 class="mt-5">Generate QR Codes with Python Tkinter: Comprehensive Guide using PIL Library</h2>
+
+<p class="mt-5">In this project, we introduce you to the world of QR code generation using Python. In this comprehensive guide, we will walk you through the process of building a user-friendly GUI-based QR code generator using the <strong>qrcode</strong>, <strong>PIL (Python Imaging Library)</strong>, and <strong>tkinter</strong> libraries.</p>
+<p class="mt-4">With the provided Python code, you will learn how to leverage these libraries to create an intuitive graphical user interface. The GUI window allows you to input text, URLs, or other data, and generate corresponding QR codes with a click of a button.</p>
+<p class="mt-4">The <strong>qrcode</strong> library provides the functionality to generate QR codes based on the input data, while the <strong>PIL</strong> library enables you to handle image manipulation tasks, such as creating and saving the QR code images. <strong>Tkinter</strong>, a widely-used GUI library for Python, empowers you to design and interact with the graphical elements of the QR code generator.</p>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-4">Through this project, you will gain hands-on experience in utilizing the <strong>qrcode</strong>, <strong>PIL</strong>, and <strong>tkinter</strong> libraries to build a functional and visually appealing QR code generator. Whether you want to share information or enhance your marketing strategies, this project will equip you with the skills to generate QR codes effortlessly.</p>
+
+<p class="mt-3"> Here is a breakdown of each section of the code:</p>
+
+<p class="mt-5">This section imports the necessary libraries to create the QR code generator. <strong>qrcode</strong> is a library for generating QR codes, while <strong>PIL</strong> is a library for manipulating images. <strong>tkinter</strong> is a standard Python library for creating GUIs.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#pip install qrcode, pillow
+import qrcode, PIL
+from PIL import Image,ImageTk
+import tkinter as tk
+from tkinter import ttk,messagebox,filedialog
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This function is called when the user clicks the "<strong>Create</strong>" button or presses the <strong>Enter</strong> key in the text entry field. It generates a <strong>QR code</strong> using the text entered in the text entry field (<strong>text_entry</strong>) and displays it in the canvas (<strong>qr_canvas</strong>) using the <strong>create_image method</strong>. The <strong>QR code</strong> is first resized to a fixed size of 280x250 pixels before being displayed. If no text is entered, a warning message is displayed using the <strong>messagebox.showwarning</strong> method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def createQR(*args):
+    data = text_entry.get()
+    if data:
+        img = qrcode.make(data) #generate QRcode  
+        res_img = img.resize((280,250)) # reszie QR Code Size
+        #Convert To image
+        tkimage= ImageTk.PhotoImage(res_img)
+        qr_canvas.create_image(0,0,anchor=tk.NW, image=tkimage)
+        qr_canvas.image = tkimage
+    else:
+        messagebox.showwarning("Warning",'Enter Data in Entry First')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This function is called when the user clicks the "<strong>Save</strong>" button. It generates a <strong>QR code</strong> using the text entered in the text entry field (<strong>text_entry</strong>), resizes it to a fixed size of 280x250 pixels, and prompts the user to save it as a PNG file using the <strong>filedialog.asksaveasfilename</strong> method. If the user selects a path to save the QR code, it is saved and a success message is displayed using the <strong>messagebox.showinfo</strong> method. If no text is entered, a warning message is displayed.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def saveQR():
+    data = text_entry.get()
+    if data:
+        img = qrcode.make(data) #generate QRcode  
+        res_img = img.resize((280,250)) # reszie QR Code Size
+        
+        path = filedialog.asksaveasfilename(defaultextension=".png",)
+        if path:
+            res_img.save(path)
+            messagebox.showinfo("Sucess","QR Code is Saved ")
+    else:
+        messagebox.showwarning("Warning",'Enter Data in Entry First')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">This section creates the main window of the GUI and sets its title, size, background color, and resizeability.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root = tk.Tk()
+root.title("QR Code Generator")
+root.geometry("300x380")
+root.config(bg='ivory')
+root.resizable(0,0)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The code defines two frame widgets <strong>frame1</strong> and <strong>frame2</strong>. <strong>frame1</strong> has a raised relief style and a size of 280x250 pixels, while <strong>frame2</strong> has a <strong>sunken</strong> relief style and a size of 280x100 pixels. These frames will be used to contain various GUI widgets like <strong>canvas</strong>, <strong>entry</strong>, and <strong>buttons</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">frame1 = tk.Frame(root,bd=2,relief=tk.RAISED)
+frame1.place(x=10,y=5,width=280,height=250)
+
+frame2 = tk.Frame(root,bd=2,relief=tk.SUNKEN)
+frame2.place(x=10,y=260,width=280,height=100)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The code defines a canvas widget <strong>qr_canvas</strong> inside <strong>frame1</strong>. This widget will be used to display the generated QR code.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">qr_canvas = tk.Canvas(frame1)
+qr_canvas.pack(fill=tk.BOTH)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The code defines a text entry widget <strong>text_entry</strong> inside <strong>frame2</strong>, where the user can input the text to generate the QR code.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">text_entry = ttk.Entry(frame2,width=26,font=("Sitka Small",11),justify=tk.CENTER)
+text_entry.bind("<Return>",createQR)
+text_entry.place(x=5,y=5)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">The code also defines three button widgets <strong>btn_1</strong>, <strong>btn_2</strong>, and <strong>btn_3</strong> inside <strong>frame2</strong>. <strong>btn_1</strong> will be used to generate the QR code, <strong>btn_2</strong> will be used to save the generated QR code, and <strong>btn_3</strong> will be used to exit the application.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">btn_1 = ttk.Button(frame2,text="Create",width=10,command=createQR)
+btn_1.place(x=25,y=50)
+
+btn_2 = ttk.Button(frame2,text="Save",width=10,command=saveQR)
+btn_2.place(x=100,y=50)
+
+btn_3 = ttk.Button(frame2,text="Exit",width=10,command=root.quit)
+btn_3.place(x=175,y=50)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-2">The code uses <strong>place</strong> and <strong>pack</strong> methods to place the widgets inside the frames. <strong>frame1</strong> and <strong>frame2</strong> are placed using the place method. <strong>qr_canvas</strong> is packed inside frame1 using the pack method. <strong>text_entry</strong> and the three buttons are placed inside frame2 using the place method. The buttons are positioned at different x-coordinates to create a visually appealing layout.</p>
+
+<p class="mt-5">it tells <strong></strong>Tkinter to start running the application and it continues running until the window is closed by the user.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Overall, this code creates a simple GUI with frames, a canvas widget, an entry widget, and three buttons. The user can input text, generate a QR code, save the generated QR code, and exit the application.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dYv3sRyJUjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<!--CALCULATOR-GUI-APP-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<h2 class="mt-5">Create a Calculator GUI: Step-by-Step Guide using Python Tkinter Framework</h2>
+
+<p class="mt-5">This code is a Python program for a simple <strong>calculator</strong> that uses the <strong>tkinter</strong> module for its graphical user interface. The <strong>calculator</strong> provides basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator has a <strong>text entry box</strong> where the user can see and enter their <strong>input</strong> and a <strong>display box</strong> for showing the <strong>result</strong>.</p>
+
+<p class="mt-3">Here is a breaf explanation of the code:</p>
+
+<p class="mt-5">Imports everything from the Tkinter module.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import everything from tkinter module
+from tkinter import *
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Globally declares the <strong>expression</strong> variable as an empty string.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># globally declare the expression variable
+expression = ""
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a function to <strong>update</strong> the expression in the text entry box when a number button is pressed.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Function to update expression
+# in the text entry box
+def press(num):
+    # point out the global expression variable
+    global expression
+    # concatenation of string
+    expression = expression + str(num)
+    # update the expression by using set method
+    equation.set(expression)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Defines a function to <strong>evaluate</strong> the final expression when the <strong>equal button</strong> is pressed.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+# Function to evaluate the final expression
+def equalpress():
+    # Try and except statement is used for handling the errors like zero # division error etc.
+    try:
+        global expression
+
+        # eval function evaluate the expression
+        # and str function convert the result
+        # into string
+        total = str(eval(expression))
+
+        equation.set(total)
+
+        # initialize the expression variable
+        # by empty string
+        expression = ""
+
+    # if error is generate then handle
+    # by the except block
+    except:
+
+        equation.set(" error ")
+        expression = ""
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a function to <strong>clear</strong> the contents of the text entry box.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+# Function to clear the contents
+# of text entry box
+def clear():
+    global expression
+    expression = ""
+    equation.set("")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>driver code</strong> section initializes the GUI window with a specific configuration.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Driver code
+if __name__ == "__main__":
+    # create a GUI window
+    gui = Tk()
+
+    # set the background colour of GUI window
+    gui.configure(background="bisque")
+
+    # set the title of GUI window
+    gui.title("Calculator")
+
+    # set the configuration of GUI window
+    gui.geometry("330x250")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creates an instance of the <strong>StringVar()</strong> class to display the expression in the <strong>text entry box</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    # StringVar() is the variable class
+    # we create an instance of this class
+    equation = StringVar()
+
+    # create the text entry box for
+    # showing the expression .
+    expression_field = Entry(gui, textvariable=equation)
+
+    # grid method is used for placing
+    # the widgets at respective positions
+    # in table like structure .
+    expression_field.grid(columnspan=4, ipadx=100, ipady=10)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">Defines all of the number and operator buttons and places them in a specific <strong>grid layout</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">    # create a Buttons and place at a particular
+    # location inside the root window .
+    # when user press the button, the command or
+    # function affiliated to that button is executed .
+    button1 = Button(gui, text=' 1 ', fg='white', bg='darkviolet',
+					command=lambda: press(1), height=2, width=10)
+    button1.grid(row=2, column=0)
+
+    button2 = Button(gui, text=' 2 ', fg='white', bg='darkviolet',
+					command=lambda: press(2), height=2, width=10)
+    button2.grid(row=2, column=1)
+
+    button3 = Button(gui, text=' 3 ', fg='white', bg='darkviolet',
+					command=lambda: press(3), height=2, width=10)
+    button3.grid(row=2, column=2)
+
+    button4 = Button(gui, text=' 4 ', fg='white', bg='darkviolet',
+					command=lambda: press(4), height=2, width=10)
+    button4.grid(row=3, column=0)
+
+    button5 = Button(gui, text=' 5 ', fg='white', bg='darkviolet',
+					command=lambda: press(5), height=2, width=10)
+    button5.grid(row=3, column=1)
+
+    button6 = Button(gui, text=' 6 ', fg='white', bg='darkviolet',
+					command=lambda: press(6), height=2, width=10)
+    button6.grid(row=3, column=2)
+
+    button7 = Button(gui, text=' 7 ', fg='white', bg='darkviolet',
+					command=lambda: press(7), height=2, width=10)
+    button7.grid(row=4, column=0)
+
+    button8 = Button(gui, text=' 8 ', fg='white', bg='darkviolet',
+					command=lambda: press(8), height=2, width=10)
+    button8.grid(row=4, column=1)
+
+    button9 = Button(gui, text=' 9 ', fg='white', bg='darkviolet',
+					command=lambda: press(9), height=2, width=10)
+    button9.grid(row=4, column=2)
+
+    button0 = Button(gui, text=' 0 ', fg='white', bg='darkviolet',
+					command=lambda: press(0), height=2, width=10)
+    button0.grid(row=5, column=0)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines the remaining operator buttons and places them in the <strong>grid layout</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    plus = Button(gui, text=' + ', fg='white', bg='darkviolet',
+				command=lambda: press("+"), height=2, width=10)
+    plus.grid(row=2, column=3)
+
+    minus = Button(gui, text=' - ', fg='white', bg='darkviolet',
+				command=lambda: press("-"), height=2, width=10)
+    minus.grid(row=3, column=3)
+
+    multiply = Button(gui, text=' * ', fg='white', bg='darkviolet',
+					command=lambda: press("*"), height=2, width=10)
+    multiply.grid(row=4, column=3)
+
+    divide = Button(gui, text=' / ', fg='white', bg='darkviolet',
+					command=lambda: press("/"), height=2, width=10)
+    divide.grid(row=5, column=3)
+
+    equal = Button(gui, text=' = ', fg='white', bg='darkviolet',
+				command=equalpress, height=2, width=10)
+    equal.grid(row=5, column=2)
+
+    clear = Button(gui, text='Clear', fg='white', bg='darkviolet',
+				command=clear, height=2, width=10)
+    clear.grid(row=5, column='1')
+
+    Decimal= Button(gui, text='.', fg='white', bg='darkviolet',
+					command=lambda: press('.'), height=2, width=10)
+    Decimal.grid(row=6, column=3)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Starts the gui.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+    # start the GUI
+    gui.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, this Python program provides a basic understanding of using the <strong>tkinter</strong> module to create a simple graphical user interface and how to implement basic arithmetic operations.</p>
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/AflzDtgNSQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+<!--IMAGE-VIEWER--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<h2 class="mt-5">Build an Image Viewer App GUI: Step-by-Step Guide with Python Tkinter & PIL Library</h2>
+<p class="mt-5">This Python program is a <strong>beginner-friendly guide</strong> to creating a simple image viewer using the <strong>Tkinter GUI library</strong>. By leveraging the power of the <strong>Python Imaging Library (PIL)</strong>, you will be able to effortlessly display images within the program.</p>
+<p class="mt-4">To get started, the program utilizes a class called "<strong>ImageView</strong>" that encapsulates the necessary methods for <strong>setting up a window, incorporating interactive buttons, and efficiently displaying images</strong>. This organized structure allows for easy customization and further expansion of the image viewer's functionalities.</p>
+<p class="mt-4">Throughout this guide, you will learn how to implement key features such as <strong>loading and displaying images, navigating between images, and incorporating buttons for intuitive user interaction</strong>. With a few simple steps, you will be able to create your own image viewer application with a visually appealing and user-friendly graphical user interface.</p>
+
+<p class="mt-3">Here's the code breakdown:</p>
+
+<p class="mt-5">First, the program imports necessary libraries: <strong>ImageTk from PIL</strong>, <strong>PIL.Image</strong>, <strong>Tk</strong> and <strong>filedialog from tkinter</strong>, and <strong>os</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from PIL import ImageTk
+import PIL.Image
+from tkinter import *
+from tkinter import filedialog
+import os
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Then, it creates a class named "<strong>ImageView</strong>" that takes the root of the <strong>tkinter</strong> window as a parameter. In the constructor, the program initializes the window by setting its title, geometry, and making it non-resizable. It also sets a few instance variables for the current image index, list of image names, current path, and possible image file extensions.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">class ImageView:
+
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Image-Viewer")
+        self.root.geometry('850x530')
+        self.root.resizable(0, 0)
+        
+        self.i = 0
+        # image list
+        self.Image_list = []
+        # current path 
+        self.path = ""
+        # possible extensions of images
+        self.extension = ['JPG', 'BMP', 'PNG']
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The program then creates a canvas for displaying images and binds the right and left arrow keys to the <strong>next_image</strong> and <strong>previous_image</strong> methods, respectively.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create canvas 
+        self.canvas = Canvas(self.root, bd=5, relief=RIDGE)
+        self.root.bind('<Right>', self.next_image)
+        self.root.bind('<Left>', self.previous_image)
+        self.canvas.place(x=0, y=0, height=500, width=850)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">After that, the program creates three buttons for the user to open an image, go to the previous image, and go to the next image. When the user clicks the "<strong>Open</strong>" button, the program opens a file dialog that allows the user to choose a directory containing image files. If a directory is chosen, the program adds all image files with a supported file extension to the <strong>Image_list</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create buttons
+
+        self.previous_button = Button(self.root, text="<", width=3, font=(
+            'arial', 10, 'bold'), command=self.previous_image)
+        self.previous_button.place(x=360, y=500)
+
+        self.next_button = Button(self.root, text=">", width=3, font=(
+            'arial', 10, 'bold'), command=self.next_image)
+        self.next_button.place(x=455, y=500)
+
+        self.open_button = Button(self.root, text="Open", width=5, font=(
+            'arial', 10, 'bold'), command=self.open_file)
+        self.open_button.place(x=400, y=500)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The program also defines two methods for adding an image to the canvas and resizing the image. The <strong>resize</strong> method resizes the image to fit within the canvas's dimensions, creates a <strong>PhotoImage</strong> object from the resized image, deletes any previous image displayed on the canvas, and creates a new image item with the <strong>PhotoImage</strong> object.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># open function 
+    def open_file(self):
+        self.path = filedialog.askdirectory()
+        if self.path:
+            self.Image_list = []
+            self.add_image()
+
+    def add_image(self):
+        for image in os.listdir(self.path):
+            ext = image.split('.')[::-1][0].upper()
+            if ext in self.extension:
+                self.Image_list.append(image)
+
+        self.resize(self.Image_list[0])
+
+        # resize function
+    def resize(self, image):
+        if self.path:
+            os.chdir(self.path)
+            image_p = self.path + '\\' + str(image)
+            img = PIL.Image.open(image)
+            # img.show()
+            width, height = img.size
+            if (int(width) > 850 and int(height) < 500):
+                img = img.resize((850, height))
+            elif (int(height) > 500 and int(width) < 850):
+                img = img.resize((width, 500))
+            elif (int(width) > 850 and int(height) > 500):
+                img = img.resize((840, 480))
+
+            storeobj = ImageTk.PhotoImage(img)
+            self.canvas.delete(self.canvas.find_withtag("bacl"))
+            w = self.canvas.winfo_width()
+            h = self.canvas.winfo_height()
+            self.canvas.image = storeobj  # <--- keep reference of your image
+            self.canvas.create_image(
+                w / 2, h / 2, image=storeobj, anchor=CENTER)
+
+            # print(self.canvas.find_withtag("bacl"))
+            self.root.title("Image Viewer ({})".format(image_p))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Finally, the program defines two methods for navigating between images. When the "<strong>next</strong>" or "<strong>previous</strong>" button is clicked, the program increments or decrements the image index, retrieves the next or previous image from the <strong>Image_list</strong>, and resizes and displays the image on the canvas.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def next_image(self, *args):
+        self.i += 1
+        try:
+            self.image = self.Image_list[self.i]
+            self.resize(self.image)
+        except:
+            pass
+
+    def previous_image(self, *args):
+        self.i -= 1
+        try:
+            self.image = self.Image_list[self.i]
+            self.resize(self.image)
+        except:
+            self.i = 1
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">In the main block, the program creates a Tkinter root window, creates an instance of the <strong>ImageView</strong> class, and starts the main event loop.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">if __name__ == '__main__':
+    root = Tk()
+    img = ImageView(root)
+    root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Throughout this beginner-friendly guide, we learned how to create a simple image viewer application using Python's Tkinter GUI library and the PIL (Python Imaging Library). By leveraging the capabilities of these libraries, we were able to build a functional image viewer with features such as loading and displaying images, navigating between images, and incorporating interactive buttons for user-friendly interaction. </p>
+
+<p class="mt-4">This project provided valuable insights into GUI development using Tkinter, image manipulation using PIL, and the overall process of building an intuitive image viewer application. With this knowledge, you can further enhance and customize the image viewer according to your specific requirements and explore more advanced GUI development concepts.</p>
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/38r0-QeiNX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------- Comments...%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------- -->
+
+  
+  
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+      <li class="page-item active   pe-2">
+        <a class="page-link" href="tkinter3.html" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+     
+      <li class="page-item  pe-2"><a class="page-link" href="tkinter3.html">3</a></li>
+      <li class="page-item active pe-2"><a class="page-link" href="tkinter4.html">4</a></li>
+      <li class="page-item  pe-2"><a class="page-link" href="tkinter5.html">5</a></li>
+      
+      <li class="page-item active pe-2">
+        <a class="page-link" href="tkinter5.html">Next</a>
+      </li>
+    </ul>
+  </nav>    
+  
+  
+  
+  <div class="alert alert-info mt-5" role="alert">
+    <h4 class="alert-heading">Site Update in Progress...</h4>
+    <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+  </div>
+    <h3 class="mt-5">Comments...</h3>
+    <div class="comment mt-3 px-3 py-3">
+      
+      <form id="contactForm"  onsubmit="return sendMail();">
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Name</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="messageTextarea" class="form-label">Your Comments</label>
+          <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class=" mt-4" id="messages">
+                      </div>
+    </div>
+  
+    <!----------------- Comments ENDS HERE...-------------- -->
+  
+  
+  
+            
+          </div>
+          <div id="ads" class="col-3 mt-5 d-none d-sm-block  border-start">
+            <div class=" text-center">
+              <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 mb-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+            <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+  
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+     
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+
+    
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '6e0edb924a4d1f796c691953555afee5',
+                  'format' : 'iframe',
+                  'height' : 300,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+  
+            <div class="mt-5 text-center">
+              <script type="text/javascript">
+                atOptions = {
+                  'key' : '60d187c01f46598efa9231f38aa5470f',
+                  'format' : 'iframe',
+                  'height' : 600,
+                  'width' : 160,
+                  'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+              </script>
+            </div>
+  
+  
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+      <!-- Footer -->
+  <footer class="futer text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- tiktok -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- pinterest -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+          ><i class="fab fa-pinterest"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- tumblr -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+          ><i class="fab fa-tumblr"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+      <div class="text-center  text-success" id="newsletter-success"></div>
+      <div class="alert" style="display: none;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+        Subscription successful!
+      </div>
+  <!-- Section: Form -->
+  <section class="">
+    <form id="contactForm2" >
+      
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <!--Grid column-->
+        
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="emailid" class="form-control" />
+            <label class="form-label" for="form5Example21">Email address</label>
+          </div>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-light mb-4">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <!-- Section: Form -->
+  <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+      © 2023 Copyright:
+      <a class="text-white" href="../main.html">samcodehub.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="tkinter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+  </body>
+  </html>
