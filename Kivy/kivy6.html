@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Enhance your Python GUI design skills with this comprehensive guide to using StackLayout to control widget orientations, mastering the Spinner widget for enhanced user input options, and creating dynamic and interactive interfaces with various types of widget animations in the Kivy Framework. Learn valuable techniques and examples to take your GUI design to the next level.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Kivy.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Kivy GUI: StackLayout, Spinner  & Widget Animations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Kivy GUI: StackLayout, Spinner  & Widget Animations">
+<meta property="og:description" content="Enhance your Python GUI design skills with this comprehensive guide to using StackLayout to control widget orientations, mastering the Spinner widget for enhanced user input options, and creating dynamic and interactive interfaces with various types of widget animations in the Kivy Framework. Learn valuable techniques and examples to take your GUI design to the next level.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Kivy/kivy6.html">
+<meta name="twitter:title" content="Python Kivy GUI: StackLayout, Spinner  & Widget Animations">
+<meta name="twitter:description" content="Enhance your Python GUI design skills with this comprehensive guide to using StackLayout to control widget orientations, mastering the Spinner widget for enhanced user input options, and creating dynamic and interactive interfaces with various types of widget animations in the Kivy Framework. Learn valuable techniques and examples to take your GUI design to the next level.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Kivy/kivy6.html"> 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+<div class="container-fluid text-dark bg-light mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="mt-3 text-center d-none d-sm-block">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      
+
+
+      <div class="mt-3 text-center d-block d-sm-none">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      <div class="col-9  text-break">
+
+<!--Stack-Layout-position-###############################################################################-->
+<h1 class="mt-3">StackLayout in Kivy App: Learn All Possible Orientations and Examples</h1>
+<p class="mt-5">This project is a great example of a <strong>Kivy</strong> application that creates a visually appealing stack of buttons that can be arranged either vertically or horizontally, depending on the orientation that you set in the <strong>StackLayout</strong>. The <strong>StackLayout</strong> is a powerful tool that can be used to arrange children widgets in a way that maximizes space and usability. </p>
+<p class="mt-3">This is achieved by automatically fitting as many widgets as possible within the available space, without compromising on the layout's overall aesthetic appeal. One of the most impressive things about the <strong>StackLayout</strong> is that it can accommodate widgets of varying sizes, ensuring that the individual components of the layout look cohesive and well-organized. Whether you're building a complex user interface or a simple application, this code will help you create a visually stunning and highly functional layout.</p>
+<p class="mt-3">Here's a breakdown of each section of the code:</p>
+
+<p class="mt-5">Importing necessary modules, The default configuration of the app window is changed to 500x500.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import kivy module
+import kivy
+
+# below this kivy version you cannot use the app
+kivy.require("1.9.1")
+
+# base class of your app
+from kivy.app import App
+
+# creates the button in kivy ,if not imported shows the error
+from kivy.uix.button import Button
+
+# The StackLayout arranges children vertically or horizontally, as many as the layout can fit.
+from kivy.uix.stacklayout import StackLayout
+
+# to change the kivy default setting we use config
+from kivy.config import Config
+Config.set('graphics','width','500')
+Config.set('graphics','height','500')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>StackLayoutApp</strong> class is defined, which inherits from the <strong>App</strong> class. The <strong>build()</strong> method is defined, which returns the <strong>StackLayout</strong> widget.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># class in which we are creating StackLayout
+class StackLayoutApp(App):
+	
+	def build(self):
+
+		# Different orientation
+		# ['lr-tb', 'tb-lr', 'rl-tb', 'tb-rl','lr-bt', 'bt-lr', 'rl-bt', 'bt-rl']	
+		SL = StackLayout(orientation ='lr-tb')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Ten buttons are created, each with its own unique text and color properties.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Creating Multiple Buttons
+		btn1 = Button(text ="B1",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn2 = Button(text ="B2",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn3 = Button(text ="B3",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn4 = Button(text ="B4",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn5 = Button(text ="B5",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn6 = Button(text ="B6",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn7 = Button(text ="B7",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn8 = Button(text ="B8",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn9 = Button(text ="B9",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+		btn10 = Button(text ="B10",
+					font_size = 20,
+					size_hint =(.2, .1),
+                    background_color =(0, 0.5, 0.5, 1))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Each button is added to the <strong>StackLayout</strong> widget using the <strong>add_widget()</strong> method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># adding widgets
+		SL.add_widget(btn1)
+		SL.add_widget(btn2)
+		SL.add_widget(btn3)
+		SL.add_widget(btn4)
+		SL.add_widget(btn5)
+		SL.add_widget(btn6)
+		SL.add_widget(btn7)
+		SL.add_widget(btn8)
+		SL.add_widget(btn9)
+		SL.add_widget(btn10)
+
+
+		# returning widgets
+		return SL
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>StackLayoutApp</strong> instance is created and its <strong>run()</strong> method is called to start the app.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Run the Kivy app
+if __name__ == '__main__':
+	StackLayoutApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">When you run the app, the app will display a window with ten buttons arranged in a stack in the specified orientation.</p>
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/PiXFguytcME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5">
+                            <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+                          </div>
+                          
+<!--SPINNER-MENU-WIDGET-################################################################################-->
+<h2 class="mt-5">Complete Guide to Using the Spinner Widget in Python Kivy Framework: Python GUI Design Tutorial</h2>
+<p class="mt-5">This code uses the <strong>Kivy</strong> library to create a GUI (Graphical User Interface) app that displays a <strong>spinner</strong> object with a list of programming languages and a label that shows the selected language from the <strong>spinner</strong>.</p>
+<p class="mt-1"><strong>Spinner</strong> is a widget that provides a quick way to select one value from a set. In the default state, a spinner shows its currently selected value. Touching the spinner displays a dropdown menu with all the other available values from which the user can select a new one.</p>
+
+<p class="mt-3">Here is a breakdown of the code:</p>
+
+<p class="mt-4">Importing the necessary modules. Configures the graphics settings of the app to set the width and height of the window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import kivy module
+import kivy
+
+# base class of your app
+from kivy.app import App
+
+# below this kivy version you cannot use the app
+kivy.require('1.9.0')
+
+# to change the kivy default setting we use config
+from kivy.config import Config
+Config.set('graphics','width','500')
+Config.set('graphics','height','500')
+
+# the label widget is for rendering text
+from kivy.uix.label import Label
+
+# spinner is a widget that provides a quick way to select one value from a set like a dropdown list
+from kivy.uix.spinner import Spinner
+
+# floatlayout allows us to place the elements relatively based on the current window size and height
+from kivy.uix.floatlayout import FloatLayout
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a class called <strong>SpinnerExample</strong> that derives from the <strong>App</strong> class in Kivy.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># make an app by deriving from the app class
+class SpinnerExample(App):
+    # defIne build
+    def build(self):
+        
+        # creating floatlayout
+        layout = FloatLayout()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">
+  <ul>
+    <li>Creates a <strong>FloatLayout</strong> object called layout.</li>
+    <li>Creates a <strong>Spinner</strong> object called <strong>SpinnerObject</strong> and configures its properties (text, values, background_color) and adds it to the layout.</li>
+    <li>Sets the <strong>size_hint</strong> and <strong>pos_hint</strong> properties of the <strong>SpinnerObject</strong>.</li>
+    <li>Binds the text property of the <strong>SpinnerObject</strong> to the <strong>on_spinner_select</strong> method.</li>
+   
+  </ul>
+</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># creating the spinner , configure spinner object and add to layout
+        self.SpinnerObject = Spinner(text = "Languages List",
+                                     values = ("Python","Java","C++", "C","C#","PHP"), background_color = (0.84, 0.3, 0.6, 1))
+        
+        self.SpinnerObject.size_hint = (0.3, 0.1)
+        
+        self.SpinnerObject.pos_hint = {'x': .10, 'y': .75}
+        
+        layout.add_widget(self.SpinnerObject)
+        
+        self.SpinnerObject.bind(text = self.on_spinner_select)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">
+  <ul>
+    <li>Creates a <strong>Label</strong> object called <strong>SpinnerSelection</strong> and sets its initial text to display the selected item from the <strong>SpinnerObject</strong>.</li>
+    <li>Adds the <strong>SpinnerSelection</strong> label to the layout.</li>
+    <li>Sets the <strong>pos_hint</strong> property of the <strong>SpinnerSelection</strong>.</li>
+  </ul>
+</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># it change the label info as well add a label displaying the selection from the spinner
+        self.SpinnerSelection = Label(text = "Selected item is: %s"%self.SpinnerObject.text)
+        
+        layout.add_widget(self.SpinnerSelection)
+        self.SpinnerSelection.pos_hint = {'x': .175, 'y': .3}
+        
+        return layout
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">
+  <ul>
+    <li>Defines a method called <strong>on_spinner_select</strong> that gets called whenever a new item is selected in the <strong>spinner</strong>.</li>
+    <li>Updates the text property of the <strong>SpinnerSelection</strong> label to display the newly selected item from the <strong>SpinnerObject</strong>.</li>
+    <li>Prints the selected item to the console.</li>
+  </ul>
+</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># call back for the selection in spinner object
+    def on_spinner_select(self, spinner, text):
+        self.SpinnerSelection.text = "Your language is: %s"%self.SpinnerObject.text
+        print('The spinner', spinner, 'have text', text)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Creates an instance of the <strong>SpinnerExample</strong> class and runs the app by calling its <strong>run()</strong> method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># run the app
+if __name__=='__main__':
+    SpinnerExample().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">In conclusion, the <strong>Spinner widget</strong> is an incredibly powerful tool that can be used to enhance the user experience of your Python <strong>Kivy Framework</strong> applications. By providing a user-friendly interface that allows users to select values from a predefined list, the <strong>Spinner widget</strong> can significantly improve the usability and functionality of your GUI designs. </p>
+<p class="mt-3">With the information presented in this article, you now have a comprehensive understanding of how to create and customize <strong>Spinner widgets</strong> in Python <strong>Kivy</strong>. By experimenting with the various properties and methods that the <strong>Spinner widget</strong> provides, you can create dynamic and interactive GUI designs that will take your Python <strong>Kivy Framework</strong> applications to the next level.</p>
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/-m2jbFK-CQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5 text-center">
+                            <script type="text/javascript">
+                              atOptions = {
+                                'key' : '2be6d81d479aab6f66c74305d58a3261',
+                                'format' : 'iframe',
+                                'height' : 250,
+                                'width' : 300,
+                                'params' : {}
+                              };
+                              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                            </script>
+                          </div>
+                          
+<!--ANIMATION-WIDGET-KIVY-##############################################################################-->
+<h2 class="mt-5">Complete Guide to Animating Widgets in Kivy: Learn Different Types of Animations - Python GUI Design Tutorial</h2>
+<p class="mt-5">The <strong>kivy Animation module</strong> is an essential component of the <strong>Kivy library</strong> that provides a powerful set of tools for creating and managing <strong>animations</strong> in Kivy applications. This module allows developers to animate various properties of Kivy widgets, such as their position, size, opacity, and color, among others.</p>
+  <p class="mt-3">The <strong>Animation module</strong> works by defining a set of properties to be animated and a set of values for each property to transition between. The module then automatically calculates the intermediate values and updates the widget's properties accordingly, creating a smooth and fluid <strong>animation effect</strong>.</p>
+  <p class="mt-3">The <strong>Animation module</strong> also offers advanced features, such as interpolation functions for customizing the animation curve, the ability to specify the duration and delay of the animation, and the ability to chain multiple animations together.</p>
+<p class="mt-3"><strong>Animation</strong> and Animation Transition are used to animate Widget properties. You must specify at least a property <strong>name</strong> and <strong>target</strong> value. To use an <strong>Animation</strong>, follow these steps:<br>
+  1-Setup an Animation object<br>
+  2-Use the Animation object on a Widget</p>
+  <p class="mt-3">Here is a breakdown of the code:</p>
+
+<p class="mt-5">Importing the necessary modules and set the window size and color.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import kivy module
+import kivy
+
+# below this kivy version you cannot use the app
+kivy.require('1.0.7')
+
+# animation is a way to make figures,images and widgets appear as moving in kivy
+from kivy.animation import Animation
+
+# base class of your app
+from kivy.app import App
+
+# creates the button in kivy
+from kivy.uix.button import Button
+
+# to change the kivy default setting we use config
+from kivy.config import Config
+Config.set('graphics','width','500')
+Config.set('graphics','height','500')
+
+# set the window background color
+from kivy.core.window import Window
+Window.clearcolor = (0.2, 0, .1, 1)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">
+  <ul>
+    <li>The <strong>TestApp</strong> class is defined and derived from the <strong>App</strong> class.</li>
+    <li>The "<strong>animate</strong>" method is defined to handle button animations.</li>
+  </ul>
+</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># make an app by deriving from the app class
+class TestApp(App):
+    
+    def animate(self, instance):
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">
+  <ul>
+    <li>An <strong>Animation</strong> object is created with the "<strong>Animation()</strong>" function and the "<strong>pos</strong>" and "<strong>t</strong>" (timing) arguments.</li>
+    <li>Another <strong>Animation</strong> object is created with the "<strong>Animation()</strong>" function and the "<strong>pos</strong>" and "<strong>t</strong>" arguments.</li>
+    <li>The "<strong>&=</strong>" operator is used to add the "size" and "size" arguments to the previous animation, making them happen in parallel.</li>
+    <li>Another Animation object is created with the "<strong>Animation()</strong>" function and the "<strong>size</strong>" arguments.</li>
+  </ul>
+</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create an animation object ,this object could be stored and reused each call or reused across diffrent widgets.
+        # +- is a sequential step, while &= is in parallel
+        animation = Animation(pos = (100, 100), t = 'out_bounce')
+        animation += Animation(pos = (200, 100), t = 'out_bounce')
+        animation &= Animation(size = (300, 300))
+        animation += Animation(size = (100, 50))
+        
+        # apply the animation on the button, passed in the "instance" argument
+        # notice that default 'click' animation (changing the button color while the mouse is down) is unchanged
+        animation.start(instance)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">
+  <ul>
+    <li>The "<strong>build</strong>" method is defined to create the button and set the "<strong>animate</strong>" method as the <strong>on_press</strong> event handler.</li>
+    <li>The button is created with the "<strong>Button()</strong>" function, with arguments for its <strong></strong>size_hint, <strong>text</strong>, <strong>background_color</strong>, and <strong>on_press</strong> event handler.</li>
+    <li>The button is returned by the "<strong>build</strong>" method.</li>
+  </ul>
+</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def build(self):
+        # create a button, and attach animate() method as on_press handler
+        button = Button(size_hint = (None, None), text = 'plop', background_color = (0, 1, .5), on_press=self.animate)
+        return button
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The "<strong>TestApp</strong>" object is created and its "<strong>run()</strong>" method is called to start the app.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># run the app
+if __name__ == '__main__':
+    TestApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, the <strong>Animation module</strong> is a powerful and versatile tool for creating dynamic and engaging animations in <strong>Kivy applications</strong>Kivy applications, and is a key component of the <strong>Kivy</strong> library's ability to provide rich and interactive user interfaces.</p>
+
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/mQbpp_b-pHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5">
+                            <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+                          </div>
+
+
+
+
+
+
+
+<nav aria-label="Page navigation example ">
+    <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+      <li class="page-item active  pe-2">
+        <a class="page-link" href="kivy5.html" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+     
+      
+      <li class="page-item  pe-2"><a class="page-link" href="kivy5.html">5</a></li>
+      <li class="page-item active pe-2"><a class="page-link" href="kivy6.html">6</a></li>
+      <li class="page-item pe-2"><a class="page-link" href="kivy7.html">7</a></li>
+      
+      <li class="page-item active pe-2">
+        <a class="page-link" href="kivy7.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!----------------- Comments...-------------- -->
+
+  
+  <div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+    <h4 class="alert-heading">Site Update in Progress...</h4>
+    <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+  </div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+  
+  <!----------------- Comments ENDS HERE...-------------- -->
+  
+  
+  
+          
+        </div>
+        <div id="ads" class="col-3 mt-5 d-none d-sm-block text-break border-start">
+          <div class=" text-center">
+            <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 mb-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+          <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- Footer -->
+  <footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+  
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+  
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+  
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+  
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+  <!-- Section: Form -->
+  <section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+  </section>
+  <!-- Section: Form -->
+  <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+  
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="Kivy.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script type="text/javascript">
+    amzn_assoc_ad_type = "link_enhancement_widget";
+    amzn_assoc_tracking_id = "samcodehub-20";
+    amzn_assoc_linkid = "27dbf4b90e0f6caafdcabb459896571a";
+    amzn_assoc_placement = "";
+    amzn_assoc_marketplace = "amazon";
+    amzn_assoc_region = "US";
+</script>
+
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+  </body>
+  </html>

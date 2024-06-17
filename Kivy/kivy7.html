@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn advanced GUI design techniques in Python using the Kivy framework. This tutorial covers setting multiple images as the background using various positioning techniques, creating a draggable scroll bar for enhanced user interaction, and implementing a custom GLSL shader to grayscale images. Follow the step-by-step guide and elevate your Kivy app design skills.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Kivy.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Kivy GUI: User Interface Design & Custom GLSL Shader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Kivy GUI: User Interface Design & Custom GLSL Shader">
+<meta property="og:description" content="Learn advanced GUI design techniques in Python using the Kivy framework. This tutorial covers setting multiple images as the background using various positioning techniques, creating a draggable scroll bar for enhanced user interaction, and implementing a custom GLSL shader to grayscale images. Follow the step-by-step guide and elevate your Kivy app design skills.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Kivy/kivy7.html">
+<meta name="twitter:title" content="Python Kivy GUI: User Interface Design & Custom GLSL Shader">
+<meta name="twitter:description" content="Learn advanced GUI design techniques in Python using the Kivy framework. This tutorial covers setting multiple images as the background using various positioning techniques, creating a draggable scroll bar for enhanced user interaction, and implementing a custom GLSL shader to grayscale images. Follow the step-by-step guide and elevate your Kivy app design skills.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Kivy/kivy7.html"> 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+<div class="container-fluid text-dark bg-light mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="mt-3 text-center d-none d-sm-block">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      
+
+
+      <div class="mt-3 text-center d-block d-sm-none">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      <div class="col-9  text-break">
+
+
+<!--POSITION-SEVERAL-IMAGES-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+<h1 class="mt-3">Python Kivy GUI App: Multi-Image Backgrounds & Positioning Techniques</h1>
+
+<p class="mt-5">This code is an example of how to create a simple user interface using the <strong>Kivy</strong> framework in Python. It defines a main application that displays three images using the <strong>AsyncImage</strong> widget and a custom layout using <strong>CustomLayout</strong>. The <strong>root</strong> widget is defined using <strong>BoxLayout</strong> and is created in the <strong>RootWidget</strong> class.</p>
+<p class="mt-3">The <strong>AsyncImage widget</strong> is a specialized image widget in the <strong>Kivy library</strong> that is designed to efficiently load and display images from external sources, such as the internet. Unlike the standard <strong>Image widget</strong>, which loads images synchronously and can block the UI while the image is being loaded, the <strong>AsyncImage widget</strong> loads images asynchronously in the background, allowing the UI to remain responsive during the loading process.</p>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+  <p class="mt-5">The <strong>AsyncImage widget</strong> achieves this by using a separate thread to load the image data, while the UI thread continues to handle user input and update the screen. Once the image data has been loaded, the <strong>AsyncImage widget</strong> automatically updates the image texture and displays the image on the screen.</p>
+  <p class="mt-3">The <strong>AsyncImage widget</strong> also provides a number of additional features, such as the ability to specify a placeholder image to be displayed while the image is being loaded, and the ability to automatically retry loading the image if the initial attempt fails.</p>
+<p class="mt-3">Here is a breakdown of the code:</p>
+
+<p class="mt-5">Imports the necessary Kivy modules that are used throughout the code and set the window size and color.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># base class of your app
+from kivy.app import App
+
+# floatlayout allows us to place the elements relatively based on the current window size
+from kivy.uix.floatlayout import FloatLayout
+
+# box layout arranges children in a vertical or horizontal box
+from kivy.uix.boxlayout import BoxLayout
+
+# the kivy language is a language dedicated to describing user interface and interactions
+from kivy.lang import Builder
+
+# to change the kivy default setting we use config
+from kivy.config import Config
+Config.set('graphics','width','500')
+Config.set('graphics','height','500')
+
+# set the window background color
+from kivy.core.window import Window
+Window.clearcolor = (.3, .2, 0.7, 1)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Defines the user interface using the <strong>Kivy</strong> language. It creates three <strong>AsyncImage</strong> widgets that display images. <strong>AsyncImage</strong> is a Kivy widget that asynchronously loads and displays an image. The images are loaded from the image folder and positioned using <strong>pos_hint</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">Builder.load_string('''
+<RootWidget>
+    CustomLayout:
+        AsyncImage:
+            source: 'image/pic 3.png'
+            size_hint: 1, 1
+            pos_hint: {'center_x':.6, 'center_y': .8}
+    AsyncImage:
+        source: 'image/pic 2.png'
+        size_hint: 1, 1
+    CustomLayout
+        AsyncImage:
+            source: 'image/pic 1.png'
+            size_hint: 1, 1
+            pos_hint: {'center_x':.4, 'center_y': 0.2}
+''')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a class <strong>RootWidget</strong> that inherits from <strong>BoxLayout</strong>. This class is used to create the <strong>root</strong> widget that contains the other widgets defined in section 2.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">class RootWidget(BoxLayout):
+    pass
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a class <strong>CustomLayout</strong> that inherits from <strong>FloatLayout</strong>. This class is used to create a custom layout that is used in the Kivy language definition in section 2.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">class CustomLayout(FloatLayout):
+    pass
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines the <strong>MainApp</strong> class that inherits from <strong>App</strong>. This class is the main application and is responsible for building and running the app. The <strong></strong>build method returns the <strong>RootWidget</strong> instance created in section 3.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">class MainApp(App):
+
+    def build(self):
+        return RootWidget()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">It checks if the script is being run as the main program and creates an instance of <strong>MainApp</strong> to run the application.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">if __name__ == '__main__':
+    MainApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Overall, the <strong>AsyncImage widget</strong> is a powerful tool for efficiently loading and displaying images in <strong>Kivy applications</strong>, particularly when working with images from external sources.</p>
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/CP_6bLmpfOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5">
+                            <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+                          </div>
+<!--DRAGGABLE-SCROLL-BAR-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+<h2 class="mt-5">How to Create a Draggable Scroll Bar in Kivy using Python: Step-by-Step Guide</h2>
+<p class="mt-5">The <strong>ScrollView widget</strong> is a user interface (UI) component in the <strong>Kivy library</strong> that allows for scrolling of content that is too large to fit within the visible area of a window or screen. The <strong>ScrollView widget</strong> can be used to display large amounts of text, images, or other widgets within a limited space, while allowing the user to scroll through the content to see more.</p>
+<p class="mt-3">When using the <strong>ScrollView widget</strong>, the content to be displayed is typically placed inside a layout widget, such as a <strong>GridLayout</strong> or <strong>BoxLayout</strong>, which is then placed inside the <strong>ScrollView widget</strong>. The <strong>ScrollView widget</strong> provides a <strong>scrollable view</strong> of the content, which can be controlled using either touch gestures or the mouse scroll wheel.</p>
+<p class="mt-3">The <strong>ScrollView widget</strong> also provides a number of additional features, such as the ability to scroll to a specific position programmatically, the ability to control the scrolling speed and direction, and the ability to enable or disable scrolling in either the horizontal or vertical directions.</p>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">This code uses the <strong>Kivy</strong> framework to create a GUI application with a custom <strong>draggable scrollbar</strong>. The application contains a <strong>popup</strong> window that has a <strong>stack layout</strong> with three children widgets: a <strong>close</strong> button, a <strong>scroll</strong> view with a custom <strong>scrollbar</strong>, and the <strong>draggable scrollbar</strong>. </p>
+<p class="mt-3">The program creates a <strong>grid layout</strong> with <strong>99</strong> buttons and adds it to the scroll view. Whenever the custom <strong>scrollbar</strong> is dragged, the previously added scroll view is scrolled by the same amount as the slider. The program defines two functions, <strong>scroll_change</strong> and <strong>slider_change</strong>, to handle the scrolling and the dragging of the custom scrollbar. Finally, the program runs the app by creating an instance of the <strong>ScrollApp</strong> class and calling the run method.</p>
+<p class="mt-3">Here is a breakdown of the code:</p>
+<p class="mt-5">Imports the required Kivy modules and sets the required version of Kivy. It also sets the default configuration of the graphics, such as the size of the window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import kivy module
+import kivy
+
+#below this kivy version you cannot use the app
+kivy.require('1.5.1')
+
+# to change the kivy default setting we use config
+from kivy.config import Config
+Config.set('graphics','width','500')
+Config.set('graphics','height','500')
+
+# base class of your app
+from kivy.app import App
+
+# creates the button in kivy
+from kivy.uix.button import Button
+
+# the stacklayout arranges children vertically and horizontally , as many as the layout can fit.
+from kivy.uix.stacklayout import StackLayout
+
+# the grid layout arranges children in a matrix, it takes the available space and divides it into columns and rows
+from kivy.uix.gridlayout import GridLayout
+
+# the textinput widget provides a box for editable plain text
+from kivy.uix.textinput import TextInput
+
+# popup widget is used to create popups. by defualt the popup will cover whole parent window. when you are creating popup you must at least set popup title and popup content
+from kivy.uix.popup import Popup
+
+# the scrollview manages the position of its children similrly to relaytivelayout but does not use the size_hint
+from kivy.uix.scrollview import ScrollView
+
+# importing slider widget
+from kivy.uix.slider import Slider
+
+# partial function allow one to derive a function with x parameters to a function with fewer parameters and fixed values set for the more limited function
+from functools import partial
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">Defines the main class of the application <strong>ScrollApp</strong>, which inherits from the <strong>App</strong> class of Kivy. It defines the <strong>build</strong> method, which will be called when the app starts.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">class ScrollApp(App):
+    
+    def build(self):
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creates a <strong>popup</strong> widget with a title '<strong>Draggable Scrollbar</strong>' and sets its size hint and <strong>auto-dismiss</strong> property. It also creates a <strong></strong>StackLayout widget named <strong>layout1</strong> that will be the child widget for the popup. It creates a button <strong>closebutton</strong> and binds its <strong>on_press</strong> event to the dismiss method of the popup.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+        popup = Popup(title='Draggable Scrollbar', size_hint=(0.8,1), auto_dismiss=False)
+
+        #this layout is the child widget for the main popup
+        layout1 = StackLayout(orientation='lr-bt')
+        #this button is a child of layout1
+        closebutton = Button(text='close', size_hint=(0.9,0.05))
+        closebutton.bind(on_press=popup.dismiss)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creates a <strong>ScrollView</strong> widget named <strong>scrlv</strong>, which will be a child of <strong>layout1</strong>. It also creates a <strong>Slider</strong> widget named s that will be the <strong>draggable scrollbar</strong>. It binds the <strong>scroll_y</strong> event of <strong>scrlv</strong> to the <strong>slider_change</strong> method, and the value event of s to the <strong>scroll_change</strong> method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#another child of layout1 and this is the scrollview which will have a custom draggable scrollbar
+        scrlv = ScrollView(size_hint=(0.9,0.95))
+
+        #the last child of layout1 and this will act as the draggable scrollbar
+        s = Slider(min=0, max=1, value=25, orientation='vertical', step=0.01, size_hint=(0.1, 0.95))
+
+        scrlv.bind(scroll_y=partial(self.slider_change, s))
+
+        #what this does is, whenever the slider is dragged, it scrolls the previously added scrollview by the same amount the slider is dragged
+        s.bind(value=partial(self.scroll_change, scrlv))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creates a <strong>GridLayout</strong> widget named <strong>layout2</strong> with three columns, which will be a child widget of <strong>scrlv</strong>. It also binds its <strong>minimum_height</strong> to its own height to make it scrollable.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">layout2 = GridLayout(cols=3, size_hint_y=None)
+        layout2.bind(minimum_height=layout2.setter('height'))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">Creates a <strong>Button</strong> widget for each number from <strong>0</strong> to <strong>98</strong> and adds them to <strong>layout2</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">for i in range(0, 99):
+            btn = Button(text=str(i), size_hint_y=None, height=120, valign='center', font_size=20, background_color = (0,.8,.8,.8))
+            btn.text_size = (btn.size)
+            layout2.add_widget(btn)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Adds layout2 to scrlv.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+        scrlv.add_widget(layout2)
+        layout1.add_widget(closebutton)
+        layout1.add_widget(scrlv)
+        layout1.add_widget(s)
+        popup.content = layout1
+        popup.open()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines the <strong>scroll_change</strong> method, which will be called when the value event of s is triggered. It sets the <strong>scroll_y</strong> property of <strong>scrlv</strong> to the value of the slider.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def scroll_change(self, scrlv, instance, value):
+        scrlv.scroll_y = value
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines the <strong>slider_change</strong> method, which will be called when the <strong>scroll_y</strong> event of <strong>scrlv</strong> is triggered. It sets the value of s to the value of the scroll.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def slider_change(self, s, instance, value):
+        if value >= 0:
+        #this to avoid 'maximum recursion depth exceeded' error
+            s.value=value
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Checks if the module is being run as the main program and creates an instance of <strong>ScrollApp</strong> and runs it.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># run the app
+if __name__ == '__main__':
+    ScrollApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">The <strong>ScrollView</strong> manages the position of its children similarly to a <strong>RelativeLayout</strong> but does not use the <strong>size_hint</strong> . You must carefully specify the size of your content to get the desired scroll/pan effect.</p>
+<p class="mt-3">Overall, the <strong>ScrollView widget</strong> is a powerful tool for creating user interfaces that can display large amounts of content in a limited space, while still providing a smooth and intuitive scrolling experience for the user.</p>
+
+
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/59jDgO5-4fM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5 text-center">
+                            <script type="text/javascript">
+                              atOptions = {
+                                'key' : '2be6d81d479aab6f66c74305d58a3261',
+                                'format' : 'iframe',
+                                'height' : 250,
+                                'width' : 300,
+                                'params' : {}
+                              };
+                              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                            </script>
+                          </div>
+<!--GLSL-SHADERS-GRAYSCALE-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+<h2 class="mt-5">How to Use a Custom GLSL Shader in Kivy App to Grayscale Images: A Step-by-Step Guide</h2>
+<p class="mt-5">This code is an example of how to create a custom <strong>Kivy</strong> widget with a <strong>shader</strong>, which can be used to create unique visual effects on graphics.</p>
+<p class="mt-4">These <strong>shading</strong> languages are used to program <strong>shaders</strong> (i.e. more or less small programs) that are executed on a <strong>GPU</strong> (graphics processing unit), i.e. the processor of the graphics system of a computer – as opposed to the <strong>CPU</strong> (central processing unit) of a computer.
+  </p>
+<p class="mt-3"><strong>Shaders</strong> use <strong>GLSL</strong> (OpenGL Shading Language), a special <strong>OpenGL</strong> Shading Language with syntax similar to <strong>C</strong>. <strong>GLSL</strong> is executed directly by the graphics pipeline. There are several kinds of <strong>shaders</strong>, but two are commonly used to create graphics on the web: <strong>Vertex</strong> Shaders and <strong>Fragment</strong> (Pixel) Shaders.</p>
+
+  <p class="mt-4"><strong>A Vertex Shader</strong> is a program that runs on the graphics processing unit (GPU) and transforms the vertices of a 3D object from their original position in 3D space into the final position on the screen, by performing operations like scaling, rotation, and translation.</p>
+  <p class=mt-3>A <strong>Fragment (Pixel) Shader</strong> is another program that runs on the GPU and determines the final color of each pixel in the rendered image. Fragment shaders can apply a variety of operations to the color of each pixel, such as lighting and shadows, reflections, and other effects.</p>
+  <div class="mt-5 text-center">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '2be6d81d479aab6f66c74305d58a3261',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+    </script>
+  </div>
+
+  <p class=mt-5><strong>Vertex Shaders</strong> and <strong>Fragment (Pixel) Shaders</strong> form the basis of the graphics pipeline in Kivy applications, allowing the creation of complex 3D graphics and animations, as well as the application of a wide range of visual effects and post-processing techniques.</p>
+  <p class=mt-3>In <strong>Kivy</strong>, developers can work with Vertex Shaders and Fragment (Pixel) Shaders through the <strong>Shader class</strong>. The Shader class provides an interface to create custom shaders using the <strong>GLSL</strong> (OpenGL Shading Language) syntax, which can be compiled and linked to the Kivy application at runtime.</p>
+  <p class="mt-3">Here is a breakdown of the code:</p>
+<p class="mt-5">Imports and sets configuration parameters for the <strong>Kivy</strong> library. The code sets the width and height of the graphics window to 500 pixels using the <strong>Config</strong> module. It also imports the <strong>RenderContext</strong>, <strong>Widget</strong>, <strong>Image</strong>, <strong>App</strong>, and <strong>EventLoop</strong> modules.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># to change the kivy default setting we use config
+from kivy.config import Config
+Config.set('graphics','width','500')
+Config.set('graphics','height','500')
+
+# if you use the callback class to call rendering methods of another toolkit, you will have issues with the OpenGL context
+from kivy.graphics import RenderContext
+
+# a widget is the base building block of gui interfaces in kivy 
+from kivy.uix.widget import Widget
+
+# the Image widget is used to display images
+from kivy.uix.image import Image
+
+# base class of your app
+from kivy.app import App
+
+# this module contains the kivy core functionality and is not intended for end users
+from kivy.base import EventLoop
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a custom widget called <strong>CustomShaderWidget</strong>. This widget uses a <strong>RenderContext</strong> to display graphics, and it specifies the location of a <strong>GLSL</strong> shader file called "<strong>myshader.glsl</strong>". The widget's constructor ensures that the <strong>GL</strong> context is fully prepared before rendering, and it uses the parent projection and modelview to ensure that the widget behaves consistently with other widgets.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">class CustomShaderWidget(Widget):
+    def __init__(self, **kwargs):
+        # we must do this if no other widget has been loaded the GL context may not be fully prepared
+        EventLoop.ensure_window()
+        # most likely you will want to use the parent projection and modelview in order for your widget to behave the same as the rest of the widget
+        self.canvas = RenderContext(use_parent_projection = True, use_parent_modelview = True)
+        
+        # declare glsl file path
+        self.canvas.shader.source = 'myshader.glsl'
+        super(CustomShaderWidget, self).__init__(**kwargs)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">This code is creating a custom <strong>shader</strong> for grayscale image processing using <strong>GLSL</strong> shaders in <strong>Kivy</strong>, a Python-based GUI framework.</p>
+<p class="mt-3">You should create a separate file called <strong>myshader.glsl</strong> in the same folder for this code.</p>
+<p class="mt-3">The code includes two shaders: a <strong>vertex</strong> shader and a <strong>fragment</strong> shader. The <strong>vertex</strong> shader defines the attributes of the vertices of a mesh and passes data to the <strong>fragment</strong> shader. It takes <strong>vertex</strong> attributes such as position and texture coordinates as input, and outputs the color and position of each <strong>vertex</strong> in a format that can be used by the <strong>fragment</strong> shader.</p>
+<p class="mt-3">The <strong>fragment</strong> shader takes the color and position data from the <strong>vertex</strong> shader and outputs the final color of each pixel on the screen. In this code, the <strong>fragment</strong> shader takes a texture sampler, which is an image file loaded in the <strong>Kivy</strong> application, and converts it to grayscale by averaging the RGB channels of each pixel. The output is a <strong>gray-scale</strong> version of the input image.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">---VERTEX SHADER---
+#ifdef GL_ES
+    precision highp float;
+#endif
+
+/* output to the fragment shader */
+varying vec4 frag_color;
+varying vec2 text_coord0;
+
+/* vertex attributes */
+attribute vec2 vPosition;
+attribute vec2 vTextCoords0;
+
+/* uniform variables */
+uniform mat4 modelview_mat;
+uniform mat4 projection_mat;
+uniform vec4 color;
+uniform float opacity;
+
+void main (void){
+    frag_color = color * vec4(1.0, 1.0, 1.0, opacity);
+    tex_coord0 = vTexCoords0;
+    gl_Position = projection_mat * modelview_mat * vec4(vPosition.xy, 0.0, 1.0);
+
+}
+
+---FRAGMENT SHADER---
+#ifdef GL_ES
+    precision highp float;
+#endif
+
+/* input from the vertex shader */
+varying vec4 frag_color;
+varying vec2 tex_coord0;
+
+/* uniform texture samplers */
+uniform sampler2D texture0;
+
+/* this is the only part of the default shader we need to change to grayscale our picture: we need to take the average of rgb channels and then assign rgb to be the avaregae */
+void main (void){
+    vec4 pixel_color = frag_color * texture2D(texture0, tex_coord0);
+    float average = (pixel_color[0] + pixel_color[1] + pixel_color[2])/3.;
+    gl_fragColor = vec4(average, average, average, pixel_color[3]);
+}
+
+
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Defines a custom application class called <strong>CustomShaderApp</strong>, which inherits from the <strong>App</strong> class provided by <strong>Kivy</strong>. The <strong>build()</strong> method of this class creates an instance of the <strong>CustomShaderWidget</strong> class and adds an image to it. The size of the widget is bound to the size of the image using the <strong>bind()</strong> method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">class CustomShaderApp(App):
+    def build(self):
+        shader_widget = CustomShaderWidget()
+        im = Image(source = 'pic.png')
+        shader_widget.add_widget(im)
+        shader_widget.bind(size = im.setter('size'))
+        return shader_widget
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Checks if the current script is the main script, and if so, it creates an instance of the <strong>CustomShaderApp</strong> class and runs the app using the <strong>run()</strong> method. This is the entry point for the <strong>Kivy</strong> application.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># run the app
+if __name__ == '__main__':
+    CustomShaderApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Overall, this code provides a framework for creating a custom <strong>Kivy</strong> widget with a <strong>shader</strong> program that can render unique visual effects.</p>
+
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/CEGz7u3fz4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5">
+                
+                          </div>
+
+                          <div class="mt-5">
+                            <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+                          </div>
+
+
+
+
+<nav aria-label="Page navigation example ">
+    <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+      <li class="page-item active  pe-2">
+        <a class="page-link" href="kivy6.html" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+     
+      <li class="page-item  pe-2"><a class="page-link" href="kivy6.html">6</a></li>
+      <li class="page-item active pe-2"><a class="page-link" href="kivy7.html">7</a></li>
+      <li class="page-item pe-2"><a class="page-link" href="kivy8.html">8</a></li>
+      <li class="page-item active pe-2">
+        <a class="page-link" href="kivy8.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!----------------- Comments...-------------- -->
+
+  
+  
+  <div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+    <h4 class="alert-heading">Site Update in Progress...</h4>
+    <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+  </div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+  
+  <!----------------- Comments ENDS HERE...-------------- -->
+  
+  
+  
+          
+        </div>
+        <div id="ads" class="col-3 mt-5 d-none d-sm-block border-start">
+          <div class=" text-center">
+            <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 mb-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+          <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- Footer -->
+  <footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+  
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+  
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+  
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+  
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+  <!-- Section: Form -->
+  <section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+  </section>
+  <!-- Section: Form -->
+  <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+  
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="Kivy.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script type="text/javascript">
+    amzn_assoc_ad_type = "link_enhancement_widget";
+    amzn_assoc_tracking_id = "samcodehub-20";
+    amzn_assoc_linkid = "27dbf4b90e0f6caafdcabb459896571a";
+    amzn_assoc_placement = "";
+    amzn_assoc_marketplace = "amazon";
+    amzn_assoc_region = "US";
+  </script>
+  
+  <script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+  </body>
+  </html>

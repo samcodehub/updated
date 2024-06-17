@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn the step-by-step process of creating a switch button, implementing a progress bar, and utilizing the floating action button speed dial widget in Python Kivy Framework. This tutorial provides comprehensive instructions and examples for Python developers to enhance their Kivy app development skills. Explore the tutorials on switch button creation, progress bar implementation, and floating action button speed dial widget usage to create interactive and visually appealing Kivy applications.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Kivy.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Kivy: Progress Bar, Switch & FAB Speed Dial Widgets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Kivy: Progress Bar, Switch & FAB Speed Dial Widgets">
+<meta property="og:description" content="Learn the step-by-step process of creating a switch button, implementing a progress bar, and utilizing the floating action button speed dial widget in Python Kivy Framework. This tutorial provides comprehensive instructions and examples for Python developers to enhance their Kivy app development skills. Explore the tutorials on switch button creation, progress bar implementation, and floating action button speed dial widget usage to create interactive and visually appealing Kivy applications.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Kivy/kivy4.html">
+<meta name="twitter:title" content="Python Kivy: Progress Bar, Switch & FAB Speed Dial Widgets">
+<meta name="twitter:description" content="Learn the step-by-step process of creating a switch button, implementing a progress bar, and utilizing the floating action button speed dial widget in Python Kivy Framework. This tutorial provides comprehensive instructions and examples for Python developers to enhance their Kivy app development skills. Explore the tutorials on switch button creation, progress bar implementation, and floating action button speed dial widget usage to create interactive and visually appealing Kivy applications.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Kivy/kivy4.html"> 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+<div class="container-fluid text-dark bg-light mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="mt-3 text-center d-none d-sm-block">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      
+
+
+      <div class="mt-3 text-center d-block d-sm-none">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      <div class="col-9  text-break">
+
+<!--Switch-Button-kivy---############################################################################# -->
+<h1 class="mt-3">5 Steps to Creating a Python Kivy Switch Button</h1>
+<p class="mt-5">This is an example of how to create a simple graphical user interface (GUI) using the <strong>Kivy</strong> module in Python. The GUI consists of a <strong>switch</strong> widget and a <strong>label</strong> widget that displays the state of the switch.<br>The <strong>Switch</strong> widget is active or inactive, as a mechanical light switch. The user can swipe to the left/right to activate/deactivate it. 
+  The value represented by the switch is either <strong>True</strong> or <strong>False</strong>. That is the switch can be either in On position or Off position.</p>
+  <p class="mt-3">Here is a brief overview of each section:</p>
+
+<p class="mt-5">Imports the necessary modules, sets the minimum required version of <strong>Kivy</strong>, and sets the window size and background color.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import kivy module
+import kivy
+
+# base class of your application inherites from app class always refers to the instance of your app
+from kivy.app import App
+
+# below this kivy version you cannot use the app
+kivy.require('1.9.0')
+
+# the switch widget is active or inactive the state transition of a switch is from either on to off or off to on
+from kivy.uix.switch import Switch
+
+# the gridlayout arranges children in a matrix , it takes the available space and divides it into colums and rows
+from kivy.uix.gridlayout import GridLayout
+
+# the label widget is for rendering text
+from kivy.uix.label import Label
+
+# the config module is used to set the window size
+from kivy.config import Config
+Config.set('graphics','width','400')
+Config.set('graphics','height','400')
+
+# set the window background color
+from kivy.core.window import Window
+Window.clearcolor = (0.1, 0, 1, 1)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a class called <strong>SimpleSwitch</strong>, which inherits from the <strong>GridLayout</strong> class in <strong>Kivy</strong>. It has a constructor method (<strong>init</strong>), which initializes the <strong>grid layout</strong> with two columns and adds a <strong>label</strong> widget and a <strong>switch</strong> widget to the layout. It also binds a callback function to the <strong>switch</strong> widget.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># a gridlayout with label a switch and a class which contains all stuff about switch
+class SimpleSwitch(GridLayout):
+    
+    # defining __init__ constructor
+    def __init__(self,**kwargs):
+        
+        # super function can be used to gain access to inherited methods from a parent or sibling class that has been overwitten in a class object
+        super(SimpleSwitch, self).__init__(**kwargs)
+        
+        # number of columns
+        self.cols = 2
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Adds a <strong>label</strong> widget to the <strong>SimpleSwitch</strong> class and creates a <strong>switch</strong> widget with an initial state of <strong>active=True</strong>. It then adds the <strong>switch</strong> widget to the layout and binds a callback function to the switch widget's active property.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># adding label to the switch
+        self.add_widget(Label(text = "Switch", font_size = 30))
+        
+        # initially switch is on active = true
+        self.settings_sample = Switch(active = True)
+        
+        # add widget
+        self.add_widget(self.settings_sample)
+        
+        # arranging a callback to switch using bind function
+        self.settings_sample.bind(active = switch_callback)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a <strong>callback</strong> function called <strong>switch_callback</strong>, which takes two parameters: <strong>switchObject</strong> and <strong>switchValue</strong>. The function prints a message depending on the state of the <strong>switch</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># callback for the switch state transition, defining a callback function, contains two parameter switchobject, switchvalue
+def switch_callback(switchObject, switchValue):
+    
+    # switch value are true and false
+    if(switchValue):
+        print("Switch is ON")
+    else:
+        print("Switch is OFF")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines an <strong>App</strong> class called <strong>SwitchApp</strong>, which inherits from the <strong>App</strong> class in <strong>Kivy</strong>. It has a <strong>build</strong> method that returns an instance of the <strong>SimpleSwitch</strong> class.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># defining the app class
+class SwitchApp(App):
+    # define build function
+    def build(self):
+        #return the switch class
+        return SimpleSwitch()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Runs the <strong>Kivy</strong> app by creating an instance of the <strong>SwitchApp</strong> class and calling its <strong>run</strong> method. When the app runs, it displays a window containing the <strong>SimpleSwitch</strong> layout with a label and a <strong>switch</strong> widget. The <strong>switch</strong> widget can be toggled <strong>on</strong> or <strong>off</strong>, and the <strong>label</strong> displays the current state of the <strong>switch</strong>. When the <strong>switch</strong> is turned on or off, the <strong>switch_callback</strong> function is called and prints a message to the console.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># run the kivy app
+if __name__=='__main__':
+    SwitchApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">In summary, this code demonstrates how to create a simple GUI with a <strong>switch</strong> widget and a <strong>label</strong> widget using the <strong>Kivy</strong> module in Python. It also shows how to define a <strong>callback</strong> function to handle events triggered by the <strong>switch</strong> widget.</p>
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/9V71MambmIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5">
+                            <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+                          </div>
+                 
+                          
+<!--PROGRESS-BAR-KIVY-################################################################################-->
+<h2 class="mt-5">How to Implement a Progress Bar in Python Kivy: Step-by-Step Guide</h2>
+<p class="mt-5">This is a Python program that uses the <strong>Kivy</strong> module to create a GUI application with a <strong>progress bar</strong> widget that displays the progress of a download. <br>Here's a breakdown of each section:</p>
+
+<p class="mt-5">Imports the necessary modules from <strong>Kivy</strong> to build the application, including the <strong>App</strong> class, <strong>ProgressBar</strong>, <strong>BoxLayout</strong>, <strong>Clock</strong>, <strong>Button</strong>, <strong>Popup</strong>, <strong>Widget</strong>, and <strong>ObjectProperty</strong>. The code also sets the required version of Kivy to be <strong>1.9.0</strong> or higher. Additionally, the code uses the <strong>Config</strong> module to set the size of the window and the color of the background.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import kivy module
+import kivy
+
+# base class of your application inherites from app class always refers to the instance of your app
+from kivy.app import App
+
+# below this kivy version you can not use the app
+kivy.require('1.9.0')
+
+# the progressbar widget is used to visualize the progress of some task
+from kivy.uix.progressbar import ProgressBar
+
+# box layout arranges children in a vertical or horizontal box
+from kivy.uix.boxlayout import BoxLayout
+
+# the clock object allows you to schedule a function call in future
+from kivy.clock import Clock
+
+# the button is a label with associated actions that is triggered when the button is pressed
+from kivy.uix.button import Button
+
+# popup widget is used to create popups, by default the popup will cover the whole parent window, when you are creating a popup you must at least set a popup title and popup content
+from kivy.uix.popup import Popup
+
+# a widget is the base building block of gui interfaces in kivy, it provides a canvas that can be used to draw on screen
+from kivy.uix.widget import Widget
+
+# objectproperty is a specialized subclass of the property class, so it has same initialization parameters as it . by default a property always takes a default value. the default value must be a value that agrees wih the property
+from kivy.properties import ObjectProperty
+
+# the config module is used to set the window size
+from kivy.config import Config
+Config.set('graphics','width','500')
+Config.set('graphics','height','400')
+
+# set the window background color
+from kivy.core.window import Window
+Window.clearcolor = (0.1, 0.5, 0.1, 1)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines a custom widget class called <strong>MyWidget</strong> that inherits from the Widget class. This class has an <strong>ObjectProperty</strong> attribute that stores the <strong>progress bar</strong> widget.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create the widget class
+class MyWidget(Widget):
+    progress_bar = ObjectProperty()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Defines the <strong>init()</strong> method of the <strong>MyWidget</strong> class. This method creates an instance of the <strong>ProgressBar</strong> widget and a <strong>Popup</strong> widget with the <strong>progress bar</strong> widget as its content. It also sets up an event listener for when the Popup widget is opened. Finally, it adds a Button widget to the <strong>MyWidget</strong> instance with an <strong>on_release</strong> event that triggers a method to open the <strong>Popup</strong> widget.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">    def __init__(self, **kwa):
+        super(MyWidget, self).__init__(**kwa)
+        
+        self.progress_bar = ProgressBar()
+        self.popup = Popup(title = 'Download', content = self.progress_bar)
+        
+        self.popup.bind(on_open = self.puopen)
+        self.add_widget(Button(size = (200, 60), pos = (150, 150), text = 'Download', font_size = 30, background_color = (0, 0.7, 1, 1), on_release = self.pop))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines the <strong>pop()</strong> method that is called when the <strong>Button</strong> widget is clicked. This method sets the initial value of the <strong>progress bar</strong> widget to 1 and opens the <strong>Popup</strong> widget.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># the function which works when you click the button
+    def pop(self, instance):
+        self.progress_bar.value = 1
+        self.popup.open()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Defines the <strong>next()</strong> method that is called repeatedly to update the value of the progress bar widget. This method increases the value of the <strong>progress bar</strong> widget by 1 until it reaches 100.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># to continuosly increasing the alue of pb
+    def next(self, dt):
+        if self.progress_bar.value>= 100:
+            return False
+        self.progress_bar.value += 1
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">Defines the <strong>puopen()</strong> method that is called when the <strong>Popup</strong> widget is opened. This method schedules the <strong>next()</strong> method to be called at a rate of 1/3 second using the <strong>Clock.schedule_interval()</strong> method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># as the number increase the progress speed will increase
+    def puopen(self, instance):
+            Clock.schedule_interval(self.next, 1/3)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5">Defines the <strong>ProgressApp</strong> class that inherits from the <strong>App</strong> class. This class has a <strong>build()</strong> method that returns an instance of the <strong>MyWidget</strong> class.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create the app class
+class ProgressApp(App):
+    def build(self):
+        return MyWidget()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Checks if the program is being run as the main module and creates an instance of the <strong>ProgressApp</strong> class to run the application.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># run the app
+if __name__ in ("__main__"):
+    ProgressApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, this code is a Python program that uses the <strong>Kivy</strong> module to create a GUI application with a <strong>progress bar</strong> widget that displays the progress of a download. The application has a single button that, when clicked, opens a <strong>Popup</strong> widget with the <strong>progress bar</strong> widget as its content. The <strong>progress bar</strong> widget is updated continuously using the <strong>Clock.schedule_interval()</strong> method until it reaches 100%, at which point the <strong>progress bar</strong> widget stops updating. The user can then close the <strong>Popup</strong> widget to end the download process.</p>
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/wvgVhaNNxTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5 text-center">
+                            <script type="text/javascript">
+                              atOptions = {
+                                'key' : '2be6d81d479aab6f66c74305d58a3261',
+                                'format' : 'iframe',
+                                'height' : 250,
+                                'width' : 300,
+                                'params' : {}
+                              };
+                              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                            </script>
+                          </div>
+                          
+<!--Floating-Action-Button-###############################################################################-->
+<h2 class="mt-5">KivyMD Floating Action Button Speed Dial Widget Tutorial: How to Use</h2>
+<p class="mt-5">This<strong> Python code</strong> employs the versatile <strong>KivyMD framework</strong> to design an intuitive and user-friendly mobile app. The app features a prominent <strong>floating action button speed dial</strong> that allows users to easily access the most frequently used functions of the application. 
+</p>
+<p class="mt-3">The <strong>floating action button</strong> is a circular icon button that floats above the application content and provides a quick and easy way to promote the primary action in the app. This style of button is often used in the Scaffold, specifically in the <strong>floatingActionButton field</strong>, to highlight the primary function of the application and create a seamless user experience. With the use of the <strong>KivyMD framework</strong>, the app is optimized for a wide range of mobile devices and provides users with a smooth and intuitive interface.</p>
+<p class="mt-3">Here's a breakdown of what's happening in the code:</p>
+
+<p class="mt-5">Imports necessary modules for our app and set the window size.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># import kivy module
+import kivy
+
+# mdscreen is an element intended to be used with a screenmanager
+from kivymd.uix.screen import MDScreen
+
+# mdapp class that is inherited from app
+from kivymd.app import MDApp
+
+# importing mdfloatingactionbuttonspeeddial to use it in the app
+from kivymd.uix.button import MDFloatingActionButtonSpeedDial
+
+# core class for creating the default kivy window and size the window
+from kivy.core.window import Window
+Window.size = (500, 500)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>Example</strong> class is defined, which inherits from the <strong>MDApp</strong> class.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create the app class
+class Example(MDApp):
+    # adding icons and items
+    data = {
+        'Python': 'language-python',
+        'PHP': 'language-php',
+        'C++': 'language-cpp',
+    }
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">
+  <ul>
+    <li>The <strong>build</strong> method is defined, which returns a <strong>dark-themed MDScreen</strong> object containing a <strong>MDFloatingActionButtonSpeedDial</strong> object with three icons/items.</li>
+    <li>The <strong>self.theme_cls.theme_style</strong> attribute is set to "Dark".</li>
+    <li>The <strong>MDScreen</strong> and <strong>MDFloatingActionButtonSpeedDial</strong> objects are created and configured.</li>
+    <li>The <strong>data</strong> dictionary is defined to contain the icons/items for the speed dial.</li>
+    <li>The data dictionary is assigned to the <strong>MDFloatingActionButtonSpeedDial</strong> object's data attribute.</li>
+    <li>The <strong>MDFloatingActionButtonSpeedDial</strong> object's <strong>root_button_anim</strong> attribute is set to <strong>True</strong>.</li>
+    <li>The <strong>MDFloatingActionButtonSpeedDial</strong> object is added as a child widget to the <strong>MDScreen</strong> object.</li>
+  </ul>
+</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def build(self):
+        self.theme_cls.theme_style = "Dark" # or "Light" ,"normal","darkest"
+        screen = MDScreen()
+        speed_dial = MDFloatingActionButtonSpeedDial()
+        speed_dial.data = self.data
+        speed_dial.root_button_anim = True
+        screen.add_widget(speed_dial)
+        return screen
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">An instance of the <strong>Example</strong> class is created and its run method is called to start the application.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">Example().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-3">When the user clicks on the root button of the <strong>MDFloatingActionButtonSpeedDial</strong>, a set of <strong>sub-buttons</strong> will appear with icons and labels as defined in the <strong>data</strong> dictionary.<br>
+
+  Each <strong>sub-button</strong> can have an <strong>on_press</strong> event assigned to it, so you can define what happens when a user clicks on a specific button.<br>
+  
+  For example, you could define an <strong>on_press</strong> event to navigate to a different screen, play a sound, or perform any other action you want to take when the user clicks on a button.<br>
+  
+  By default, the <strong>sub-buttons</strong> will animate out from the root button, and when the user clicks on the root button again, the <strong>sub-buttons</strong> will animate back in.</p>
+
+
+
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/LkZgsmb4N1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5">
+                            <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+                          </div>
+
+
+
+
+
+
+
+<nav aria-label="Page navigation example ">
+    <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+      <li class="page-item active  pe-2">
+        <a class="page-link" href="kivy3.html" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+     
+      <li class="page-item  pe-2"><a class="page-link" href="kivy3.html">3</a></li>
+      <li class="page-item active pe-2"><a class="page-link" href="kivy2.html">4</a></li>
+      <li class="page-item pe-2"><a class="page-link" href="kivy5.html">5</a></li>
+      
+      <li class="page-item active pe-2">
+        <a class="page-link" href="kivy5.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!----------------- Comments...-------------- -->
+
+  
+  <div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+    <h4 class="alert-heading">Site Update in Progress...</h4>
+    <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+  </div>
+  <h3 class="mt-5">Comments...</h3>
+  <div class="comment mt-3 px-3 py-3">
+    
+    <form id="contactForm"  onsubmit="return sendMail();">
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Your Comments</label>
+        <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class=" mt-4" id="messages">
+                    </div>
+  </div>
+  
+  <!----------------- Comments ENDS HERE...-------------- -->
+  
+  
+  
+          
+        </div>
+        <div id="ads" class="col-3 mt-5 d-none d-sm-block text-break border-start">
+          <div class=" text-center">
+            <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 mb-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+          <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+                                                     
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- Footer -->
+  <footer class="futer text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- tiktok -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+  
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+  
+      <!-- pinterest -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+  
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+  
+      <!-- tumblr -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+        ><i class="fab fa-tumblr"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div class="text-center  text-success" id="newsletter-success"></div>
+    <div class="alert" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+      Subscription successful!
+    </div>
+  <!-- Section: Form -->
+  <section class="">
+  <form id="contactForm2" >
+    
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        
+        <p class="pt-2">
+          <strong>Sign up for our newsletter</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="emailid" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
+        </div>
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Subscribe
+        </button>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </form>
+  </section>
+  <!-- Section: Form -->
+  <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+      </p>
+    </section>
+    <!-- Section: Text -->
+  
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+    © 2023 Copyright:
+    <a class="text-white" href="../main.html">samcodehub.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="Kivy.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  
+  <script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+  </body>
+  </html>

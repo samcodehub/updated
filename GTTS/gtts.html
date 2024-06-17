@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover the Python GTTS (Google Text-to-Speech) library and learn how to convert text to speech easily. Follow the step-by-step guide to install and use the GTTS library for text-to-speech conversion in Python. Explore the GTTS library tutorial to transform text into audio in minutes. Build a user-friendly text-to-speech converter GUI app using Python Tkinter, GTTS, and Playsound libraries. Enhance your applications with speech synthesis capabilities using Python.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="gtts.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>GTTS Library: Text to Speech Convertor GUI App with Tkinter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="GTTS Library: Text to Speech Convertor GUI App with Tkinter">
+<meta property="og:description" content="Discover the Python GTTS (Google Text-to-Speech) library and learn how to convert text to speech easily. Follow the step-by-step guide to install and use the GTTS library for text-to-speech conversion in Python. Explore the GTTS library tutorial to transform text into audio in minutes. Build a user-friendly text-to-speech converter GUI app using Python Tkinter, GTTS, and Playsound libraries. Enhance your applications with speech synthesis capabilities using Python.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/GTTS/gtts.html">
+<meta name="twitter:title" content="GTTS Library: Text to Speech Convertor GUI App with Tkinter">
+<meta name="twitter:description" content="Discover the Python GTTS (Google Text-to-Speech) library and learn how to convert text to speech easily. Follow the step-by-step guide to install and use the GTTS library for text-to-speech conversion in Python. Explore the GTTS library tutorial to transform text into audio in minutes. Build a user-friendly text-to-speech converter GUI app using Python Tkinter, GTTS, and Playsound libraries. Enhance your applications with speech synthesis capabilities using Python.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/GTTS/gtts.html">   
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container">
+        <div class="row">
+           
+          <div class="mt-3 text-center d-none d-sm-block">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+          
+    
+    
+          <div class="mt-3 text-center d-block d-sm-none">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+                <div class="col-9 ">
+                  <h1 class="mt-3">Python GTTS Library: How to Convert Text to Speech Easily</h1>
+                  <p class="mt-5">The <strong>Python GTTS</strong> (Google Text-to-Speech) library is a powerful tool for converting text into spoken words using Google's <strong></strong>Text-to-Speech API. With the <strong>GTTS</strong> library, you can easily generate an MP3 file from any text input, which can then be played on your local system. This is particularly useful for creating audio versions of articles, books, or other written content.</p>
+                  <p class="mt-4">One of the key advantages of the <strong>GTTS</strong> library is its flexibility. You can specify the language of the speech output, choose from a variety of different voices, and adjust the speed of the speech. This allows you to create audio files that are tailored to your specific needs and preferences.</p>
+
+     
+
+                  <p class="mt-4">In addition to these features, the <strong>GTTS</strong> library also provides a number of options for saving and manipulating the output. For example, you can save the speech output as an MP3 file, which can then be used in a variety of different applications. You can also specify the location and filename of the output file, making it easy to organize and manage your audio files.</p>
+                  <p class="mt-4">Overall, the <strong>GTTS</strong> library is a powerful and versatile tool for anyone who needs to convert text into spoken words. Whether you are looking to create audio versions of your written content, or you simply need a way to generate speech output for your Python programs, the GTTS library is a great choice.</p>
+
+
+
+                  <div class="mt-5 text-center">
+                    <script type="text/javascript">
+                      atOptions = {
+                        'key' : '2be6d81d479aab6f66c74305d58a3261',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                      };
+                      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                    </script>
+                  </div>
+                  
+                  <h2 class="mt-5">How to Install and Use gtts Library in Python: A Step-by-Step Guide for Text-to-Speech Conversion</h2>
+<p class="mt-5">You can install the <strong>GTTS</strong> (Google Text-to-Speech) library in Python using the <strong>pip</strong> package manager. Here are the steps:</p>
+<ol class="mt-4">
+  <li class="mt-3">Open a command prompt or terminal on your computer.</li>
+  <li class="mt-3">Type the following command and press Enter to install the GTTS library:</li>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">pip install gtts                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+</ol>
+
+                  <p class="mt-5">Here is an example code snippet that demonstrates how to use the <strong>GTTS</strong> library to generate speech from text:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from gtts import gTTS
+import os
+  
+text = "Hello, how are you today?"
+language = 'en'
+  
+tts = gTTS(text=text, lang=language)
+tts.save("hello.mp3")
+  
+os.system("mpg321 hello.mp3")                          
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+                  
+
+
+
+                  <p class="mt-4">In this example, we import the <mark><strong>gTTS</strong></mark> class from the <mark><strong>gtts</strong></mark> module and create an instance of it with the text and language specified. We then save the speech output as an MP3 file using the <mark><strong>save()</strong></mark> method, and use the <mark><strong>os</strong></mark> module to play the MP3 file using the <mark><strong>mpg321</strong></mark> command line tool.</p>
+                  <p class="mt-4">Overall, the Python GTTS library is a simple and easy-to-use library for converting text into speech using Google's Text-to-Speech API. It can be useful for various applications, such as creating automated voice notifications or generating speech output for visually impaired users.</p>
+                  <div class="mt-5">
+                    <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+                  <div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+                  </div>
+                  
+<h2 class="mt-5">Python GTTS Library Tutorial: Transform Text into Audio in Minutes</h2>
+<p class="mt-5">This code uses the <strong>gTTS</strong> library, to convert the text from a file named <strong>sample.txt</strong> into an audio file in MP3 format. The resulting audio file is saved as <strong>audio.mp3</strong>.</p>
+
+<p class="mt-3">Here's a breakdown of the code:</p>
+
+<p class="mt-4">This line imports the <strong>gTTS</strong> class from the gtts module.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from gtts import gTTS
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">These two lines open the <strong>sample.txt</strong> file, read its contents, and store them in the <strong>data</strong> variable.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">file = open('sample.txt')
+data = file.read()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line sets the language of the text to be English.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">language = 'en'
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line creates an instance of the <strong>gTTS</strong> class, passing the <strong>data</strong> variable as the text to be converted to speech.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">audio = gTTS(text=data)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line saves the resulting audio as an MP3 file named <strong>audio.mp3</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">audio.save('audio.mp3')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-4">Overall, this code can be used to add text-to-speech functionality to a webpage, allowing users to listen to the content instead of having to read it.</p>
+
+                  <h4 class="mt-5">You can watch the video below:</h4>
+                  <div class="ratio ratio-16x9 mt-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bV8T9y-Yw5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  
+                  <div class="mt-5 text-center">
+                    <script type="text/javascript">
+                      atOptions = {
+                        'key' : '2be6d81d479aab6f66c74305d58a3261',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                      };
+                      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                    </script>
+                  </div>
+                  
+<h2 class="mt-5">How to Build a Text-to-Speech Converter GUI App using Python Tkinter, GTTS and Playsound Libraries</h2>
+<p class="mt-5">This code is a basic GUI (Graphical User Interface) program using the <strong>tkinter</strong>, <strong>gtts</strong> and <strong>playsound</strong> libraries to implement a simple <strong>Text-To-Speech</strong> application.</p>
+
+<p class="mt-4">Here is the step-by-step explanation of the code:</p>
+
+<p class="mt-1"><strong>from tkinter import * </strong>- It imports all the classes, functions, and variables from the tkinter library.</p>
+<p class="mt-1"><strong>from gtts import gTTS</strong> - It imports the gTTS class from the gtts library, which is used to convert text to speech.</p>
+<p class="mt-1"><strong>from playsound import playsound</strong> - It imports the playsound function from the playsound library, which is used to play the generated audio.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">from tkinter import *
+from gtts import gTTS
+from playsound import playsound
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>root = Tk()</strong> - It creates an instance of the Tk class, which represents the main window of the application.</p>
+<p class="mt-1"><strong>root.geometry('350x300')</strong> - It sets the size of the main window to 350x300 pixels.</p>
+<p class="mt-1"><strong>root.resizable(0,0)</strong> - It disables the resizing of the main window.</p>
+<p class="mt-1"><strong>root.config(bg='white')</strong> - It sets the background color of the main window to white.</p>
+<p class="mt-1"><strong>root.title('TEXT-TO-SPEECH')</strong> - It sets the title of the main window to 'TEXT-TO-SPEECH'.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root = Tk()
+root.geometry('350x300')
+root.resizable(0,0)
+root.config(bg='white')
+root.title('TEXT-TO-SPEECH')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-5"><strong>Label(root, text='Text-TO-SPEECH' , font='ariel 20 bold', bg='white').pack()</strong> - It creates a label widget with the text 'Text-TO-SPEECH', sets its font and background color, and packs it into the main window.</p>
+<p class="mt-1"><strong>Label(root, text='SAMCODEHUB', font='ariel 15 bold', bg='white').pack(side= BOTTOM)</strong> - It creates a label widget with the text 'SAMCODEHUB', sets its font and background color, and packs it into the main window at the bottom.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># heading
+Label(root, text='Text-TO-SPEECH' , font='ariel 20 bold', bg='white').pack()
+Label(root, text='SAMCODEHUB', font='ariel 15 bold', bg='white').pack(side= BOTTOM)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>Label(root, text='Enter Text', font='ariel 15 bold', bg='white').place(x=20, y=60)</strong> - It creates a label widget with the text 'Enter Text', sets its font and background color, and places it at the specified position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># label 
+Label(root, text='Enter Text', font='ariel 15 bold', bg='white').place(x=20, y=60)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>Msg= StringVar()</strong> - It creates a StringVar variable, which is used to store the user input from the text entry field.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># text variable
+Msg= StringVar()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5"><strong>entry_field = Entry(root, textvariable =Msg, width='50')</strong> - It creates a text entry widget with the specified width and sets its text variable to Msg.</p>
+<p class="mt-1"><strong>entry_field.place(x=20, y=100)</strong> - It places the text entry widget at the specified position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">#ENTRY
+entry_field = Entry(root, textvariable =Msg, width='50')
+entry_field.place(x=20, y=100)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>def Text_to_speech()</strong>: - It defines a function Text_to_speech, which is called when the 'PLAY' button is clicked.</p>
+<p class="mt-1"><strong>Message = entry_field.get()</strong> - It gets the user input from the text entry widget.</p>
+<p class="mt-1"><strong>speech = gTTS(text= Message)</strong> - It creates a gTTS object with the user input text.</p>
+<p class="mt-1"><strong>speech.save('v.mp3')</strong> - It saves the generated audio as a .mp3 file with the name 'v.mp3'.</p>
+<p class="mt-1"><strong>playsound('v.mp3')</strong> - It plays the generated audio using the playsound function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># define function
+def Text_to_speech():
+    Message = entry_field.get()
+    speech = gTTS(text= Message)
+    speech.save('v.mp3')
+    playsound('v.mp3')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>def Exit()</strong>: - It defines a function Exit, which is called when the 'EXIT' button is clicked.</p>
+<p class="mt-1"><strong>root.destroy()</strong> - It destroys the main window, which exits the program.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def Exit():
+    root.destroy()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5"><strong>def Reset()</strong>: - This function resets the content of the Msg variable to an empty string.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def Reset():
+    Msg.set()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">This lines creates 3 Buttons widgets with the label "<strong>RESET</strong>" and sets its command to the <strong>Reset()</strong> function. When the button is clicked, it will execute the <strong>Reset()</strong> function.</p>
+<p class="mt-1">Button widget with the label "<strong>PLAY</strong>" and sets its command to the <strong>Text-To-Speech()</strong> function. When the button is clicked, it will execute the <strong>Text-To-Speech()</strong> function.</p>
+<p class="mt-1">Button widget with the label "<strong>EXIT</strong>" and sets its command to the <strong>Exit()</strong> function. When the button is clicked, it will execute the <strong>Exit()</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># button
+Button(root, text = "PLAY", font= 'ariel 15 bold', command = Text_to_speech, width=4).place(x=25, y=140)   
+Button(root, text= "EXIT", font= 'ariel 15 bold', command = Exit, bg='red').place(x=100, y=140)
+Button(root, text= "RESET", font= 'ariel 15 bold', command = Reset).place(x=175, y=140) 
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The <strong>mainloop()</strong> method is responsible for starting the event loop, which waits for user events and processes them as they occur.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">In this tutorial, we have learned how to create a <strong>text-to-speech</strong> converter GUI app using Python's <strong>tkinter</strong> and <strong>gtts</strong> libraries. We have covered the basics of these libraries and provided a step-by-step guide for building the app from scratch. By following this tutorial, you can create a customizable text-to-speech converter that can read out any text you input. With some additional modifications, you can also enhance the app's functionality to suit your needs. We hope you found this tutorial useful and that it has inspired you to explore more possibilities with Python!</p>
+
+                  <h4 class="mt-5">You can watch the video below:</h4>
+                  <div class="ratio ratio-16x9 mt-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MT4-S5HDOgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  
+                  
+<!----------------- Comments...-------------- -->
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+<div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm"  onsubmit="return sendMail();">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+     
+
+        <div id="ads" class="col-3 mt-5 d-none d-sm-block text-break border-start">
+          <div class="text-center  mb-5">
+            <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+          </div>
+                   
+          
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+          
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+          
+          <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+          <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+
+          <div class="text-center mt-5 mb-5">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          
+          </div>
+
+
+  
+
+
+   
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="gtts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>

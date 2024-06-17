@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn how to create a CheckBox, DropDown Menu, and Carousel View App using the Python Kivy Framework. This step-by-step guide covers the process of creating interactive UI components in Python Kivy. Explore the tutorials on creating CheckBox, DropDown Menu, and Carousel View App to enhance your Kivy development skills.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Kivy.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Kivy GUI: CheckBox, DropDown Menu & Carousel View App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Kivy GUI: CheckBox, DropDown Menu & Carousel View App">
+<meta property="og:description" content="Learn how to create a CheckBox, DropDown Menu, and Carousel View App using the Python Kivy Framework. This step-by-step guide covers the process of creating interactive UI components in Python Kivy. Explore the tutorials on creating CheckBox, DropDown Menu, and Carousel View App to enhance your Kivy development skills.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Kivy/kivy2.html">
+<meta name="twitter:title" content="Python Kivy GUI: CheckBox, DropDown Menu & Carousel View App">
+<meta name="twitter:description" content="Learn how to create a CheckBox, DropDown Menu, and Carousel View App using the Python Kivy Framework. This step-by-step guide covers the process of creating interactive UI components in Python Kivy. Explore the tutorials on creating CheckBox, DropDown Menu, and Carousel View App to enhance your Kivy development skills.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Kivy/kivy2.html">    
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+<div class="container-fluid text-dark bg-light mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="mt-3 text-center d-none d-sm-block">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      
+
+
+      <div class="mt-3 text-center d-block d-sm-none">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+      <div class="col-9  text-break">
+ 
+<!--KIVY-CHECK-BOX-########################################################################################-->
+<h1 class="mt-3">Step-by-Step Guide: How to Create a CheckBox in Python Kivy Framework</h1>
+<p class="mt-5">In this Python project, we utilize the Kivy library to create a user-friendly GUI application that features three checkboxes. The three checkboxes in our application allow the user to select from a set of options presented to them. Each checkbox is represented in the code as a Kivy <strong>CheckBox</strong> widget. When a user clicks on a checkbox, it becomes "checked" and changes its state. This state is saved in the <strong>active</strong> property of the checkbox widget.</p>
+
+<p class="mt-3">The code is designed to be easy to read and understand. It is broken up into sections, with each section performing a specific function. The first section defines the Kivy application, including the widgets used, and how they should be arranged on the screen. The second section handles user input, specifically, it detects when the user interacts with the checkboxes and updates their states accordingly.</p>
+<p class="mt-3">Here's what does every section of this code:</p>
+<p class="mt-5">The first section of the code imports necessary modules from Kivy and sets the size of the app window using the <strong>Kivy configuration API</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import kivy
+
+# base class of your app inherite from app class always refers to the instance of your application
+from kivy.app import App
+
+# class is the base class required for creationg widgets
+from kivy.uix.widget import Widget
+
+# the label widget is for rendering text
+from kivy.uix.label import Label
+
+# to use checkbox you must import it from checkbox module
+from kivy.uix.checkbox import CheckBox
+
+# the gridlayout arranges children in a matrix
+from kivy.uix.gridlayout import GridLayout
+
+# the config module is used to set the window size
+from kivy.config import Config
+Config.set('graphics','width','400')
+Config.set('graphics','height','400')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+<p class="mt-5">This section defines a class called <strong>check_box</strong> that inherits from <strong>GridLayout</strong>, a <strong>Kivy layout class</strong>. The <strong>check_box</strong> class defines the structure of the app by adding three rows to the layout and adding a <strong>Label</strong> and a <strong>CheckBox</strong> widget to each row.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># container class for the app's widgets
+class check_box(GridLayout):
+    def __init__(self, **kwargs):
+        # super function can be used to gain access to inherited methodes from a parent or sibling class that has been overwritten in a class object
+        super(check_box, self).__init__(**kwargs)
+        
+        # 3 rows in grid layout
+        self.rows = 3
+        
+        # add checkbox, widgets and labels
+        self.add_widget(Label(text='Kivy'))
+        self.active = CheckBox(active = False)
+        self.add_widget(self.active)
+        
+        self.add_widget(Label(text='Tkinter'))
+        self.active = CheckBox(active = False)
+        self.add_widget(self.active)
+        
+        self.add_widget(Label(text = 'Other'))
+        self.active = CheckBox(active= False)
+        self.add_widget(self.active)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This section defines a class called <strong>CheckBoxApp</strong> that inherits from <strong>App</strong>, another <strong>Kivy</strong> class. The <strong>build</strong> method of the <strong>CheckBoxApp</strong> class returns an instance of the <strong>check_box</strong> class, which is the main widget of the app.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># app derived from app class
+class CheckBoxApp(App):
+    def build(self):
+        return check_box()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Finally, the <strong>if __name__ =='__main__'</strong> statement checks if the current module is being executed as the main program. If so, it creates an instance of the <strong>CheckBoxApp</strong> class and calls its <strong>run()</strong> method, which starts the <strong>Kivy</strong> event loop and displays the app on the screen.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># run the app
+if __name__ =='__main__':
+    CheckBoxApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-3">Overall, this Python code creates a simple GUI application that displays three checkboxes, each with a corresponding label. The user can interact with the checkboxes by clicking on them to select or deselect them. The purpose of the application is not specified in the code, but it could be used for various purposes such as a survey form or a preference selection form.</p>
+
+<p class="mt-4">When the user selects a <strong>checkbox</strong>, the <strong>active</strong> attribute of the corresponding <strong>CheckBox</strong> widget is set to <strong>True</strong>. When the user deselects a <strong>checkbox</strong>, the <strong>active</strong> attribute is set to <strong>False</strong>. The <strong>check_box</strong> class defines the layout and behavior of the checkboxes, while the <strong>CheckBoxApp</strong> class defines the <strong>main widget</strong> of the app and sets it as the <strong>root</strong> widget. Finally, the <strong>if__name__ =='__main__'</strong> statement runs the app by creating an instance of the <strong>CheckBoxApp</strong> class and calling its <strong>run()</strong> method.</p>
+
+
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/N_D-s49SJHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+                          
+<!--DROPDOWN-MENU-####################################################################################-->
+<h2 class="mt-5">Step-by-Step Guide: How to Create a DropDown Menu in Python Kivy Framework</h2>
+<p class="mt-5">This project is an implementation of a simple <strong>Kivy</strong> app that creates a <strong>dropdown menu</strong> with 5 options using the <strong>DropDown</strong> and <strong>Button</strong> widgets. When the user clicks on a button in the dropdown menu, the selected option is displayed in the main button.</p>
+
+<p class="mt-3">Here is a brief summary of what the code does:</p>
+<p class="mt-5">The code imports the necessary modules for creating a <strong>dropdown menu</strong> in a <strong>Kivy</strong> application.<br>The <strong>kivy.require('1.9.0')</strong> line specifies that the code requires at least version <strong>1.9.0</strong> of the Kivy library to run.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import kivy
+
+# base class of your application inherites from app class always refers to the instance of your app
+from kivy.app import App
+
+# below this kivy version you cannot use the app
+kivy.require('1.9.0')
+
+# importing dropdown from the module to use in the program
+from kivy.uix.dropdown import DropDown
+
+# the button is a label with associated actions that are triggered when the button is pressed
+from kivy.uix.button import Button
+
+# another way to run kivy app
+from kivy.base import runTouchApp
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The code creates a <strong>dropdown menu</strong> with 5 buttons by looping over a range of 5.<br>For each iteration of the loop, a button is created with a text label and added to the dropdown menu.<br>The button is also bound to a <strong>lambda</strong> function that sets the text of the main button to the text of the selected option.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create a dropdown with 5 buttons
+dropdown = DropDown()
+for index in range(5):
+    # adding button in dropdown list
+    btn = Button(text = 'Option % d'% index, background_color=(1,1,255), size_hint_y = None, height = 50)
+    
+    # binding the button to show the text when selected
+    btn.bind(on_release = lambda btn: dropdown.select(btn.text))
+    
+    # then add the button inside the dropdown
+    dropdown.add_widget(btn)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The code creates the <strong>mainbutton</strong> that will display the <strong>dropdown menu</strong>.<br>The button is given a text label, font size, background color, size hint, height, width, and position.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># create a menu button
+mainbutton = Button(text = 'Menu', font_size = 30, background_color = (1,0,255), size_hint =(None, None), height= 60, width = 150, pos = (15, 500))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">The code binds the <strong>on_release</strong> event of the main button to the open method of the <strong>dropdown menu</strong>.<br>This means that when the main button is clicked, the dropdown menu will open and display its options.<br>The code also binds the <strong>on_select</strong> event of the dropdown menu to a <strong>lambda</strong> function that sets the text of the main button to the text of the selected option.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># show the dropdown menu when the mainbutton is released
+mainbutton.bind(on_release = dropdown.open)
+
+# listen for the selection in dropdown list and assign the option to the button text
+dropdown.bind(on_select = lambda instance, x: setattr(mainbutton, 'text', x))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The code calls the <strong>runTouchApp</strong> function to run the <strong>Kivy</strong> application and display the main button with the <strong>dropdown menu</strong>.<br>The <strong>mainbutton</strong> object is passed as an argument to the <strong>runTouchApp</strong> function.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># runtouchApp
+runTouchApp(mainbutton)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Overall, this code demonstrates how to create a simple <strong>Kivy</strong> app with a <strong>dropdown menu</strong> that allows the user to select an option and display it in a main button.</p>
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/fr3eDWg8Ivk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5 text-center">
+                            <script type="text/javascript">
+                              atOptions = {
+                                'key' : '2be6d81d479aab6f66c74305d58a3261',
+                                'format' : 'iframe',
+                                'height' : 250,
+                                'width' : 300,
+                                'params' : {}
+                              };
+                              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+                            </script>
+                          </div>
+                          
+<!--CAROUSEL-KIVY-####################################################################################-->
+<h2 class="mt-5">Step-by-Step Guide: How to Create a Carousel View App in Python Kivy Framework</h2>
+<p class="mt-5">A <strong>carousel</strong> is a widget in Kivy that provides a mobile-friendly <strong>carousel</strong> view where you can swipe between slides. In this code, the <strong>carousel</strong> widget is used to display a slideshow of images.</p>
+<p class="mt-3">Here is a brief summary of what the code does:</p>
+<p class="mt-5">The Kivy module is imported and the minimum version required to run the app is specified. The base class '<strong>App</strong>' is imported from the <strong>Kivy</strong> app module and the '<strong>Carousel</strong>' and '<strong>AsyncImage</strong>' widgets are imported from the Kivy <strong>UIX</strong> module.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import kivy
+
+# below this kivy version you can not use the app
+kivy.require('2.0.0')
+
+# base class of your app inherite from app class always refers to the instance of your application
+from kivy.app import App
+
+#The Carousel widget provides the classic mobile-friendly carousel view where you can swipe between slides
+from kivy.uix.carousel import Carousel
+
+# The Image widget is used to display an image this module contain all features of images 
+from kivy.uix.image import AsyncImage
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">A list of image paths is created as a source for the <strong>carousel</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># the sourse of images. it could be local like now or the external link
+src =["image/1.png","image/2.png","image/3.png","image/4.png","image/5.png"]
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">A new class '<strong>CarouselApp</strong>' is defined that inherits from the Kivy '<strong>App</strong>' class. A '<strong>build</strong>' method is defined that creates the <strong>carousel</strong> widget and adds images to it.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Create the App class
+class CarouselApp(App):
+    def build(self):
+        # Add carousel And add the direction of swipe
+        carousel = Carousel(direction ='right')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">A '<strong>for</strong>' loop is created that iterates through the list of image paths. For each image path, an '<strong>AsyncImage</strong>' widget is created and added to the <strong>carousel</strong>. the <strong>carousel</strong> widget is returned from the '<strong>build</strong>' method.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Adding 5 slides
+        for i in range(5):
+            
+            # using Asynchronous image
+            image = AsyncImage(source = src[i], allow_stretch = True)
+            carousel.add_widget(image)
+        return carousel
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The script checks if it is being run directly and not being imported. If it is being run directly, an instance of the '<strong>CarouselApp</strong>' class is created and the '<strong>run</strong>' method is called to start the app.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># Run the App
+if __name__ == '__main__':
+    CarouselApp().run()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<p class="mt-3">Overall, the code creates a simple <strong>Kivy</strong> app that displays a slideshow of images using the <strong>carousel</strong> widget.</p>
+
+
+
+
+                          <h5 class="mt-5 mb-4">you can watch the video here : </h5>
+                          <div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/-Dn8UPELIMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                          <div class="mt-5">
+                            <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+                          </div>
+                       
+
+
+
+<nav aria-label="Page navigation example ">
+  <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+    <li class="page-item active  pe-2">
+      <a class="page-link" href="kivy.html" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item  pe-2"><a class="page-link" href="kivy.html">1</a></li>
+    <li class="page-item active pe-2"><a class="page-link" href="kivy2.html">2</a></li>
+    <li class="page-item pe-2"><a class="page-link" href="kivy3.html">3</a></li>
+   
+    <li class="page-item active pe-2">
+      <a class="page-link" href="kivy3.html">Next</a>
+    </li>
+  </ul>
+</nav>
+<!----------------- Comments...-------------- -->
+
+
+<div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+  <h4 class="alert-heading">Site Update in Progress...</h4>
+  <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+</div>
+<h3 class="mt-5">Comments...</h3>
+<div class="comment mt-3 px-3 py-3">
+  
+  <form id="contactForm"  onsubmit="return sendMail();">
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Your Comments</label>
+      <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class=" mt-4" id="messages">
+                  </div>
+</div>
+
+<!----------------- Comments ENDS HERE...-------------- -->
+
+
+
+        
+      </div>
+      <div id="ads" class="col-3 mt-5 d-none d-sm-block text-break border-start">
+        <div class=" text-center">
+          <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 mb-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+        <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '60d187c01f46598efa9231f38aa5470f',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+        <div class="mt-5 text-center">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '6e0edb924a4d1f796c691953555afee5',
+              'format' : 'iframe',
+              'height' : 300,
+              'width' : 160,
+              'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+          </script>
+        </div>
+
+                                        
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+<footer class="futer text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- tiktok -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- pinterest -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-pinterest"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+
+    <!-- tumblr -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+      ><i class="fab fa-tumblr"></i
+    ></a>
+  </section>
+  <!-- Section: Social media -->
+  <div class="text-center  text-success" id="newsletter-success"></div>
+  <div class="alert" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+    Subscription successful!
+  </div>
+<!-- Section: Form -->
+<section class="">
+<form id="contactForm2" >
+  
+  <!--Grid row-->
+  <div class="row d-flex justify-content-center">
+    <!--Grid column-->
+    <div class="col-auto">
+      
+      <p class="pt-2">
+        <strong>Sign up for our newsletter</strong>
+      </p>
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-md-5 col-12">
+      <!-- Email input -->
+      <div class="form-outline form-white mb-4">
+        <input type="email" id="emailid" class="form-control" />
+        <label class="form-label" for="form5Example21">Email address</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-auto">
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-outline-light mb-4">
+        Subscribe
+      </button>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+<!-- Section: Text -->
+  <section class="mb-4">
+    <p>
+      SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+    </p>
+  </section>
+  <!-- Section: Text -->
+
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+  © 2023 Copyright:
+  <a class="text-white" href="../main.html">samcodehub.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="Kivy.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+</body>
+</html>
