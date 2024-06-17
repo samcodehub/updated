@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn how to develop a turtle race game, a dice game, and a number guessing game using Python. Dive into the exciting world of Python game development as you explore the Turtle Graphics library, create interactive GUI games with Tkinter and PIL, and implement randomization and mathematical concepts. Enhance your programming skills and have fun with these engaging game projects.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="game.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Games: Turtle Race, Dice Game & Number Guessing GUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Games: Turtle Race, Dice Game & Number Guessing GUI">
+<meta property="og:description" content="Learn how to develop a turtle race game, a dice game, and a number guessing game using Python. Dive into the exciting world of Python game development as you explore the Turtle Graphics library, create interactive GUI games with Tkinter and PIL, and implement randomization and mathematical concepts. Enhance your programming skills and have fun with these engaging game projects.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Game/game9.html">
+<meta name="twitter:title" content="Python Games: Turtle Race, Dice Game & Number Guessing GUI">
+<meta name="twitter:description" content="Learn how to develop a turtle race game, a dice game, and a number guessing game using Python. Dive into the exciting world of Python game development as you explore the Turtle Graphics library, create interactive GUI games with Tkinter and PIL, and implement randomization and mathematical concepts. Enhance your programming skills and have fun with these engaging game projects.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Game/game9.html">    
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container text-break">
+        <div class="row">
+            
+          <div class="mt-3 text-center d-none d-sm-block">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+          
+    
+    
+          <div class="mt-3 text-center d-block d-sm-none">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+                <div class="col-9 ">
+
+<!--TURTLE-RACE-GAME--########################################################################################-->
+<h1 class="mt-3">How to Develop a Turtle Race Game using Python Turtle Graphics Library</h1>
+<p class="mt-5">This code is a simple implementation of a game of turtle race where two players control turtles that race to a finish line. the program waits for player 1 to press the enter key to roll the die. The <strong>random.choice()</strong> method is used to simulate the roll of a six-sided die. The outcome of the roll is printed to the console, and the turtle moves forward a number of steps determined by the outcome of the roll, which is multiplied by 20.</p>
+
+<p class="mt-5">First, the code imports the <strong>turtle</strong> and <strong>random</strong> modules.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import turtle   
+import random
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Then it creates two turtle objects named <strong>player_1</strong> and <strong>player_2</strong> with different colors and shapes. The turtles are placed at different starting positions using <strong>goto()</strong> method.</p>
+<p class="mt-1">Next, the code draws two circles, one at the top and one at the bottom of the screen, using the <strong>circle()</strong> method. These circles serve as the finish lines for the turtles to reach.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">player_1 = turtle.Turtle()
+player_1.color('green')
+player_1.shape("turtle")
+player_1.penup()
+player_1.goto(-200, 100)
+player_2 = player_1.clone()
+player_2.color('yellow')
+player_2.penup()
+player_2.goto(-200, -100)
+
+player_1.goto(200, 60)
+player_1.pendown()
+player_1.circle(40) 
+player_1.penup()
+player_1.goto(-200, 100)
+player_2.goto(200, -140)
+player_2.pendown()
+player_2.circle(40)
+player_2.penup()
+player_2.goto(-200, -100)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">After setting up the game board, the code enters a <strong>while</strong> loop that will keep running until one of the turtles reaches their respective finish line. In each iteration of the loop, the program waits for <strong>player 1</strong> to press the <strong>enter</strong> key to roll the die. The <strong>random.choice()</strong> method is used to simulate the roll of a six-sided die. The outcome of the roll is printed to the console, and the turtle moves forward a number of steps determined by the outcome of the roll, which is multiplied by <strong>20</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">die = [1,2,3,4,5,6]
+
+while(1):
+    if player_1.pos() >= (200, 100):
+        print("Player1 win!")
+        break
+    elif player_2.pos() >= (200, -100):
+        print("Player2 win!")
+        break
+    else:
+        player_1_turn = input("press 'Enter' to roll die:")
+        die_outcome = random.choice(die) 
+        print("the result of the roll die is: ")
+        print(die_outcome)
+        print("the number of the steps will be: ")
+        print(20*die_outcome)
+        player_1.fd(20*die_outcome)
+        player_2_turn = input("press 'Enter' to roll die: ")
+        die_outcome = random.choice(die)
+        print("the result of the roll die is: ")
+
+        print(die_outcome)
+        print("the number of the steps will be: ")
+        print(20*die_outcome)
+        player_2.fd(20*die_outcome)     
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+
+<p class="mt-3">This process is repeated for player 2, who is prompted to press enter and roll the die. Once either turtle reaches their finish line, the while loop is broken, and a message is printed to the console indicating which player won the game.</p>
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kPovBdzK2Uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+</div>
+
+<!--DICE-GAME--########################################################################################-->
+<h2 class="mt-5">How to Develop a Dice Game using Python Tkinter GUI and PIL Libraries</h2>
+<p class="mt-5">This code demonstrates a simple dice game using Python's <strong>tkinter</strong> library and <strong>PIL</strong> library for image processing. The game features a graphical user interface with a single die image displayed on the screen. When the user clicks the "<strong>Roll the Dice</strong>" button, the image changes to a randomly generated die image, simulating a dice roll. The code uses the <strong>random</strong> module to randomly choose one of six die images from the dice list.</p>
+<p class="mt-3">The code also includes a <strong>label</strong> that displays a welcome message for new users. The label is styled with a bold and italic font and set to a dark green background with light green text. The label and the die image are both packed using tkinter's <strong>pack()</strong> method, allowing them to be displayed on the screen in a simple and organized layout.</p>
+<p class="mt-3">Here's what does every section of the code:</p>
+<p class="mt-5">import the necessary modules for the program: <strong>tkinter</strong> for creating GUI elements, <strong>PIL</strong> (Python Imaging Library) for working with images, and random for generating random numbers.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import tkinter
+from PIL import Image, ImageTk
+import random
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Creating a new <strong>Tk</strong> object, which represents the main window of the program. <strong>geometry()</strong> sets the size of the window to 400x400 pixels, and <strong>title()</strong> sets the title of the window to "Dice Game".</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root = tkinter.Tk()
+root.geometry('400x400')
+root.title('Dice Game')
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Create an empty Label widget and add it to the main window using the <strong>pack()</strong> method. This is just a placeholder and doesn't display any text.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">l0 = tkinter.Label(root, text="")
+l0.pack()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+
+<p class="mt-5">Creates a new Label widget with the text "Hello New User!", green foreground color, dark green background color, and a bold italic Helvetica font. The <strong>pack()</strong> method adds the label to the main window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">l1 = tkinter.Label(root, text="Hello New User!", fg ="light green",
+                   bg="dark green",
+                   font = "Helvetica 16 bold italic")
+l1.pack()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line creates a list of image filenames for the dice images. These images should be located in the same directory as the Python script.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">dice = ['die1.png', 'die2.png', 'die3.png', 'die4.png', 'die5.png', 'die6.png' ]
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This code creates a new <strong>PhotoImage</strong> object from a randomly selected image filename in the dice list. It then creates a new Label widget and sets its image to image1 using the image attribute. The expand=True argument in the <strong>pack()</strong> method tells the label to fill any extra space in the window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">image1 = ImageTk.PhotoImage(Image.open(random.choice(dice)))
+label1 = tkinter.Label (root, image=image1)
+label1.image = image1
+label1.pack( expand=True)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This code defines a new function <strong>rolling_dice()</strong>, which generates a new random image from the dice list and updates <strong>label1</strong> with the new image. It then creates a new Button widget with the label "Roll the Dice", blue foreground color, and the command attribute set to <strong>rolling_dice</strong>, which specifies that the <strong>rolling_dice()</strong> function should be called when the button is clicked. The <strong>pack()</strong> method adds the button to the main window.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">def rolling_dice():
+    imagel = ImageTk.PhotoImage(Image.open(random.choice(dice)))
+    label1.configure(image=imagel)
+    label1.image = imagel
+
+button = tkinter.Button(root, text='Roll the Dice' , fg = 'blue', command=rolling_dice)
+button.pack( expand=True)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This line starts the <strong>event loop</strong> of the program, which listens for user input (such as mouse clicks) and updates the GUI accordingly. The program will stay in this loop until the window is closed.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">root.mainloop()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<p class="mt-3">Overall, this project is a great starting point for learning <strong>GUI</strong> programming in Python and can be easily expanded upon to create more complex games with additional features and functionality. With a basic understanding of <strong>tkinter</strong> and <strong>PIL</strong> libraries, you can customize the game to fit your specific needs and interests.</p>
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QStKZaFIBk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+
+
+<!--NUMBER-GUESSING-GAME--#############################################################################-->
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<h2 class="mt-5">Python Number Guessing Game Using Random & Math Module</h2>
+<p class="mt-5">This Python code implements a fun and interactive number guessing game that challenges the player to guess a randomly generated number within a specified range. The game works by prompting the player to enter the range of numbers they want to play with, and then generates a random number within that range. The player then has a limited number of attempts to correctly guess the number.</p>
+  <p class="mt-3">To make the game more engaging, the code uses the '<strong>random</strong>' and '<strong>math</strong>' modules in Python to generate a truly random number, ensuring that the player never knows what to expect. The player can see how many attempts they have left, and the program provides hints to guide the player towards the correct answer.</p>
+  <p class="mt-3">The game features a simple user interface that is easy to navigate, making it suitable for players of all ages and experience levels. Whether you're a beginner looking to learn more about Python programming, or an experienced developer seeking a fun coding challenge, this number guessing game is sure to keep you entertained and engaged. So why not give it a try and see if you can guess the random number within the limited number of attempts?</p>
+  <p class="mt-3">Here's how the code works:</p>
+
+
+<p class="mt-5">The first two lines import the "<strong>random</strong>" and "<strong>math</strong>" modules, which provide functions for generating random numbers and performing mathematical operations, respectively.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import random
+import math
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The next two lines prompt the user to input two integers, which are assigned to the variables "<strong>lower</strong>" and "<strong>upper</strong>". These integers define the range of numbers from which the computer will generate a random number for the user to guess.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># taking the inputs
+lower = int(input("Enter Lower Number: "))
+upper = int(input("Enter Upper Number: "))
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">The next line generates a random integer "<strong>x</strong>" within the range defined by the "<strong>lower</strong>" and "<strong>upper</strong>" inputs. It also prints out a message that informs the user how many guesses they have to correctly guess the number.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># generating random numbers
+x = random.randint(lower, upper)
+print("\n\tYou Have Only ",round(math.log(upper - lower + 1, 2)), " chances to guess the number!\n")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">The next line initializes a variable "<strong>count</strong>" to zero. This variable will be used to keep track of the number of guesses the user has made.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># initial the guess
+count = 0
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">This section contains a "<strong>while</strong>" loop that will continue running until the user has made the maximum number of guesses allowed. The maximum number of guesses is determined by the expression "<strong>math.log(upper - lower + 1, 2)</strong>", which calculates the number of times the loop will iterate.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># for guessing the minimum number of guesses depends of choosen range
+while count &lt; math.log(upper - lower + 1, 2):
+    count += 1
+    
+    # take guessing numbers as inputs
+    guess = int(input("Enter Guess Number: "))
+    
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-5">Within the <strong>while</strong> loop, the user is prompted to input a guess using the "<strong>input()</strong>" function. The guess is assigned to the variable "<strong>guess</strong>".</p>
+<p class="mt-1">An "<strong>if</strong>" statement then checks whether the guess matches the randomly generated number "<strong>x</strong>". If it does, the program prints a congratulatory message and breaks out of the <strong>while</strong> loop.</p>
+<p class="mt-1">If the guess is not correct, the program checks whether the guess is higher or lower than "<strong>x</strong>" and prints an appropriate message.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># condition checking
+    if x == guess:
+        print("Congratulations... You have guessed it in ",count, " try")
+        
+        # once guessed correctly loop will break
+        break
+    elif x > guess:
+        print("your guessed is too small!!")
+    elif x < guess:
+        print("your guessed is too high!!!")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+
+<p class="mt-5">This section contains an "<strong>if</strong>" statement that executes if the user has made the maximum number of guesses allowed without correctly guessing the number. In this case, the program prints the correct number and a message indicating that the user has not succeeded in guessing the number within the allowed number of guesses.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python"># If Guessing is more than required guesses, show this output
+if count >= math.log(upper - lower + 1, 2):
+    print("\nThe number is %d" % x)
+    print("\tBetter luck next time!")
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+
+
+<p class="mt-3">In summary, the number guessing game using Python's <strong>random</strong> and <strong>math</strong> modules is a fun and interactive way to test your guessing skills while practicing your Python programming. The game is easy to understand and play, and can be customized to fit your preferences by adjusting the range of numbers or number of attempts allowed. By following the code and making tweaks of your own, you can also gain a better understanding of how random numbers are generated in Python and how math functions can be used to manipulate those numbers. Overall, this game is a great project for beginners looking to practice their Python skills or anyone looking for a fun challenge.</p>
+
+
+
+<h4 class="mt-5">You can watch the video below:</h4>
+<div class="ratio ratio-16x9 mt-3">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7qxNCppanE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+
+
+
+
+
+
+<nav aria-label="Page navigation example ">
+    <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+      <li class="page-item active   pe-2">
+        <a class="page-link" href="game8.html" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+     
+      <li class="page-item  pe-2"><a class="page-link" href="game8.html">8</a></li>
+      <li class="page-item active pe-2"><a class="page-link" href="game9.html">9</a></li>
+      <li class="page-item pe-2"><a class="page-link" href="game10.html">10</a></li>
+      
+      <li class="page-item active pe-2">
+        <a class="page-link" href="game10.html">Next</a>
+      </li>
+    </ul>
+  </nav>                             
+   <!----------------- Comments...-------------- -->
+   
+  
+  <div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+    <h4 class="alert-heading">Site Update in Progress...</h4>
+    <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+  </div>
+   <h3 class="mt-5">Comments...</h3>
+   <div class="comment mt-3 px-3 py-3">
+     
+    <form id="contactForm"  onsubmit="return sendMail();">
+       <div class="mb-3">
+         <label for="nameInput" class="form-label">Name</label>
+         <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+       </div>
+       <div class="mb-3">
+         <label for="emailInput" class="form-label">Email address</label>
+         <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+       </div>
+       <div class="mb-3">
+         <label for="messageTextarea" class="form-label">Your Comments</label>
+         <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+       </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+     <div class=" mt-4" id="messages">
+                     </div>
+   </div>
+  
+   <!----------------- Comments ENDS HERE...-------------- -->
+  
+  
+  
+           
+         </div>
+         <div id="ads" class="col-3 mt-5 d-none d-sm-block text-break border-start">
+          <div class=" text-center">
+            <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 mb-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+          <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+
+         </div>
+       </div>
+     </div>
+   </div>
+  
+  
+     <!-- Footer -->
+  <footer class="futer text-center text-white">
+   <!-- Grid container -->
+   <div class="container p-4">
+     <!-- Section: Social media -->
+     <section class="mb-4">
+       <!-- tiktok -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+  
+       <!-- Twitter -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+         ><i class="fab fa-twitter"></i
+       ></a>
+  
+       <!-- pinterest -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+         ><i class="fab fa-pinterest"></i
+       ></a>
+  
+       <!-- Instagram -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+         ><i class="fab fa-instagram"></i
+       ></a>
+  
+       <!-- Linkedin -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+         ><i class="fab fa-linkedin-in"></i
+       ></a>
+  
+       <!-- tumblr -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+         ><i class="fab fa-tumblr"></i
+       ></a>
+     </section>
+     <!-- Section: Social media -->
+     <div class="text-center  text-success" id="newsletter-success"></div>
+     <div class="alert" style="display: none;">
+       <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+       Subscription successful!
+     </div>
+  <!-- Section: Form -->
+  <section class="">
+   <form id="contactForm2" >
+     
+     <!--Grid row-->
+     <div class="row d-flex justify-content-center">
+       <!--Grid column-->
+       <div class="col-auto">
+         
+         <p class="pt-2">
+           <strong>Sign up for our newsletter</strong>
+         </p>
+       </div>
+       <!--Grid column-->
+       
+       <!--Grid column-->
+       <div class="col-md-5 col-12">
+         <!-- Email input -->
+         <div class="form-outline form-white mb-4">
+           <input type="email" id="emailid" class="form-control" />
+           <label class="form-label" for="form5Example21">Email address</label>
+         </div>
+       </div>
+       <!--Grid column-->
+  
+       <!--Grid column-->
+       <div class="col-auto">
+         <!-- Submit button -->
+         <button type="submit" class="btn btn-outline-light mb-4">
+           Subscribe
+         </button>
+       </div>
+       <!--Grid column-->
+     </div>
+     <!--Grid row-->
+   </form>
+  </section>
+  <!-- Section: Form -->
+  <!-- Section: Text -->
+     <section class="mb-4">
+       <p>
+         SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+       </p>
+     </section>
+     <!-- Section: Text -->
+  
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+   <!-- Copyright -->
+   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+     © 2023 Copyright:
+     <a class="text-white" href="../main.html">samcodehub.com</a>
+   </div>
+   <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="game.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+  </body>
+  </html>

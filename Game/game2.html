@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VP3VDZGZEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VP3VDZGZEM');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7872588747261159"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn how to build a captivating car racing game from scratch using Python and the Pygame library. This comprehensive guide will walk you through the step-by-step process of creating an entertaining and engaging game project. Develop your Python and Pygame skills while building an exciting car racing game.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="game.css" />
+    <link rel="icon" type="image/x-icon" href="../IMG/s.png">
+    <title>Python Car Racing Game: Building from Scratch with Pygame</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <script src="https://kit.fontawesome.com/e517e55e99.js" crossorigin="anonymous"></script>
+<!-- Meta Tags for Social Sharing -->
+<meta property="og:title" content="Python Car Racing Game: Building from Scratch with Pygame">
+<meta property="og:description" content="Learn how to build a captivating car racing game from scratch using Python and the Pygame library. This comprehensive guide will walk you through the step-by-step process of creating an entertaining and engaging game project. Develop your Python and Pygame skills while building an exciting car racing game.">
+<meta property="og:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:url" content="https://samcodehub.com/Game/game2.html">
+<meta name="twitter:title" content="Python Car Racing Game: Building from Scratch with Pygame">
+<meta name="twitter:description" content="Learn how to build a captivating car racing game from scratch using Python and the Pygame library. This comprehensive guide will walk you through the step-by-step process of creating an entertaining and engaging game project. Develop your Python and Pygame skills while building an exciting car racing game.">
+<meta name="twitter:image" content="https://www.samcodehub.com/IMG/s.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://samcodehub.com/Game/game2.html">    
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EPqtEwgLtyLECUuik");
+      })();
+    </script>
+</head>
+<body>
+  <!--HEADER-->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav nav-black">
+        <div class="nav nav-purple">
+          <div class="nav nav-white">
+            <button class="nav-btn close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="list">
+              <li><a class="hover-underline-animation" href="../main.html">Home</a></li>
+              <li><a class="hover-underline-animation" href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank">YouTube Channel</a></li>
+              <li>Contacts:</li>
+              <li>
+                <ul>
+                  <li><a class="hover-underline-animation" href="https://twitter.com/SamCodehub" target="_blank">Twitter</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.instagram.com/samcodehub/" target="_blank">Instagram</a></li>
+                  <li><a class="hover-underline-animation" href="https://www.tiktok.com/@samcodehub" target="_blank">Tiktok</a></li>
+                  <li><a class="hover-underline-animation" href="mailto:samcodehub@gmail.com">Mail</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-white ms-5" href="../main.html">SAMCODEHUB</a>
+      </div>
+  </nav>
+  
+
+    
+  <div class="container-fluid text-dark bg-light mb-5">
+    <div class="container text-break">
+        <div class="row">
+          <div class="mt-3 text-center d-none d-sm-block">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '1b2faf8c56912cbb33c75a4f2c4147a0',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1b2faf8c56912cbb33c75a4f2c4147a0/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+          
+    
+    
+          <div class="mt-3 text-center d-block d-sm-none">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '5f8d3ca7e2522cae1c98e57ae1a52fc4',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/5f8d3ca7e2522cae1c98e57ae1a52fc4/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+                
+                <div class="col-9 ">
+
+<!--CAR-RACE-GAME--########################################################################################-->
+
+  
+<h1 class="mt-3">Building a Car Racing Game from Scratch with Python and Pygame Library</h1>
+  
+  <p class="mt-5">This game is using <strong>pygame</strong> library to create a car race game. it's almost a large project about 400 lines of code.</p>
+  
+  <p class="mt-4">the code defines several functions to display images and text on the game window, such as <strong>introImg</strong>, <strong>instructionIMG</strong>, <strong>aboutIMG</strong>, <strong>play</strong>, <strong>ABOUT</strong>, <strong>Instruction</strong>, and <strong>introscreen</strong>. These functions are used to display the intro screen, which has three buttons: <strong>PLAY</strong>, <strong>INSTRUCTION</strong>, and <strong>ABOUT</strong>. When the user clicks the <strong>PLAY</strong> button, the <strong>countdown</strong> function is called, and the game starts.<br/>
+  
+    The <strong>countdown</strong> function displays a countdown of 3, 2, 1, and then the word "GO!!!" on the game window, with a background image. After a short delay, the countdown function ends, and the actual car game begins. </p>
+  
+  <p class="mt-4">Then you can move the car using keyboards arrow keys and randomly another cars will pass. the game is displayed on a screen where the player controls a car to avoid obstacles while collecting points.</p>
+  <p class="mt-4"><strong>*Note</strong>: for this project its necessary to prepare the photos music text by the same name or modify the code.</p>
+  
+  <p class="mt-4">You can download the files here: <a href="https://drive.google.com/uc?id=1rxja_s3EkUqyZxGoqFY5PYJ4mBDUs_HE&export=download" target="_blank" download><i class="fa fa-download"></i></a></p>
+  
+  <h2 class="mt-5">Let's breakdown the code:</h2>  
+  <p class="mt-5">Importing the necessary libraries:</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">import pygame,sys
+pygame.init() #initializes the Pygame
+from pygame.locals import* #import all modules from Pygame
+import random
+import math
+import time
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+ 
+
+<div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+</div>
+  
+  <p class="mt-5">Initializes the <strong>Pygame</strong> library, sets the game window's <strong>size</strong> and <strong>title</strong>, and changes the game window's <strong>logo</strong>.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">screen = pygame.display.set_mode((798,600))
+  
+#initializing pygame mixer
+pygame.mixer.init()
+  
+#changing title of the game window
+pygame.display.set_caption('Car Game')
+  
+#changing the logo
+logo = pygame.image.load('logo.jpeg')
+pygame.display.set_icon(logo)
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  
+  <p class="mt-5">After that, the code defines several functions to display images and text on the game window, such as <strong>introImg</strong>, <strong>instructionIMG</strong>, <strong>aboutIMG</strong>, <strong>play</strong>, <strong>ABOUT</strong>, <strong>Instruction</strong>, and <strong>introscreen</strong>. These functions are used to display the intro screen, which has three buttons: <strong>PLAY</strong>, <strong>INSTRUCTION</strong>, and <strong>ABOUT</strong>. When the user clicks the <strong>PLAY</strong> button, the <strong>countdown</strong> function is called, and the game starts.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+  IntroFont = pygame.font.Font("freesansbold.ttf", 38)
+  def introImg(x,y):
+      intro = pygame.image.load("intro.png")
+      
+      screen.blit(intro,(x,y))
+  def instructionIMG(x,y):
+      instruct = pygame.image.load("instruction.png")
+      run = True
+      while run:
+          screen.blit(instruct,(x,y))
+          pygame.display.update()
+          for event in pygame.event.get():
+              if event.type == pygame.QUIT:
+                  run = False
+  
+  def aboutIMG(x,y):
+      aboutimg = pygame.image.load("About.png")
+      run = True
+      while run:
+          screen.blit(aboutimg,(x,y))
+          pygame.display.update()
+          for event in pygame.event.get():
+              if event.type == pygame.QUIT:
+                  run = False
+  def play(x,y):
+      playtext = IntroFont.render("PLAY",True,(255,0,0))
+      screen.blit (playtext,(x,y))
+  def ABOUT(x,y):
+      aboutText = IntroFont.render("ABOUT",True,(255,0,0))
+      screen.blit (aboutText,(x,y))
+  def Instruction(x,y):
+      instructionText = IntroFont.render("INSTRUCTION",True,(255,0,0))
+      screen.blit(instructionText,(x,y))
+  
+  
+  def introscreen():
+      run = True
+      pygame.mixer.music.load('startingMusic.mp3')
+      pygame.mixer.music.play()
+      while run :
+          screen.fill((0,0,0))
+          introImg(0,0)
+          play(100,450)
+          Instruction(280,450)
+          ABOUT(615,450)
+  
+          ####### getting coordinates of mouse cursor #######
+          x,y = pygame.mouse.get_pos()
+  
+          ###### storing rectangle coordinates (x, y, length, height) by making variables
+          button1 = pygame.Rect(60,440,175,50)
+          button2 = pygame.Rect(265,440,300,50)
+          button3 = pygame.Rect(600,440,165,50)
+  
+          ##### Drawing rectangles with stored coorditates of rectangles.######
+          ###### pygame.draw.rect takes these arguments (surface, color, coordinates, border) #####
+          pygame.draw.rect(screen, (255,255,255), button1,6)
+          pygame.draw.rect(screen, (255,255,255), button2,6)
+          pygame.draw.rect(screen,(255,255,255),button3,6)
+  
+          #### if our cursor is on button1 which is PLAY button
+          if button1.collidepoint(x,y):
+          ### changing from inactive to active by changing the color from white to red 
+              pygame.draw.rect(screen, (155,0,0), button1,6)
+          #### if we click on the PLAY button ####
+              if click:
+                  countdown() ## CALLING COUNTDOWN FUNCTION TO START OUR GAME
+  
+  
+          #### if our cursor is on button2 which is INSTRUCTION button
+          if button2.collidepoint(x,y):
+          ### changing from inactive to active by changing the color from white to red 
+              pygame.draw.rect(screen, (155,0,0), button2,6)
+          #### if we click on the INSTRUCTION button ####
+              if click:
+                  instructionIMG(0,0)### DISPLAYING OUR INSTRUCTION IMAGE BY CALLING IT
+  
+          
+          #### if our cursor is on button3 which is ABOUT button
+          if button3.collidepoint(x,y):
+          ### changing from inactive to active by changing the color from white to red 
+              pygame.draw.rect(screen,(155,0,0),button3,6)
+          #### if we click on the ABOUT button ####
+              if click:
+                  aboutIMG(0,0) ### DISPLAYING OUR ABOUT IMAGE BY CALLING IT
+                  
+          ###### checking for mouse click event
+          click = False
+          for event in pygame.event.get():
+           if event.type == pygame.QUIT:
+              run = False
+           if event.type == pygame.MOUSEBUTTONDOWN:
+               if event.button == 1:
+                   click = True
+          pygame.display.update()
+  
+    ###### Countdown ######
+  def countdown():
+      font2 = pygame.font.Font('freesansbold.ttf', 85)
+      countdownBacground = pygame.image.load('bg.png')
+      three = font2.render('3',True, (187,30,16))
+      two =   font2.render('2',True, (255,255,0))
+      one =   font2.render('1',True, (51,165,50))
+      go =    font2.render('GO!!!',True, (0,255,0))
+      
+      
+  
+                 ##### displaying blank background #####
+      screen.blit(countdownBacground, (0,0))
+      pygame.display.update()
+  
+      ###### Displaying  three (3) ######
+      screen.blit(three,(350,250))
+      pygame.display.update()
+      time.sleep(1)
+  
+      ##### displaying blank background #####
+      screen.blit(countdownBacground, (0,0))
+      pygame.display.update()
+      time.sleep(1)
+  
+          ###### Displaying  two (2) ######
+      screen.blit(two,(350,250))
+      pygame.display.update()
+      time.sleep(1)
+  
+      ##### displaying blank background #####
+      screen.blit(countdownBacground, (0,0))
+      pygame.display.update()
+      time.sleep(1)
+  
+          ###### Displaying  one (1) ######
+      screen.blit(one,(350,250))
+      pygame.display.update()
+      time.sleep(1)
+  
+      ##### displaying blank background #####
+      screen.blit(countdownBacground, (0,0))
+      pygame.display.update()
+      time.sleep(1)
+  
+          ###### Displaying  Go!!! ######
+      screen.blit(go,(300,250))
+      pygame.display.update()
+      time.sleep(1)
+      gameloop() #calling the gamloop so that our game can start after the countdown
+      pygame.display.update()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  
+  <p class="mt-5">Define a function as <strong>gameloop()</strong> that is the main loop that plays the background music, car crash sound showing the scores.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+  #defining our gameloop function
+  def gameloop():
+  
+        ####### music ####### 
+      pygame.mixer.music.load('BackgroundMusic.mp3')
+      pygame.mixer.music.play()
+      ###### sound effect for collision ######
+      crash_sound = pygame.mixer.Sound('car_crash.wav')
+  
+      ####### scoring part ######
+      score_value = 0
+      font1= pygame.font.Font("freesansbold.ttf",25)
+  
+      def show_score(x,y):
+          score = font1.render("SCORE: "+ str(score_value), True, (255,0,0))
+          screen.blit(score, (x,y))
+  
+      #highscore part
+      with open ("highscore.txt","r") as f:
+              highscore = f.read()
+      def show_highscore(x,y):
+          Hiscore_text = font1.render('HISCORE :' + str(highscore),True,(255,0,0))
+          screen.blit (Hiscore_text,(x,y))
+          pygame.display.update()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803482.highrevenuegate.com/48f614a090a4554e6545c45cb2bade8a/invoke.js"></script>
+<div id="container-48f614a090a4554e6545c45cb2bade8a"></div>
+</div>
+
+  <p class="mt-5">The <strong>gameover()</strong> function is created to display a game-over screen when the game is over. It loads a game-over image and displays the player's score and high score on the screen. It also listens for events such as the player pressing the spacebar to restart the game or the escape key to quit the game.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">###### creating our game over function #######
+  
+      def gameover():
+          gameoverImg = pygame.image.load("gameover.png")
+          run = True
+          while run:
+  
+              screen.blit(gameoverImg,(0,0))
+              time.sleep(0.5)
+              show_score(330,400)
+              time.sleep(0.5)
+              show_highscore(330,450)
+              pygame.display.update()
+              
+              for event in pygame.event.get():
+               if event.type == pygame.QUIT:
+                  run = False
+                  pygame.quit()
+                  sys.exit()
+               if event.type == pygame.KEYDOWN:
+                  if event.key == pygame.K_SPACE:
+                      countdown()
+                  if event.key == pygame.K_ESCAPE:
+                      pygame.quit()
+                      sys.exit()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  
+  <p class="mt-5">The game loop starts by loading and displaying the background image and the player's car. It also loads and displays three other cars that will act as obstacles in the game. The player can control their car's movement using the arrow keys, and the game checks for collisions between the player's car and the other cars.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+      #setting background image
+      bg = pygame.image.load('bg.png')
+      
+      
+      # setting our player
+      maincar = pygame.image.load('car.png')
+      maincarX = 350
+      maincarY = 495
+      maincarX_change = 0
+      maincarY_change = 0
+  
+      #other cars
+      car1 = pygame.image.load('car1.jpeg')
+      car1X = random.randint(178,490)
+      car1Y = 100
+      car1Ychange = 10    
+      car2 = pygame.image.load('car2.png')
+      car2X = random.randint(178,490)
+      car2Y = 100
+      car2Ychange = 10
+  
+      car3 = pygame.image.load('car3.png')
+      car3X = random.randint(178,490)
+      car3Y = 100
+      car3Ychange = 10
+         
+  
+      run = True
+      while run:
+          for event in pygame.event.get():
+              if event.type == pygame.QUIT:
+                  run = False
+                  pygame.quit()
+                  sys.exit()
+  
+                  #checking if any key has been pressed
+              if event.type == pygame.KEYDOWN: 
+                  if event.key == pygame.K_RIGHT:
+                      maincarX_change += 5
+              
+                  if event.key == pygame.K_LEFT:
+                      maincarX_change -= 5
+                  
+                  if event.key == pygame.K_UP:
+                      maincarY_change -= 5
+                      
+                  if event.key == pygame.K_DOWN:
+                      maincarY_change += 5
+  
+                  #checking if key has been lifted up
+              if event.type == pygame.KEYUP: 
+                  if event.key == pygame.K_RIGHT:
+                      maincarX_change = 0
+              
+                  if event.key == pygame.K_LEFT:
+                      maincarX_change = 0
+                  
+                  if event.key == pygame.K_UP:
+                      maincarY_change = 0
+                      
+                  if event.key == pygame.K_DOWN:
+                      maincarY_change = 0            
+  
+          #setting boundary for our main car
+          if maincarX < 178:
+              maincarX = 178
+          if maincarX > 490:
+              maincarX = 490
+          
+          if maincarY < 0:
+              maincarY = 0
+          if maincarY > 495:
+              maincarY = 495
+  
+  
+          #CHANGING COLOR WITH RGB VALUE, RGB = RED, GREEN, BLUE 
+          screen.fill((0,0,0))
+  
+          #displaying the background image
+          screen.blit(bg,(0,0))
+  
+          #displaying our main car
+          screen.blit(maincar,(maincarX,maincarY))
+  
+          #displaing other cars
+          screen.blit(car1,(car1X,car1Y))
+          screen.blit(car2,(car2X,car2Y))
+          screen.blit(car3,(car3X,car3Y))
+            #calling our show_score function
+          show_score(570,280)
+          #calling show_hiscore function
+          show_highscore(0,0)
+  
+          
+          
+          #updating the values
+          maincarX += maincarX_change
+          maincarY += maincarY_change
+  
+          #movement of the enemies
+          car1Y += car1Ychange
+          car2Y += car2Ychange
+          car3Y += car3Ychange
+          #moving enemies infinitely
+          if car1Y > 670:
+              car1Y = -100
+              car1X = random.randint(178,490)
+              score_value += 1
+          if car2Y > 670:
+              car2Y = -150
+              car2X = random.randint(178,490)
+              score_value += 1
+          if car3Y > 670:
+              car3Y = -200
+              car3X = random.randint(178,490)
+              score_value += 1
+  
+          #checking if highscore has been created
+          if score_value > int(highscore):
+              highscore = score_value
+  
+            
+           
+  
+  
+          #DETECTING COLLISIONS BETWEEN THE CARS
+  
+          #getting distance between our main car and car1
+          def iscollision(car1X,car1Y,maincarX,maincarY):
+              distance = math.sqrt(math.pow(car1X-maincarX,2) + math.pow(car1Y - maincarY,2)) 
+  
+              #checking if distance is smaller than 50 after then collision will occur
+  
+              if distance < 50: 
+                  return True
+              else:
+                  return False
+  
+          #getting distance between our main car and car2
+          def iscollision(car2X,car2Y,maincarX,maincarY):
+              distance = math.sqrt(math.pow(car2X-maincarX,2) + math.pow(car2Y - maincarY,2))
+  
+              #checking if distance is smaller than 50 after then collision will occur
+              if distance < 50:
+                  return True
+              else:
+                  return False
+  
+          #getting distance between our main car and car3
+          def iscollision(car3X,car3Y,maincarX,maincarY):
+              distance = math.sqrt(math.pow(car3X-maincarX,2) + math.pow(car3Y - maincarY,2))
+  
+              #checking if distance is smaller then 50 after then collision will occur
+              if distance < 50:
+                  return True
+              else:
+                  return False
+          
+          ##### giving collision a variable #####
+  
+          #collision between maincar and car1
+          coll1 = iscollision(car1X,car1Y,maincarX,maincarY) 
+  
+          #collision between maincar and car2
+          coll2 = iscollision(car2X,car2Y,maincarX,maincarY) 
+  
+          #collision between maincar and car3
+          coll3 = iscollision(car3X,car3Y,maincarX,maincarY) 
+  
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+ <div class="mt-5 text-center">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '2be6d81d479aab6f66c74305d58a3261',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/2be6d81d479aab6f66c74305d58a3261/invoke.js"></scr' + 'ipt>');
+  </script>
+
+ </div> 
+
+
+  <p class="mt-5">If the player's car collides with any of the other cars, the <strong>gameover()</strong> function is called to display the game-over screen. The game continues until the player quits or their car collides with one of the other cars.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+          #if coll1 occur
+          if coll1: 
+              
+              
+              car1Ychange = 0
+              car2Ychange = 0
+              car3Ychange = 0
+              car1Y = 0
+              car2Y = 0
+              car3Y = 0
+              maincarX_change = 0
+              maincarY_change = 0
+              pygame.mixer.music.stop()
+              crash_sound.play()
+          ###### calling our game over function #######
+              time.sleep(1)
+              gameover()
+            
+             
+              
+          
+          #if coll2 occur
+          if coll2:
+             
+              
+              car1Ychange = 0
+              car2Ychange = 0
+              car3Ychange = 0
+              car1Y = 0
+              car2Y = 0
+              car3Y = 0
+              maincarX_change = 0
+              maincarY_change = 0
+              pygame.mixer.music.stop()
+              crash_sound.play()
+          ###### calling our game over function #######
+              time.sleep(1)
+              gameover()
+             
+  
+          #if coll3 occur    
+          if coll3:
+             
+              car1Ychange = 0
+              car2Ychange = 0
+              car3Ychange = 0
+              car1Y = 0
+              car2Y = 0
+              car3Y = 0
+              maincarX_change = 0
+              maincarY_change = 0
+              pygame.mixer.music.stop()
+              crash_sound.play()
+          ###### calling our game over function #######
+              time.sleep(1)
+              gameover()
+          
+          if car1Ychange == 0 and car2Ychange == 0 and car3Ychange == 0 :
+            pass
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  
+  <p class="mt-5">The code is writing the highscore value to a file named "<strong>highscore.txt</strong>" using the built-in <strong>open()</strong> function in Python, and the file is opened in write mode ("<strong>w</strong>"). The <strong>with</strong> statement is used to ensure that the file is properly closed after writing the data to it.<br/>
+  
+    The <strong>f.write(str(highscore))</strong> line writes the highscore value to the file as a string. The <strong>str()</strong> function is used to convert the integer value of highscore to a string so it can be written to the file.<br/>
+    
+    Finally, <strong>pygame.display.update()</strong> updates the game display and <strong>introscreen()</strong> most likely starts the game intro screen.</p>
+<div id="code-container"class="bg-dark text-white pt-3 ps-3 pe-3">
+<pre>
+<code class="language-Python">
+          # writing to our highscore.txt file
+          with open ("highscore.txt","w") as f:
+              f.write(str(highscore))
+          
+  
+          pygame.display.update()
+  introscreen()
+</code>
+</pre>
+<button id="copy" type="button" onclick="copyCode(this)" class="btn btn-outline-secondary"><i class="fa-regular fa-clipboard"></i></button>
+</div>
+  
+  <p class="mt-3">Overall, it's a fun and engaging project that demonstrates the capabilities of the <strong>Pygame</strong> library.</p>
+  <h4 class="mt-5">You can watch the video below:</h4>
+  <div class="ratio ratio-16x9 mt-3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NwrJOhrRAbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<div class="mt-5">
+  <script async="async" data-cfasync="false" src="//pl19803483.highrevenuegate.com/6e23a23963bb7aab641dba5ed180d8b6/invoke.js"></script>
+<div id="container-6e23a23963bb7aab641dba5ed180d8b6"></div>
+</div>
+
+
+
+
+
+
+<nav aria-label="Page navigation example ">
+    <ul class="pagination pagination-sm justify-content-center ps-3 mt-5">
+      <li class="page-item active  pe-2">
+        <a class="page-link" href="game.html" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+     
+      <li class="page-item  pe-2"><a class="page-link" href="game.html">1</a></li>
+      <li class="page-item active pe-2"><a class="page-link" href="game2.html">2</a></li>
+      <li class="page-item pe-2"><a class="page-link" href="game3.html">3</a></li>
+      
+      <li class="page-item active pe-2">
+        <a class="page-link" href="game3.html">Next</a>
+      </li>
+    </ul>
+  </nav>                          
+   <!----------------- Comments...-------------- -->
+
+  
+  <div class="site-update alert-info mt-5 py-3 px-3" role="alert">
+    <h4 class="alert-heading">Site Update in Progress...</h4>
+    <p>We're working hard to keep our site up to date with the latest information. Please check back soon for new and improved content!</p>
+  </div>
+   <h3 class="mt-5">Comments...</h3>
+   <div class="comment mt-3 px-3 py-3">
+     
+    <form id="contactForm"  onsubmit="return sendMail();">
+       <div class="mb-3">
+         <label for="nameInput" class="form-label">Name</label>
+         <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+       </div>
+       <div class="mb-3">
+         <label for="emailInput" class="form-label">Email address</label>
+         <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+       </div>
+       <div class="mb-3">
+         <label for="messageTextarea" class="form-label">Your Comments</label>
+         <textarea class="form-control" name="message"  id="message" rows="5"></textarea>
+       </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+     <div class=" mt-4" id="messages">
+                     </div>
+   </div>
+  
+   <!----------------- Comments ENDS HERE...-------------- -->
+  
+  
+  
+           
+         </div>
+         <div id="ads" class="col-3 mt-5 d-none d-sm-block text-break border-start">
+          <div class=" text-center">
+            <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/160x600_adsterra_reff.gif" /></a>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 mb-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <script async="async" data-cfasync="false" src="//pl19803213.highrevenuegate.com/09dd4590666c6548bca106c3143299ba/invoke.js"></script>
+          <div id="container-09dd4590666c6548bca106c3143299ba"></div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '60d187c01f46598efa9231f38aa5470f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/60d187c01f46598efa9231f38aa5470f/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+  
+          <div class="mt-5 text-center">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '6e0edb924a4d1f796c691953555afee5',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6e0edb924a4d1f796c691953555afee5/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+
+
+   
+  
+
+
+
+         </div>
+       </div>
+     </div>
+   </div>
+  
+  
+     <!-- Footer -->
+  <footer class="futer text-center text-white">
+   <!-- Grid container -->
+   <div class="container p-4">
+     <!-- Section: Social media -->
+     <section class="mb-4">
+       <!-- tiktok -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@samcodehub" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+  
+       <!-- Twitter -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/SamCodehub" target="_blank" role="button"
+         ><i class="fab fa-twitter"></i
+       ></a>
+  
+       <!-- pinterest -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://ar.pinterest.com/samcodehub/" target="_blank" role="button"
+         ><i class="fab fa-pinterest"></i
+       ></a>
+  
+       <!-- Instagram -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/samcodehub/?hl=es" target="_blank" role="button"
+         ><i class="fab fa-instagram"></i
+       ></a>
+  
+       <!-- Linkedin -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samcodehub/" target="_blank" role="button"
+         ><i class="fab fa-linkedin-in"></i
+       ></a>
+  
+       <!-- tumblr -->
+       <a class="btn btn-outline-light btn-floating m-1" href="https://www.tumblr.com/blog/sam-code-hub" target="_blank" role="button"
+         ><i class="fab fa-tumblr"></i
+       ></a>
+     </section>
+     <!-- Section: Social media -->
+     <div class="text-center  text-success" id="newsletter-success"></div>
+     <div class="alert" style="display: none;">
+       <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
+       Subscription successful!
+     </div>
+  <!-- Section: Form -->
+  <section class="">
+   <form id="contactForm2" >
+     
+     <!--Grid row-->
+     <div class="row d-flex justify-content-center">
+       <!--Grid column-->
+       <div class="col-auto">
+         
+         <p class="pt-2">
+           <strong>Sign up for our newsletter</strong>
+         </p>
+       </div>
+       <!--Grid column-->
+       
+       <!--Grid column-->
+       <div class="col-md-5 col-12">
+         <!-- Email input -->
+         <div class="form-outline form-white mb-4">
+           <input type="email" id="emailid" class="form-control" />
+           <label class="form-label" for="form5Example21">Email address</label>
+         </div>
+       </div>
+       <!--Grid column-->
+  
+       <!--Grid column-->
+       <div class="col-auto">
+         <!-- Submit button -->
+         <button type="submit" class="btn btn-outline-light mb-4">
+           Subscribe
+         </button>
+       </div>
+       <!--Grid column-->
+     </div>
+     <!--Grid row-->
+   </form>
+  </section>
+  <!-- Section: Form -->
+  <!-- Section: Text -->
+     <section class="mb-4">
+       <p>
+         SAMCODEHUB is optimized for learning and training Python programming from basic to advanced. All tutorials and projects are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. it would be a greate help if you inform us the errors you might find during your journy in SAMCODEHUB.
+       </p>
+     </section>
+     <!-- Section: Text -->
+  
+ <!-- Section: Links -->
+ <section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="https://www.ko-fi.com/samcodehub" target="_blank" class="text-white">
+            <img src="../IMG/hco.png" alt="Coffee" style="width: 40px; height: 30px; margin-right: -5px;">
+            Buy Me A Coffee
+          </a>
+        </li>
+        <li>
+          <a href="../Challenge/challenge.html" target="_blank" class="text-white">Coding Challenge</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCMxVrec-3iTMxiEAsxTtZJg" target="_blank" class="text-white">Video Tutorial</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_blank"  class="text-white">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+      <ul  class="list-unstyled mb-0">
+        
+        <li>
+          <a href="../Terms/terms.html" target="_blank" class="text-white">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="../Privacy/privacy.html" target="_blank" class="text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:samcodehub@gmail.com" class="text-white">contact us</a>
+        </li>
+        <li>
+          <a href="../FAQ/faq.html" target="_blank" class="text-white">FAQ</a>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+   <!-- Copyright -->
+   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.558);">
+     © 2023 Copyright:
+     <a class="text-white" href="../main.html">samcodehub.com</a>
+   </div>
+   <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="game.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <script type='text/javascript' src='//pl19803565.highrevenuegate.com/ff/58/83/ff5883adc68702e52bb3c7953ffb3fe9.js'></script>
+  </body>
+  </html>
